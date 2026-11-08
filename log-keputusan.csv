@@ -1,2 +1,2 @@
-id,tanggal,nim,tahap,seri_kode,keputusan,alternatif_ditolak,alasan,dampak_baris
-K-001,2026-11-03,12345678,silver,var543,"periode bulanan Februari/Agustus disimpan sebagai jenis_periode=bulan","rata-rata ke tahunan","sumber menerbitkan dua kali setahun; agregasi dilakukan di Gold",0
+﻿id,tanggal,nim,tahap,seri_kode,keputusan,alternatif_ditolak,alasan,dampak_baris
+K-001,2026-11-08,124450052,silver,semua_BPS,"Kode wilayah provinsi mengikuti kode BPS empat digit dan nama wilayah dipertahankan; 38 provinsi menjadi unit analisis, sedangkan kode 9999 (INDONESIA) dipisahkan sebagai agregat nasional","Mencampurkan agregat nasional dengan data provinsi atau hanya menggunakan nama wilayah","Kode wilayah menjaga konsistensi antarseri dan mencegah agregat nasional tercampur dengan observasi provinsi",0
