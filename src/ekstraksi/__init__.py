@@ -1,83 +1,48 @@
-
-"""Tahap 1 — Ekstraksi data BPS CSV dan JSON."""
+"""Tahap 1 — Ekstraksi seluruh data mentah BPS dan WHO."""
 
 import json
 from pathlib import Path
 
 import pandas as pd
 
-from src.common.manifest import RAW, sha256_raw
+from src.common.manifest import RAW, baca as baca_manifest, periksa, sha256_raw
+from . import who
 
 
-KOLOM = [
-    "sumber",
-    "seri_kode",
-    "wilayah_kode",
-    "nama_wilayah",
-    "periode",
-    "jenis_periode",
-    "rincian",
-    "nilai",
-    "satuan",
-    "_berkas_raw",
-    "_sha256_raw",
-]
+def _lineage(df, berkas):
+    """Menambahkan informasi asal berkas dan SHA-256."""
+    df["_berkas_raw"] = berkas
+    df["_sha256_raw"] = sha256_raw(berkas)
+    return df
 
 
-def _buat_baris(
-    seri, wilayah, tahun, rincian, nilai, satuan, berkas
-):
-    """Membentuk satu observasi dengan skema Silver minimal."""
-    return {
-        "sumber": "bps",
-        "seri_kode": int(seri),
-        "wilayah_kode": int(wilayah[0]),
-        "nama_wilayah": str(wilayah[1]),
-        "periode": str(tahun),
-        "jenis_periode": "tahun",
-        "rincian": str(rincian),
-        "nilai": pd.to_numeric(nilai, errors="coerce"),
-        "satuan": str(satuan or ""),
-        "_berkas_raw": berkas,
-        "_sha256_raw": sha256_raw(berkas),
-    }
-
-
-def baca_csv(path):
-    """Membaca satu berkas CSV BPS menjadi tabel panjang."""
+def _baca_bps_csv(path):
+    """Membaca CSV BPS dengan mempertahankan kolom aslinya."""
     path = Path(path)
     berkas = path.relative_to(RAW).as_posix()
 
-    df = pd.read_csv(path, encoding="utf-8-sig")
+    df = pd.read_csv(
+        path,
+        encoding="utf-8-sig",
+        dtype=str,
+        keep_default_na=False,
+    )
 
-    hasil = []
-    for row in df.to_dict("records"):
-        wilayah = (row["wilayah_id"], row["wilayah"])
-        hasil.append(
-            _buat_baris(
-                seri=row["var_id"],
-                wilayah=wilayah,
-                tahun=row["tahun"],
-                rincian=row["turvar"],
-                nilai=row["nilai"],
-                satuan=row["satuan"],
-                berkas=berkas,
-            )
-        )
-
-    print(f"CSV  {path.name}: {len(hasil)} baris")
-    return pd.DataFrame(hasil, columns=KOLOM)
+    return _lineage(df, berkas)
 
 
-def baca_json(path):
-    """Membaca JSON WebAPI BPS dengan menguraikan kode datacontent."""
+def _baca_bps_json(path):
+    """Menguraikan JSON WebAPI BPS menjadi baris berdasarkan dimensinya."""
     path = Path(path)
     berkas = path.relative_to(RAW).as_posix()
 
-    with open(path, encoding="utf-8") as f:
-        item = json.load(f)[0]
+    with open(path, encoding="utf-8-sig") as f:
+        data = json.load(f)
 
-    # Membuat peta kode gabungan ke metadata dimensinya.
+    if not isinstance(data, list) or not data:
+        raise ValueError(f"Struktur JSON BPS tidak sesuai: {path.name}")
+
+    item = data[0]
     indeks = {}
 
     for wilayah in item["vervar"]:
@@ -94,11 +59,7 @@ def baca_json(path):
                         )
 
                         indeks[kode] = (
-                            wilayah,
-                            seri,
-                            rincian,
-                            tahun,
-                            jenis,
+                            wilayah, seri, rincian, tahun, jenis
                         )
 
     hasil = []
@@ -106,41 +67,117 @@ def baca_json(path):
     for kode, nilai in item["datacontent"].items():
         if kode not in indeks:
             raise ValueError(
-                f"Kode datacontent tidak dikenali: {kode} pada {path.name}"
+                f"Kode datacontent tidak dikenali: {kode} "
+                f"pada {path.name}"
             )
 
         wilayah, seri, rincian, tahun, jenis = indeks[kode]
 
-        hasil.append(
-            _buat_baris(
-                seri=seri["val"],
-                wilayah=(wilayah["val"], wilayah["label"]),
-                tahun=tahun["label"],
-                rincian=rincian["label"],
-                nilai=nilai,
-                satuan=seri.get("unit", ""),
-                berkas=berkas,
-            )
-        )
+        hasil.append({
+            "vervar_val": wilayah["val"],
+            "vervar_label": wilayah["label"],
+            "var_val": seri["val"],
+            "var_label": seri["label"],
+            "var_unit": seri.get("unit", ""),
+            "turvar_val": rincian["val"],
+            "turvar_label": rincian["label"],
+            "tahun_val": tahun["val"],
+            "tahun_label": tahun["label"],
+            "turtahun_val": jenis["val"],
+            "turtahun_label": jenis["label"],
+            "nilai": nilai,
+            "status": item.get("status"),
+            "data-availability": item.get("data-availability"),
+            "last_update": item.get("last_update"),
+            "subject": item.get("subject"),
+        })
 
-    print(f"JSON {path.name}: {len(hasil)} baris")
-    return pd.DataFrame(hasil, columns=KOLOM)
+    df = pd.DataFrame(hasil)
+    return _lineage(df, berkas)
+
+
+def _baca_manifest_asal(path):
+    """Membaca metadata asal unduhan BPS sebagai satu baris."""
+    path = Path(path)
+    berkas = path.relative_to(RAW).as_posix()
+
+    with open(path, encoding="utf-8-sig") as f:
+        data = json.load(f)
+
+    if not isinstance(data, dict):
+        raise ValueError("Struktur manifest_asal.json tidak sesuai.")
+
+    return _lineage(pd.DataFrame([data]), berkas)
 
 
 def jalankan():
-    """Kembalikan DataFrame hasil ekstraksi CSV dan JSON BPS."""
-    folder_bps = RAW / "bps"
+    """Menggabungkan keluaran seluruh pembaca BPS dan WHO."""
 
-    berkas_csv = sorted(folder_bps.rglob("*_v*.csv"))
-    berkas_json = sorted(folder_bps.rglob("*_v*.json"))
+    jumlah, salah = periksa()
 
-    if not berkas_csv or not berkas_json:
-        raise FileNotFoundError("Berkas CSV atau JSON BPS tidak ditemukan.")
+    if salah:
+        raise ValueError(
+            f"Pemeriksaan SHA-256 gagal untuk berkas: {salah}"
+        )
 
-    hasil_csv = [baca_csv(p) for p in berkas_csv]
-    hasil_json = [baca_json(p) for p in berkas_json]
+    manifest = baca_manifest()
+    hasil = {}
 
-    return {
-        "bps_csv": pd.concat(hasil_csv, ignore_index=True),
-        "bps_json": pd.concat(hasil_json, ignore_index=True),
-    }
+    # Membaca seluruh berkas BPS yang tercatat di manifest.
+    for berkas in sorted(manifest):
+        if not berkas.startswith("bps/"):
+            continue
+
+        path = Path(RAW) / berkas
+
+        if path.name == "manifest_asal.json":
+            df = _baca_manifest_asal(path)
+            nama = "bps_manifest_asal"
+
+        elif path.suffix.lower() == ".csv":
+            df = _baca_bps_csv(path)
+            nama = f"bps_csv_{path.stem}"
+
+        elif path.suffix.lower() == ".json":
+            df = _baca_bps_json(path)
+            nama = f"bps_json_{path.stem}"
+
+        else:
+            raise ValueError(f"Format BPS tidak didukung: {berkas}")
+
+        hasil[nama] = df
+        print(f"BPS  {path.name}: {len(df)} baris")
+
+    # Membaca seluruh berkas WHO menggunakan pembaca yang sudah ada.
+    hasil_who = who.jalankan()
+    hasil.update({
+        f"who_{nama}": df
+        for nama, df in hasil_who.items()
+    })
+
+    # Memastikan semua berkas dalam manifest sudah dibaca.
+    terbaca = set()
+
+    for df in hasil.values():
+        if "_berkas_raw" in df.columns:
+            terbaca.update(df["_berkas_raw"].dropna().astype(str))
+
+    terlewat = sorted(set(manifest) - terbaca)
+    tambahan = sorted(terbaca - set(manifest))
+
+    if terlewat or tambahan:
+        raise ValueError(
+            f"Cakupan ekstraksi tidak sesuai. "
+            f"Terlewat: {terlewat}; tambahan: {tambahan}"
+        )
+
+    total_baris = sum(len(df) for df in hasil.values())
+
+    print("\nRINGKASAN EKSTRAKSI")
+    print("Berkas dalam manifest:", jumlah)
+    print("Berkas berhasil dibaca:", len(terbaca))
+    print("Total kelompok keluaran:", len(hasil))
+    print("Total baris:", total_baris)
+    print("Cakupan manifest: LOLOS")
+
+    return hasil
