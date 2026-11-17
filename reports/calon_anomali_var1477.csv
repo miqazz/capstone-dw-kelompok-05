@@ -1,0 +1,37 @@
+kategori,provinsi,tahun,nilai,batas_bawah,batas_atas,alasan
+Bidan,ACEH,2016,124,-6.38,112.62,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Bidan,BENGKULU,2016,133,-6.38,112.62,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Bidan,ACEH,2017,233,-20.75,183.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Bidan,ACEH,2018,213,4.38,209.38,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Dokter Gigi,DI YOGYAKARTA,2016,11,-0.12,10.88,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Dokter Gigi,DKI JAKARTA,2018,24,-1.5,10.5,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Dokter Gigi,DI YOGYAKARTA,2018,18,-1.5,10.5,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Dokter Umum,DKI JAKARTA,2018,118,-7.75,50.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Dokter Umum,DI YOGYAKARTA,2018,54,-7.75,50.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Dokter Umum,NUSA TENGGARA BARAT,2018,51,-7.75,50.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Farmasi,DI YOGYAKARTA,2016,33,3.0,27.0,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Farmasi,DKI JAKARTA,2017,67,2.38,33.38,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Farmasi,DKI JAKARTA,2018,162,0.12,43.12,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Farmasi,DI YOGYAKARTA,2018,69,0.12,43.12,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Farmasi,NUSA TENGGARA BARAT,2018,50,0.12,43.12,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Gizi,GORONTALO,2016,21,-2.25,19.75,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Gizi,SULAWESI TENGGARA,2017,24,-2.75,23.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Gizi,GORONTALO,2017,24,-2.75,23.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Gizi,SULAWESI TENGGARA,2018,24,-2.75,23.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Gizi,GORONTALO,2018,24,-2.75,23.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Lingkungan,ACEH,2017,20,-1.88,17.12,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Lingkungan,MALUKU,2017,20,-1.88,17.12,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Lingkungan,ACEH,2018,20,-1.88,17.12,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Lingkungan,MALUKU,2018,20,-1.88,17.12,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,ACEH,2017,37,-9.12,33.88,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,BENGKULU,2017,46,-9.12,33.88,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,KALIMANTAN UTARA,2017,42,-9.12,33.88,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,SULAWESI TENGGARA,2017,41,-9.12,33.88,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,MALUKU UTARA,2017,45,-9.12,33.88,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,BENGKULU,2018,43,-12.62,42.38,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,SULAWESI TENGAH,2018,45,-12.62,42.38,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,SULAWESI TENGGARA,2018,45,-12.62,42.38,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Kesehatan Masyarakat,GORONTALO,2018,47,-12.62,42.38,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Pekarya,KALIMANTAN UTARA,2016,7,-2.0,6.0,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Perawat,KALIMANTAN UTARA,2017,300,20.25,290.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
+Perawat,NUSA TENGGARA BARAT,2018,377,-3.0,355.0,Nilai berada di luar batas IQR pada kategori dan tahun yang sama
