@@ -85,3 +85,10 @@ mengintegrasikan semuanya. Sesuaikan dengan parameter capstone di Workbench.
 
 Kode starter: MIT. Data: lihat `data/LISENSI.md` setelah mengunduh; basis data turunan yang
 diterbitkan memakai ODbL 1.0 dengan atribusi BPS, BNPB, World Bank, WHO, dan ILO.
+
+
+## Rekonsiliasi nasional (Tahap 6 — Sprint 2)
+
+- Tabel nasional periode × seri: `data/gold/nasional_periode_seri.csv` (baris nasional seri utama BPS dan seri pembanding WHO, dengan lineage `_berkas_raw`/`_sha256_raw`; termasuk turunan konversi/penjumlahan rincian untuk perbandingan).
+- Daftar pasangan rekonsiliasi kasus 05 dan catatan keterbandingan (satuan var1477, definisi profesi, kategori kontekstual/definisi berbeda): `reports/rekonsiliasi-tahap6.md`.
+- Keputusan terkait dicatat di `log-keputusan.csv` (K-002 s.d. K-004).

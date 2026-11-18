@@ -1,0 +1,13 @@
+total_baris	1541
+jumlah_seri	7
+jumlah_wilayah	39
+bps	var1402	baris=393	periode=2015..2025(n=11)	wilayah=39(prov=38)	rincian=1	nilai_min=1.39	nilai_max=10.21	duplikat_kunci=0
+bps	var1477	baris=926	periode=2016..2018(n=3)	wilayah=35(prov=34)	rincian=10	nilai_min=0.0	nilai_max=377.0	duplikat_kunci=0
+bps	var2279	baris=152	periode=2022..2025(n=4)	wilayah=39(prov=38)	rincian=1	nilai_min=53.49	nilai_max=98.18	duplikat_kunci=0
+who_gho	FINPROTECTION_CATA_TOT_10_POP	baris=20	periode=1999..2021(n=20)	wilayah=1(prov=0)	rincian=1	nilai_min=1.82	nilai_max=4.74	duplikat_kunci=0
+who_gho	HWF_0001	baris=13	periode=1993..2023(n=13)	wilayah=1(prov=0)	rincian=1	nilai_min=0.57	nilai_max=6.88	duplikat_kunci=0
+who_gho	HWF_0006	baris=13	periode=1992..2023(n=13)	wilayah=1(prov=0)	rincian=1	nilai_min=6.19	nilai_max=41.23	duplikat_kunci=0
+who_gho	UHC_INDEX_REPORTED	baris=24	periode=2000..2023(n=24)	wilayah=1(prov=0)	rincian=1	nilai_min=44.0	nilai_max=68.0	duplikat_kunci=0
+panel_gap	var1402	prov_teramati=38	expected=418	observed=382	missing_sel=36
+panel_gap	var1477	prov_teramati=34	expected=1020	observed=918	missing_sel=102
+panel_gap	var2279	prov_teramati=38	expected=152	observed=148	missing_sel=4
