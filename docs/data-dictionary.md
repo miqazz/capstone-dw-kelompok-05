@@ -14,8 +14,8 @@ tipe, satuan, rentang, dan jumlah kosong dihitung ulang setiap kali pipeline ber
 | periode | string | YYYY | tidak | 1992–2025 | tahun pengamatan BPS/WHO | Tahun pengamatan data |
 | jenis_periode | string | - | tidak | tahunan | turtahun BPS / frekuensi WHO | Frekuensi pengumpulan/rilis data |
 | rincian | string | snake_case | tidak | total, dokter, perawat, bidan, tenaga_kefarmasian, dll (dan dimensi WHO) | turvar BPS / DIM WHO | Kategori disagregasi. Nilainya 'total' jika angka agregat |
-| nilai | float64 | numerik | tidak | 0–100 (persen), atau > 0 (kepadatan/indeks) | kolom nilai mentah | Nilai indikator (baris missing/kosong dari mentah tidak dimasukkan ke Silver) |
-| satuan | string | - | tidak | persen, per_10000_penduduk, indeks | manifest_asal.json / log keputusan | Satuan ukur baku dari pengamatan |
+| nilai | float64 | numerik | tidak | sesuai rentang indikator dan satuan sumber | kolom nilai mentah | Nilai indikator; baris kosong dari mentah tidak dimasukkan ke Silver |
+| satuan | string | - | tidak | persen, persen_populasi, per_100000_penduduk, per_10000_penduduk, indeks_per_100 | metadata sumber / log keputusan | Satuan ukur baku dari pengamatan |
 | _berkas_raw | string | jalur relatif | tidak | jalur di dalam data/raw/ | src.common.manifest | Untuk penelusuran berkas mentah asli |
 | _sha256_raw | string | hex 64 karakter | tidak | hash SHA-256 (64 karakter) | src.common.manifest | Hash menjamin keaslian data dari snapshot |
 
