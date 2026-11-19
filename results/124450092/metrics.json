@@ -1,6 +1,8 @@
 {
   "metrik": {
-    "metrik_sesuai_pekerjaan": 1
+    "baris_silver": 1541,
+    "sel_kosong_grid": 12,
+    "outlier_ditandai": 58
   },
   "seed": 0,
   "data_hash": "1bbe0df404c003147f02a5a825ac2730eff73472722c95b8f2549c88264bdd17",

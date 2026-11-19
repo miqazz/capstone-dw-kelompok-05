@@ -1,0 +1,1711 @@
+wilayah_kode,nama_wilayah,periode,rincian,seri_kode,nilai,satuan,status
+1100,ACEH,2015,Tidak ada,var1402,3.09,Persen,terisi
+1200,SUMATERA UTARA,2015,Tidak ada,var1402,3.16,Persen,terisi
+1300,SUMATERA BARAT,2015,Tidak ada,var1402,3.49,Persen,terisi
+1400,RIAU,2015,Tidak ada,var1402,5.15,Persen,terisi
+1500,JAMBI,2015,Tidak ada,var1402,4.57,Persen,terisi
+1600,SUMATERA SELATAN,2015,Tidak ada,var1402,4.33,Persen,terisi
+1700,BENGKULU,2015,Tidak ada,var1402,5.52,Persen,terisi
+1800,LAMPUNG,2015,Tidak ada,var1402,5.49,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2015,Tidak ada,var1402,3.26,Persen,terisi
+2100,KEP. RIAU,2015,Tidak ada,var1402,3.12,Persen,terisi
+3100,DKI JAKARTA,2015,Tidak ada,var1402,3.4,Persen,terisi
+3200,JAWA BARAT,2015,Tidak ada,var1402,4.01,Persen,terisi
+3300,JAWA TENGAH,2015,Tidak ada,var1402,4.71,Persen,terisi
+3400,DI YOGYAKARTA,2015,Tidak ada,var1402,4.61,Persen,terisi
+3500,JAWA TIMUR,2015,Tidak ada,var1402,5.24,Persen,terisi
+3600,BANTEN,2015,Tidak ada,var1402,4.45,Persen,terisi
+5100,BALI,2015,Tidak ada,var1402,4.35,Persen,terisi
+5200,NUSA TENGGARA BARAT,2015,Tidak ada,var1402,6.06,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2015,Tidak ada,var1402,7.0,Persen,terisi
+6100,KALIMANTAN BARAT,2015,Tidak ada,var1402,4.91,Persen,terisi
+6200,KALIMANTAN TENGAH,2015,Tidak ada,var1402,6.05,Persen,terisi
+6300,KALIMANTAN SELATAN,2015,Tidak ada,var1402,7.8,Persen,terisi
+6400,KALIMANTAN TIMUR,2015,Tidak ada,var1402,2.99,Persen,terisi
+6500,KALIMANTAN UTARA,2015,Tidak ada,var1402,3.14,Persen,terisi
+7100,SULAWESI UTARA,2015,Tidak ada,var1402,4.55,Persen,terisi
+7200,SULAWESI TENGAH,2015,Tidak ada,var1402,7.85,Persen,terisi
+7300,SULAWESI SELATAN,2015,Tidak ada,var1402,5.15,Persen,terisi
+7400,SULAWESI TENGGARA,2015,Tidak ada,var1402,8.21,Persen,terisi
+7500,GORONTALO,2015,Tidak ada,var1402,8.51,Persen,terisi
+7600,SULAWESI BARAT,2015,Tidak ada,var1402,7.16,Persen,terisi
+8100,MALUKU,2015,Tidak ada,var1402,5.37,Persen,terisi
+8200,MALUKU UTARA,2015,Tidak ada,var1402,4.68,Persen,terisi
+9100,PAPUA BARAT,2015,Tidak ada,var1402,3.92,Persen,terisi
+9200,PAPUA BARAT DAYA,2015,Tidak ada,var1402,,,struktural
+9400,PAPUA,2015,Tidak ada,var1402,2.78,Persen,terisi
+9500,PAPUA SELATAN,2015,Tidak ada,var1402,,,struktural
+9600,PAPUA TENGAH,2015,Tidak ada,var1402,,,struktural
+9700,PAPUA PEGUNUNGAN,2015,Tidak ada,var1402,,,struktural
+1100,ACEH,2016,Tidak ada,var1402,2.86,Persen,terisi
+1200,SUMATERA UTARA,2016,Tidak ada,var1402,3.47,Persen,terisi
+1300,SUMATERA BARAT,2016,Tidak ada,var1402,3.19,Persen,terisi
+1400,RIAU,2016,Tidak ada,var1402,5.36,Persen,terisi
+1500,JAMBI,2016,Tidak ada,var1402,4.66,Persen,terisi
+1600,SUMATERA SELATAN,2016,Tidak ada,var1402,3.6,Persen,terisi
+1700,BENGKULU,2016,Tidak ada,var1402,4.92,Persen,terisi
+1800,LAMPUNG,2016,Tidak ada,var1402,4.03,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2016,Tidak ada,var1402,3.76,Persen,terisi
+2100,KEP. RIAU,2016,Tidak ada,var1402,3.1,Persen,terisi
+3100,DKI JAKARTA,2016,Tidak ada,var1402,3.08,Persen,terisi
+3200,JAWA BARAT,2016,Tidak ada,var1402,4.4,Persen,terisi
+3300,JAWA TENGAH,2016,Tidak ada,var1402,4.44,Persen,terisi
+3400,DI YOGYAKARTA,2016,Tidak ada,var1402,4.41,Persen,terisi
+3500,JAWA TIMUR,2016,Tidak ada,var1402,4.11,Persen,terisi
+3600,BANTEN,2016,Tidak ada,var1402,4.22,Persen,terisi
+5100,BALI,2016,Tidak ada,var1402,3.44,Persen,terisi
+5200,NUSA TENGGARA BARAT,2016,Tidak ada,var1402,6.49,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2016,Tidak ada,var1402,6.06,Persen,terisi
+6100,KALIMANTAN BARAT,2016,Tidak ada,var1402,4.74,Persen,terisi
+6200,KALIMANTAN TENGAH,2016,Tidak ada,var1402,5.62,Persen,terisi
+6300,KALIMANTAN SELATAN,2016,Tidak ada,var1402,6.35,Persen,terisi
+6400,KALIMANTAN TIMUR,2016,Tidak ada,var1402,3.41,Persen,terisi
+6500,KALIMANTAN UTARA,2016,Tidak ada,var1402,3.2,Persen,terisi
+7100,SULAWESI UTARA,2016,Tidak ada,var1402,4.58,Persen,terisi
+7200,SULAWESI TENGAH,2016,Tidak ada,var1402,7.06,Persen,terisi
+7300,SULAWESI SELATAN,2016,Tidak ada,var1402,4.53,Persen,terisi
+7400,SULAWESI TENGGARA,2016,Tidak ada,var1402,7.89,Persen,terisi
+7500,GORONTALO,2016,Tidak ada,var1402,6.23,Persen,terisi
+7600,SULAWESI BARAT,2016,Tidak ada,var1402,6.2,Persen,terisi
+8100,MALUKU,2016,Tidak ada,var1402,5.05,Persen,terisi
+8200,MALUKU UTARA,2016,Tidak ada,var1402,3.67,Persen,terisi
+9100,PAPUA BARAT,2016,Tidak ada,var1402,4.01,Persen,terisi
+9200,PAPUA BARAT DAYA,2016,Tidak ada,var1402,,,struktural
+9400,PAPUA,2016,Tidak ada,var1402,2.63,Persen,terisi
+9500,PAPUA SELATAN,2016,Tidak ada,var1402,,,struktural
+9600,PAPUA TENGAH,2016,Tidak ada,var1402,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Tidak ada,var1402,,,struktural
+1100,ACEH,2017,Tidak ada,var1402,3.62,Persen,terisi
+1200,SUMATERA UTARA,2017,Tidak ada,var1402,4.19,Persen,terisi
+1300,SUMATERA BARAT,2017,Tidak ada,var1402,4.22,Persen,terisi
+1400,RIAU,2017,Tidak ada,var1402,6.25,Persen,terisi
+1500,JAMBI,2017,Tidak ada,var1402,4.62,Persen,terisi
+1600,SUMATERA SELATAN,2017,Tidak ada,var1402,4.65,Persen,terisi
+1700,BENGKULU,2017,Tidak ada,var1402,4.58,Persen,terisi
+1800,LAMPUNG,2017,Tidak ada,var1402,5.64,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2017,Tidak ada,var1402,3.57,Persen,terisi
+2100,KEP. RIAU,2017,Tidak ada,var1402,3.88,Persen,terisi
+3100,DKI JAKARTA,2017,Tidak ada,var1402,3.56,Persen,terisi
+3200,JAWA BARAT,2017,Tidak ada,var1402,5.12,Persen,terisi
+3300,JAWA TENGAH,2017,Tidak ada,var1402,5.26,Persen,terisi
+3400,DI YOGYAKARTA,2017,Tidak ada,var1402,4.37,Persen,terisi
+3500,JAWA TIMUR,2017,Tidak ada,var1402,5.75,Persen,terisi
+3600,BANTEN,2017,Tidak ada,var1402,4.74,Persen,terisi
+5100,BALI,2017,Tidak ada,var1402,4.36,Persen,terisi
+5200,NUSA TENGGARA BARAT,2017,Tidak ada,var1402,6.44,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2017,Tidak ada,var1402,7.66,Persen,terisi
+6100,KALIMANTAN BARAT,2017,Tidak ada,var1402,6.01,Persen,terisi
+6200,KALIMANTAN TENGAH,2017,Tidak ada,var1402,7.11,Persen,terisi
+6300,KALIMANTAN SELATAN,2017,Tidak ada,var1402,6.41,Persen,terisi
+6400,KALIMANTAN TIMUR,2017,Tidak ada,var1402,4.18,Persen,terisi
+6500,KALIMANTAN UTARA,2017,Tidak ada,var1402,7.55,Persen,terisi
+7100,SULAWESI UTARA,2017,Tidak ada,var1402,5.44,Persen,terisi
+7200,SULAWESI TENGAH,2017,Tidak ada,var1402,9.32,Persen,terisi
+7300,SULAWESI SELATAN,2017,Tidak ada,var1402,5.51,Persen,terisi
+7400,SULAWESI TENGGARA,2017,Tidak ada,var1402,7.52,Persen,terisi
+7500,GORONTALO,2017,Tidak ada,var1402,8.81,Persen,terisi
+7600,SULAWESI BARAT,2017,Tidak ada,var1402,6.78,Persen,terisi
+8100,MALUKU,2017,Tidak ada,var1402,6.28,Persen,terisi
+8200,MALUKU UTARA,2017,Tidak ada,var1402,5.05,Persen,terisi
+9100,PAPUA BARAT,2017,Tidak ada,var1402,5.46,Persen,terisi
+9200,PAPUA BARAT DAYA,2017,Tidak ada,var1402,,,struktural
+9400,PAPUA,2017,Tidak ada,var1402,3.28,Persen,terisi
+9500,PAPUA SELATAN,2017,Tidak ada,var1402,,,struktural
+9600,PAPUA TENGAH,2017,Tidak ada,var1402,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Tidak ada,var1402,,,struktural
+1100,ACEH,2018,Tidak ada,var1402,4.53,Persen,terisi
+1200,SUMATERA UTARA,2018,Tidak ada,var1402,3.8,Persen,terisi
+1300,SUMATERA BARAT,2018,Tidak ada,var1402,3.31,Persen,terisi
+1400,RIAU,2018,Tidak ada,var1402,6.11,Persen,terisi
+1500,JAMBI,2018,Tidak ada,var1402,4.66,Persen,terisi
+1600,SUMATERA SELATAN,2018,Tidak ada,var1402,4.05,Persen,terisi
+1700,BENGKULU,2018,Tidak ada,var1402,5.65,Persen,terisi
+1800,LAMPUNG,2018,Tidak ada,var1402,5.27,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2018,Tidak ada,var1402,3.99,Persen,terisi
+2100,KEP. RIAU,2018,Tidak ada,var1402,3.46,Persen,terisi
+3100,DKI JAKARTA,2018,Tidak ada,var1402,3.2,Persen,terisi
+3200,JAWA BARAT,2018,Tidak ada,var1402,4.69,Persen,terisi
+3300,JAWA TENGAH,2018,Tidak ada,var1402,4.84,Persen,terisi
+3400,DI YOGYAKARTA,2018,Tidak ada,var1402,4.31,Persen,terisi
+3500,JAWA TIMUR,2018,Tidak ada,var1402,4.74,Persen,terisi
+3600,BANTEN,2018,Tidak ada,var1402,5.98,Persen,terisi
+5100,BALI,2018,Tidak ada,var1402,3.19,Persen,terisi
+5200,NUSA TENGGARA BARAT,2018,Tidak ada,var1402,7.31,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2018,Tidak ada,var1402,8.09,Persen,terisi
+6100,KALIMANTAN BARAT,2018,Tidak ada,var1402,5.72,Persen,terisi
+6200,KALIMANTAN TENGAH,2018,Tidak ada,var1402,6.76,Persen,terisi
+6300,KALIMANTAN SELATAN,2018,Tidak ada,var1402,5.51,Persen,terisi
+6400,KALIMANTAN TIMUR,2018,Tidak ada,var1402,4.04,Persen,terisi
+6500,KALIMANTAN UTARA,2018,Tidak ada,var1402,4.81,Persen,terisi
+7100,SULAWESI UTARA,2018,Tidak ada,var1402,5.46,Persen,terisi
+7200,SULAWESI TENGAH,2018,Tidak ada,var1402,8.57,Persen,terisi
+7300,SULAWESI SELATAN,2018,Tidak ada,var1402,5.49,Persen,terisi
+7400,SULAWESI TENGGARA,2018,Tidak ada,var1402,7.58,Persen,terisi
+7500,GORONTALO,2018,Tidak ada,var1402,7.46,Persen,terisi
+7600,SULAWESI BARAT,2018,Tidak ada,var1402,5.93,Persen,terisi
+8100,MALUKU,2018,Tidak ada,var1402,5.57,Persen,terisi
+8200,MALUKU UTARA,2018,Tidak ada,var1402,5.5,Persen,terisi
+9100,PAPUA BARAT,2018,Tidak ada,var1402,4.33,Persen,terisi
+9200,PAPUA BARAT DAYA,2018,Tidak ada,var1402,,,struktural
+9400,PAPUA,2018,Tidak ada,var1402,3.01,Persen,terisi
+9500,PAPUA SELATAN,2018,Tidak ada,var1402,,,struktural
+9600,PAPUA TENGAH,2018,Tidak ada,var1402,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Tidak ada,var1402,,,struktural
+1100,ACEH,2019,Tidak ada,var1402,4.36,Persen,terisi
+1200,SUMATERA UTARA,2019,Tidak ada,var1402,4.23,Persen,terisi
+1300,SUMATERA BARAT,2019,Tidak ada,var1402,3.28,Persen,terisi
+1400,RIAU,2019,Tidak ada,var1402,4.86,Persen,terisi
+1500,JAMBI,2019,Tidak ada,var1402,4.57,Persen,terisi
+1600,SUMATERA SELATAN,2019,Tidak ada,var1402,5.14,Persen,terisi
+1700,BENGKULU,2019,Tidak ada,var1402,5.33,Persen,terisi
+1800,LAMPUNG,2019,Tidak ada,var1402,5.47,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2019,Tidak ada,var1402,3.69,Persen,terisi
+2100,KEP. RIAU,2019,Tidak ada,var1402,3.05,Persen,terisi
+3100,DKI JAKARTA,2019,Tidak ada,var1402,2.81,Persen,terisi
+3200,JAWA BARAT,2019,Tidak ada,var1402,5.38,Persen,terisi
+3300,JAWA TENGAH,2019,Tidak ada,var1402,5.1,Persen,terisi
+3400,DI YOGYAKARTA,2019,Tidak ada,var1402,4.61,Persen,terisi
+3500,JAWA TIMUR,2019,Tidak ada,var1402,5.1,Persen,terisi
+3600,BANTEN,2019,Tidak ada,var1402,6.97,Persen,terisi
+5100,BALI,2019,Tidak ada,var1402,2.96,Persen,terisi
+5200,NUSA TENGGARA BARAT,2019,Tidak ada,var1402,7.37,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2019,Tidak ada,var1402,7.79,Persen,terisi
+6100,KALIMANTAN BARAT,2019,Tidak ada,var1402,5.55,Persen,terisi
+6200,KALIMANTAN TENGAH,2019,Tidak ada,var1402,6.84,Persen,terisi
+6300,KALIMANTAN SELATAN,2019,Tidak ada,var1402,6.7,Persen,terisi
+6400,KALIMANTAN TIMUR,2019,Tidak ada,var1402,3.85,Persen,terisi
+6500,KALIMANTAN UTARA,2019,Tidak ada,var1402,3.76,Persen,terisi
+7100,SULAWESI UTARA,2019,Tidak ada,var1402,4.73,Persen,terisi
+7200,SULAWESI TENGAH,2019,Tidak ada,var1402,8.67,Persen,terisi
+7300,SULAWESI SELATAN,2019,Tidak ada,var1402,5.8,Persen,terisi
+7400,SULAWESI TENGGARA,2019,Tidak ada,var1402,7.34,Persen,terisi
+7500,GORONTALO,2019,Tidak ada,var1402,7.89,Persen,terisi
+7600,SULAWESI BARAT,2019,Tidak ada,var1402,6.36,Persen,terisi
+8100,MALUKU,2019,Tidak ada,var1402,5.18,Persen,terisi
+8200,MALUKU UTARA,2019,Tidak ada,var1402,4.39,Persen,terisi
+9100,PAPUA BARAT,2019,Tidak ada,var1402,4.19,Persen,terisi
+9200,PAPUA BARAT DAYA,2019,Tidak ada,var1402,,,struktural
+9400,PAPUA,2019,Tidak ada,var1402,2.41,Persen,terisi
+9500,PAPUA SELATAN,2019,Tidak ada,var1402,,,struktural
+9600,PAPUA TENGAH,2019,Tidak ada,var1402,,,struktural
+9700,PAPUA PEGUNUNGAN,2019,Tidak ada,var1402,,,struktural
+1100,ACEH,2020,Tidak ada,var1402,4.33,Persen,terisi
+1200,SUMATERA UTARA,2020,Tidak ada,var1402,4.75,Persen,terisi
+1300,SUMATERA BARAT,2020,Tidak ada,var1402,4.13,Persen,terisi
+1400,RIAU,2020,Tidak ada,var1402,4.63,Persen,terisi
+1500,JAMBI,2020,Tidak ada,var1402,4.48,Persen,terisi
+1600,SUMATERA SELATAN,2020,Tidak ada,var1402,5.36,Persen,terisi
+1700,BENGKULU,2020,Tidak ada,var1402,5.14,Persen,terisi
+1800,LAMPUNG,2020,Tidak ada,var1402,5.42,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2020,Tidak ada,var1402,4.31,Persen,terisi
+2100,KEP. RIAU,2020,Tidak ada,var1402,2.61,Persen,terisi
+3100,DKI JAKARTA,2020,Tidak ada,var1402,3.93,Persen,terisi
+3200,JAWA BARAT,2020,Tidak ada,var1402,5.87,Persen,terisi
+3300,JAWA TENGAH,2020,Tidak ada,var1402,5.83,Persen,terisi
+3400,DI YOGYAKARTA,2020,Tidak ada,var1402,3.9,Persen,terisi
+3500,JAWA TIMUR,2020,Tidak ada,var1402,5.28,Persen,terisi
+3600,BANTEN,2020,Tidak ada,var1402,7.0,Persen,terisi
+5100,BALI,2020,Tidak ada,var1402,2.96,Persen,terisi
+5200,NUSA TENGGARA BARAT,2020,Tidak ada,var1402,7.68,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2020,Tidak ada,var1402,7.03,Persen,terisi
+6100,KALIMANTAN BARAT,2020,Tidak ada,var1402,5.93,Persen,terisi
+6200,KALIMANTAN TENGAH,2020,Tidak ada,var1402,6.06,Persen,terisi
+6300,KALIMANTAN SELATAN,2020,Tidak ada,var1402,6.55,Persen,terisi
+6400,KALIMANTAN TIMUR,2020,Tidak ada,var1402,3.39,Persen,terisi
+6500,KALIMANTAN UTARA,2020,Tidak ada,var1402,4.62,Persen,terisi
+7100,SULAWESI UTARA,2020,Tidak ada,var1402,4.68,Persen,terisi
+7200,SULAWESI TENGAH,2020,Tidak ada,var1402,7.52,Persen,terisi
+7300,SULAWESI SELATAN,2020,Tidak ada,var1402,5.66,Persen,terisi
+7400,SULAWESI TENGGARA,2020,Tidak ada,var1402,8.54,Persen,terisi
+7500,GORONTALO,2020,Tidak ada,var1402,6.03,Persen,terisi
+7600,SULAWESI BARAT,2020,Tidak ada,var1402,6.84,Persen,terisi
+8100,MALUKU,2020,Tidak ada,var1402,4.38,Persen,terisi
+8200,MALUKU UTARA,2020,Tidak ada,var1402,4.77,Persen,terisi
+9100,PAPUA BARAT,2020,Tidak ada,var1402,3.33,Persen,terisi
+9200,PAPUA BARAT DAYA,2020,Tidak ada,var1402,,,struktural
+9400,PAPUA,2020,Tidak ada,var1402,2.7,Persen,terisi
+9500,PAPUA SELATAN,2020,Tidak ada,var1402,,,struktural
+9600,PAPUA TENGAH,2020,Tidak ada,var1402,,,struktural
+9700,PAPUA PEGUNUNGAN,2020,Tidak ada,var1402,,,struktural
+1100,ACEH,2021,Tidak ada,var1402,4.29,Persen,terisi
+1200,SUMATERA UTARA,2021,Tidak ada,var1402,3.83,Persen,terisi
+1300,SUMATERA BARAT,2021,Tidak ada,var1402,3.26,Persen,terisi
+1400,RIAU,2021,Tidak ada,var1402,3.2,Persen,terisi
+1500,JAMBI,2021,Tidak ada,var1402,3.85,Persen,terisi
+1600,SUMATERA SELATAN,2021,Tidak ada,var1402,3.32,Persen,terisi
+1700,BENGKULU,2021,Tidak ada,var1402,4.49,Persen,terisi
+1800,LAMPUNG,2021,Tidak ada,var1402,3.89,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2021,Tidak ada,var1402,3.36,Persen,terisi
+2100,KEP. RIAU,2021,Tidak ada,var1402,2.25,Persen,terisi
+3100,DKI JAKARTA,2021,Tidak ada,var1402,2.61,Persen,terisi
+3200,JAWA BARAT,2021,Tidak ada,var1402,3.86,Persen,terisi
+3300,JAWA TENGAH,2021,Tidak ada,var1402,8.28,Persen,terisi
+3400,DI YOGYAKARTA,2021,Tidak ada,var1402,3.02,Persen,terisi
+3500,JAWA TIMUR,2021,Tidak ada,var1402,6.75,Persen,terisi
+3600,BANTEN,2021,Tidak ada,var1402,4.29,Persen,terisi
+5100,BALI,2021,Tidak ada,var1402,2.42,Persen,terisi
+5200,NUSA TENGGARA BARAT,2021,Tidak ada,var1402,8.49,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2021,Tidak ada,var1402,7.37,Persen,terisi
+6100,KALIMANTAN BARAT,2021,Tidak ada,var1402,4.48,Persen,terisi
+6200,KALIMANTAN TENGAH,2021,Tidak ada,var1402,4.18,Persen,terisi
+6300,KALIMANTAN SELATAN,2021,Tidak ada,var1402,6.46,Persen,terisi
+6400,KALIMANTAN TIMUR,2021,Tidak ada,var1402,2.61,Persen,terisi
+6500,KALIMANTAN UTARA,2021,Tidak ada,var1402,3.73,Persen,terisi
+7100,SULAWESI UTARA,2021,Tidak ada,var1402,3.19,Persen,terisi
+7200,SULAWESI TENGAH,2021,Tidak ada,var1402,6.25,Persen,terisi
+7300,SULAWESI SELATAN,2021,Tidak ada,var1402,4.22,Persen,terisi
+7400,SULAWESI TENGGARA,2021,Tidak ada,var1402,7.59,Persen,terisi
+7500,GORONTALO,2021,Tidak ada,var1402,6.45,Persen,terisi
+7600,SULAWESI BARAT,2021,Tidak ada,var1402,6.98,Persen,terisi
+8100,MALUKU,2021,Tidak ada,var1402,4.45,Persen,terisi
+8200,MALUKU UTARA,2021,Tidak ada,var1402,5.41,Persen,terisi
+9100,PAPUA BARAT,2021,Tidak ada,var1402,2.78,Persen,terisi
+9200,PAPUA BARAT DAYA,2021,Tidak ada,var1402,,,struktural
+9400,PAPUA,2021,Tidak ada,var1402,2.95,Persen,terisi
+9500,PAPUA SELATAN,2021,Tidak ada,var1402,,,struktural
+9600,PAPUA TENGAH,2021,Tidak ada,var1402,,,struktural
+9700,PAPUA PEGUNUNGAN,2021,Tidak ada,var1402,,,struktural
+1100,ACEH,2022,Tidak ada,var1402,6.83,Persen,terisi
+1200,SUMATERA UTARA,2022,Tidak ada,var1402,5.96,Persen,terisi
+1300,SUMATERA BARAT,2022,Tidak ada,var1402,4.31,Persen,terisi
+1400,RIAU,2022,Tidak ada,var1402,5.82,Persen,terisi
+1500,JAMBI,2022,Tidak ada,var1402,6.56,Persen,terisi
+1600,SUMATERA SELATAN,2022,Tidak ada,var1402,4.7,Persen,terisi
+1700,BENGKULU,2022,Tidak ada,var1402,6.06,Persen,terisi
+1800,LAMPUNG,2022,Tidak ada,var1402,7.33,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2022,Tidak ada,var1402,6.03,Persen,terisi
+2100,KEP. RIAU,2022,Tidak ada,var1402,3.96,Persen,terisi
+3100,DKI JAKARTA,2022,Tidak ada,var1402,1.56,Persen,terisi
+3200,JAWA BARAT,2022,Tidak ada,var1402,6.62,Persen,terisi
+3300,JAWA TENGAH,2022,Tidak ada,var1402,6.61,Persen,terisi
+3400,DI YOGYAKARTA,2022,Tidak ada,var1402,7.48,Persen,terisi
+3500,JAWA TIMUR,2022,Tidak ada,var1402,6.2,Persen,terisi
+3600,BANTEN,2022,Tidak ada,var1402,5.34,Persen,terisi
+5100,BALI,2022,Tidak ada,var1402,2.75,Persen,terisi
+5200,NUSA TENGGARA BARAT,2022,Tidak ada,var1402,9.98,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2022,Tidak ada,var1402,7.22,Persen,terisi
+6100,KALIMANTAN BARAT,2022,Tidak ada,var1402,6.44,Persen,terisi
+6200,KALIMANTAN TENGAH,2022,Tidak ada,var1402,5.18,Persen,terisi
+6300,KALIMANTAN SELATAN,2022,Tidak ada,var1402,5.4,Persen,terisi
+6400,KALIMANTAN TIMUR,2022,Tidak ada,var1402,5.34,Persen,terisi
+6500,KALIMANTAN UTARA,2022,Tidak ada,var1402,8.9,Persen,terisi
+7100,SULAWESI UTARA,2022,Tidak ada,var1402,4.93,Persen,terisi
+7200,SULAWESI TENGAH,2022,Tidak ada,var1402,7.93,Persen,terisi
+7300,SULAWESI SELATAN,2022,Tidak ada,var1402,7.15,Persen,terisi
+7400,SULAWESI TENGGARA,2022,Tidak ada,var1402,10.21,Persen,terisi
+7500,GORONTALO,2022,Tidak ada,var1402,8.89,Persen,terisi
+7600,SULAWESI BARAT,2022,Tidak ada,var1402,8.5,Persen,terisi
+8100,MALUKU,2022,Tidak ada,var1402,4.11,Persen,terisi
+8200,MALUKU UTARA,2022,Tidak ada,var1402,5.19,Persen,terisi
+9100,PAPUA BARAT,2022,Tidak ada,var1402,4.14,Persen,terisi
+9200,PAPUA BARAT DAYA,2022,Tidak ada,var1402,,,missing
+9400,PAPUA,2022,Tidak ada,var1402,2.16,Persen,terisi
+9500,PAPUA SELATAN,2022,Tidak ada,var1402,,,missing
+9600,PAPUA TENGAH,2022,Tidak ada,var1402,,,missing
+9700,PAPUA PEGUNUNGAN,2022,Tidak ada,var1402,,,missing
+1100,ACEH,2023,Tidak ada,var1402,5.79,Persen,terisi
+1200,SUMATERA UTARA,2023,Tidak ada,var1402,5.15,Persen,terisi
+1300,SUMATERA BARAT,2023,Tidak ada,var1402,4.67,Persen,terisi
+1400,RIAU,2023,Tidak ada,var1402,5.29,Persen,terisi
+1500,JAMBI,2023,Tidak ada,var1402,5.93,Persen,terisi
+1600,SUMATERA SELATAN,2023,Tidak ada,var1402,4.53,Persen,terisi
+1700,BENGKULU,2023,Tidak ada,var1402,5.92,Persen,terisi
+1800,LAMPUNG,2023,Tidak ada,var1402,5.51,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2023,Tidak ada,var1402,4.87,Persen,terisi
+2100,KEP. RIAU,2023,Tidak ada,var1402,4.33,Persen,terisi
+3100,DKI JAKARTA,2023,Tidak ada,var1402,3.29,Persen,terisi
+3200,JAWA BARAT,2023,Tidak ada,var1402,4.96,Persen,terisi
+3300,JAWA TENGAH,2023,Tidak ada,var1402,5.43,Persen,terisi
+3400,DI YOGYAKARTA,2023,Tidak ada,var1402,4.13,Persen,terisi
+3500,JAWA TIMUR,2023,Tidak ada,var1402,5.12,Persen,terisi
+3600,BANTEN,2023,Tidak ada,var1402,5.27,Persen,terisi
+5100,BALI,2023,Tidak ada,var1402,2.75,Persen,terisi
+5200,NUSA TENGGARA BARAT,2023,Tidak ada,var1402,9.04,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2023,Tidak ada,var1402,7.5,Persen,terisi
+6100,KALIMANTAN BARAT,2023,Tidak ada,var1402,7.23,Persen,terisi
+6200,KALIMANTAN TENGAH,2023,Tidak ada,var1402,5.72,Persen,terisi
+6300,KALIMANTAN SELATAN,2023,Tidak ada,var1402,5.82,Persen,terisi
+6400,KALIMANTAN TIMUR,2023,Tidak ada,var1402,4.62,Persen,terisi
+6500,KALIMANTAN UTARA,2023,Tidak ada,var1402,5.97,Persen,terisi
+7100,SULAWESI UTARA,2023,Tidak ada,var1402,5.38,Persen,terisi
+7200,SULAWESI TENGAH,2023,Tidak ada,var1402,6.28,Persen,terisi
+7300,SULAWESI SELATAN,2023,Tidak ada,var1402,4.92,Persen,terisi
+7400,SULAWESI TENGGARA,2023,Tidak ada,var1402,6.83,Persen,terisi
+7500,GORONTALO,2023,Tidak ada,var1402,8.72,Persen,terisi
+7600,SULAWESI BARAT,2023,Tidak ada,var1402,6.79,Persen,terisi
+8100,MALUKU,2023,Tidak ada,var1402,6.51,Persen,terisi
+8200,MALUKU UTARA,2023,Tidak ada,var1402,4.79,Persen,terisi
+9100,PAPUA BARAT,2023,Tidak ada,var1402,2.97,Persen,terisi
+9200,PAPUA BARAT DAYA,2023,Tidak ada,var1402,,,missing
+9400,PAPUA,2023,Tidak ada,var1402,2.66,Persen,terisi
+9500,PAPUA SELATAN,2023,Tidak ada,var1402,,,missing
+9600,PAPUA TENGAH,2023,Tidak ada,var1402,,,missing
+9700,PAPUA PEGUNUNGAN,2023,Tidak ada,var1402,,,missing
+1100,ACEH,2024,Tidak ada,var1402,5.24,Persen,terisi
+1200,SUMATERA UTARA,2024,Tidak ada,var1402,4.62,Persen,terisi
+1300,SUMATERA BARAT,2024,Tidak ada,var1402,4.8,Persen,terisi
+1400,RIAU,2024,Tidak ada,var1402,4.82,Persen,terisi
+1500,JAMBI,2024,Tidak ada,var1402,4.84,Persen,terisi
+1600,SUMATERA SELATAN,2024,Tidak ada,var1402,4.92,Persen,terisi
+1700,BENGKULU,2024,Tidak ada,var1402,6.35,Persen,terisi
+1800,LAMPUNG,2024,Tidak ada,var1402,5.19,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2024,Tidak ada,var1402,4.78,Persen,terisi
+2100,KEP. RIAU,2024,Tidak ada,var1402,4.61,Persen,terisi
+3100,DKI JAKARTA,2024,Tidak ada,var1402,3.06,Persen,terisi
+3200,JAWA BARAT,2024,Tidak ada,var1402,5.74,Persen,terisi
+3300,JAWA TENGAH,2024,Tidak ada,var1402,5.7,Persen,terisi
+3400,DI YOGYAKARTA,2024,Tidak ada,var1402,4.32,Persen,terisi
+3500,JAWA TIMUR,2024,Tidak ada,var1402,5.05,Persen,terisi
+3600,BANTEN,2024,Tidak ada,var1402,4.12,Persen,terisi
+5100,BALI,2024,Tidak ada,var1402,2.04,Persen,terisi
+5200,NUSA TENGGARA BARAT,2024,Tidak ada,var1402,8.24,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2024,Tidak ada,var1402,7.06,Persen,terisi
+6100,KALIMANTAN BARAT,2024,Tidak ada,var1402,5.53,Persen,terisi
+6200,KALIMANTAN TENGAH,2024,Tidak ada,var1402,4.97,Persen,terisi
+6300,KALIMANTAN SELATAN,2024,Tidak ada,var1402,6.27,Persen,terisi
+6400,KALIMANTAN TIMUR,2024,Tidak ada,var1402,3.92,Persen,terisi
+6500,KALIMANTAN UTARA,2024,Tidak ada,var1402,4.11,Persen,terisi
+7100,SULAWESI UTARA,2024,Tidak ada,var1402,5.08,Persen,terisi
+7200,SULAWESI TENGAH,2024,Tidak ada,var1402,7.28,Persen,terisi
+7300,SULAWESI SELATAN,2024,Tidak ada,var1402,5.34,Persen,terisi
+7400,SULAWESI TENGGARA,2024,Tidak ada,var1402,6.38,Persen,terisi
+7500,GORONTALO,2024,Tidak ada,var1402,7.71,Persen,terisi
+7600,SULAWESI BARAT,2024,Tidak ada,var1402,6.24,Persen,terisi
+8100,MALUKU,2024,Tidak ada,var1402,3.73,Persen,terisi
+8200,MALUKU UTARA,2024,Tidak ada,var1402,4.22,Persen,terisi
+9100,PAPUA BARAT,2024,Tidak ada,var1402,3.66,Persen,terisi
+9200,PAPUA BARAT DAYA,2024,Tidak ada,var1402,4.08,Persen,terisi
+9400,PAPUA,2024,Tidak ada,var1402,3.02,Persen,terisi
+9500,PAPUA SELATAN,2024,Tidak ada,var1402,4.37,Persen,terisi
+9600,PAPUA TENGAH,2024,Tidak ada,var1402,1.39,Persen,terisi
+9700,PAPUA PEGUNUNGAN,2024,Tidak ada,var1402,2.27,Persen,terisi
+1100,ACEH,2025,Tidak ada,var1402,5.63,Persen,terisi
+1200,SUMATERA UTARA,2025,Tidak ada,var1402,5.07,Persen,terisi
+1300,SUMATERA BARAT,2025,Tidak ada,var1402,4.45,Persen,terisi
+1400,RIAU,2025,Tidak ada,var1402,4.56,Persen,terisi
+1500,JAMBI,2025,Tidak ada,var1402,5.54,Persen,terisi
+1600,SUMATERA SELATAN,2025,Tidak ada,var1402,3.79,Persen,terisi
+1700,BENGKULU,2025,Tidak ada,var1402,4.76,Persen,terisi
+1800,LAMPUNG,2025,Tidak ada,var1402,5.1,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2025,Tidak ada,var1402,3.61,Persen,terisi
+2100,KEP. RIAU,2025,Tidak ada,var1402,2.49,Persen,terisi
+3100,DKI JAKARTA,2025,Tidak ada,var1402,2.33,Persen,terisi
+3200,JAWA BARAT,2025,Tidak ada,var1402,5.68,Persen,terisi
+3300,JAWA TENGAH,2025,Tidak ada,var1402,6.22,Persen,terisi
+3400,DI YOGYAKARTA,2025,Tidak ada,var1402,4.31,Persen,terisi
+3500,JAWA TIMUR,2025,Tidak ada,var1402,5.37,Persen,terisi
+3600,BANTEN,2025,Tidak ada,var1402,4.59,Persen,terisi
+5100,BALI,2025,Tidak ada,var1402,2.32,Persen,terisi
+5200,NUSA TENGGARA BARAT,2025,Tidak ada,var1402,8.51,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2025,Tidak ada,var1402,8.22,Persen,terisi
+6100,KALIMANTAN BARAT,2025,Tidak ada,var1402,6.01,Persen,terisi
+6200,KALIMANTAN TENGAH,2025,Tidak ada,var1402,5.81,Persen,terisi
+6300,KALIMANTAN SELATAN,2025,Tidak ada,var1402,5.9,Persen,terisi
+6400,KALIMANTAN TIMUR,2025,Tidak ada,var1402,3.86,Persen,terisi
+6500,KALIMANTAN UTARA,2025,Tidak ada,var1402,4.09,Persen,terisi
+7100,SULAWESI UTARA,2025,Tidak ada,var1402,4.97,Persen,terisi
+7200,SULAWESI TENGAH,2025,Tidak ada,var1402,6.97,Persen,terisi
+7300,SULAWESI SELATAN,2025,Tidak ada,var1402,6.43,Persen,terisi
+7400,SULAWESI TENGGARA,2025,Tidak ada,var1402,5.95,Persen,terisi
+7500,GORONTALO,2025,Tidak ada,var1402,7.9,Persen,terisi
+7600,SULAWESI BARAT,2025,Tidak ada,var1402,6.94,Persen,terisi
+8100,MALUKU,2025,Tidak ada,var1402,4.91,Persen,terisi
+8200,MALUKU UTARA,2025,Tidak ada,var1402,4.42,Persen,terisi
+9100,PAPUA BARAT,2025,Tidak ada,var1402,3.45,Persen,terisi
+9200,PAPUA BARAT DAYA,2025,Tidak ada,var1402,3.41,Persen,terisi
+9400,PAPUA,2025,Tidak ada,var1402,3.62,Persen,terisi
+9500,PAPUA SELATAN,2025,Tidak ada,var1402,4.56,Persen,terisi
+9600,PAPUA TENGAH,2025,Tidak ada,var1402,2.38,Persen,terisi
+9700,PAPUA PEGUNUNGAN,2025,Tidak ada,var1402,3.58,Persen,terisi
+1100,ACEH,2016,Dokter Umum,var1477,31.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Perawat,var1477,168.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Bidan,var1477,124.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Farmasi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Kesehatan Masyarakat,var1477,63.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Kesehatan Lingkungan,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Gizi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Ahli Teknologi Laboratorium Medik,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2016,Pekarya,var1477,0.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Dokter Umum,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Perawat,var1477,72.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Bidan,var1477,63.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Farmasi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Kesehatan Masyarakat,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Gizi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Dokter Umum,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Dokter Gigi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Perawat,var1477,114.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Bidan,var1477,83.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Kesehatan Masyarakat,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Kesehatan Lingkungan,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Gizi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Ahli Teknologi Laboratorium Medik,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Dokter Umum,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Perawat,var1477,88.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Bidan,var1477,68.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Farmasi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Kesehatan Masyarakat,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Dokter Umum,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Perawat,var1477,110.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Bidan,var1477,73.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Farmasi,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Kesehatan Masyarakat,var1477,34.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Kesehatan Lingkungan,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Gizi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Ahli Teknologi Laboratorium Medik,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Dokter Umum,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Perawat,var1477,113.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Bidan,var1477,87.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Kesehatan Masyarakat,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Gizi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2016,Pekarya,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Dokter Umum,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Perawat,var1477,144.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Bidan,var1477,133.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Farmasi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Kesehatan Masyarakat,var1477,34.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Ahli Teknologi Laboratorium Medik,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2016,Pekarya,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Perawat,var1477,51.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Bidan,var1477,31.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Farmasi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Kesehatan Masyarakat,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Kesehatan Lingkungan,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Gizi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Dokter Umum,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Perawat,var1477,180.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Bidan,var1477,68.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Farmasi,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Kesehatan Masyarakat,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Kesehatan Lingkungan,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Ahli Teknologi Laboratorium Medik,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Dokter Umum,var1477,28.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Perawat,var1477,125.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Bidan,var1477,52.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Farmasi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Kesehatan Masyarakat,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Kesehatan Lingkungan,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Gizi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Dokter Umum,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Dokter Gigi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Perawat,var1477,115.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Bidan,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Farmasi,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Kesehatan Masyarakat,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Kesehatan Lingkungan,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Gizi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Ahli Teknologi Laboratorium Medik,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2016,Pekarya,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Dokter Umum,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Perawat,var1477,48.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Bidan,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Farmasi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Kesehatan Masyarakat,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Kesehatan Lingkungan,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Gizi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Ahli Teknologi Laboratorium Medik,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Dokter Umum,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Perawat,var1477,90.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Bidan,var1477,39.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Kesehatan Masyarakat,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Dokter Umum,var1477,40.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Dokter Gigi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Perawat,var1477,135.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Bidan,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Farmasi,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Kesehatan Masyarakat,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Gizi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Ahli Teknologi Laboratorium Medik,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Dokter Umum,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Perawat,var1477,70.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Bidan,var1477,38.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Farmasi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Kesehatan Masyarakat,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Kesehatan Lingkungan,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Gizi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2016,Pekarya,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Dokter Umum,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Perawat,var1477,68.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Bidan,var1477,42.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Farmasi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Kesehatan Masyarakat,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Kesehatan Lingkungan,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Gizi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Dokter Umum,var1477,28.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Perawat,var1477,101.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Bidan,var1477,44.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Farmasi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Kesehatan Masyarakat,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Gizi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2016,Pekarya,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Dokter Umum,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Perawat,var1477,82.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Bidan,var1477,37.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Farmasi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Kesehatan Masyarakat,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Gizi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Dokter Umum,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Perawat,var1477,96.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Bidan,var1477,37.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Farmasi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Kesehatan Masyarakat,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Kesehatan Lingkungan,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Gizi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Ahli Teknologi Laboratorium Medik,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2016,Pekarya,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Perawat,var1477,90.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Bidan,var1477,41.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Farmasi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Kesehatan Masyarakat,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Kesehatan Lingkungan,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Gizi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Ahli Teknologi Laboratorium Medik,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2016,Pekarya,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Dokter Umum,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Perawat,var1477,156.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Bidan,var1477,57.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Farmasi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Kesehatan Masyarakat,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Gizi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Ahli Teknologi Laboratorium Medik,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Perawat,var1477,100.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Bidan,var1477,47.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Kesehatan Masyarakat,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Kesehatan Lingkungan,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Ahli Teknologi Laboratorium Medik,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2016,Pekarya,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Dokter Umum,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Perawat,var1477,187.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Bidan,var1477,65.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Farmasi,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Kesehatan Masyarakat,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Kesehatan Lingkungan,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Ahli Teknologi Laboratorium Medik,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Dokter Umum,var1477,32.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Dokter Gigi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Perawat,var1477,211.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Bidan,var1477,73.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Farmasi,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Kesehatan Masyarakat,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Kesehatan Lingkungan,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Gizi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2016,Pekarya,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Dokter Umum,var1477,39.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Perawat,var1477,142.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Bidan,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Kesehatan Masyarakat,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Kesehatan Lingkungan,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Gizi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Ahli Teknologi Laboratorium Medik,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2016,Pekarya,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Perawat,var1477,142.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Bidan,var1477,49.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Farmasi,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Kesehatan Masyarakat,var1477,48.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Kesehatan Lingkungan,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Gizi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Ahli Teknologi Laboratorium Medik,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Dokter Umum,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Perawat,var1477,131.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Bidan,var1477,54.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Farmasi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Kesehatan Masyarakat,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2016,Pekarya,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Dokter Umum,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Perawat,var1477,111.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Bidan,var1477,44.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Farmasi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Kesehatan Masyarakat,var1477,41.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Kesehatan Lingkungan,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Gizi,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2016,Pekarya,var1477,0.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Dokter Umum,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Perawat,var1477,96.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Bidan,var1477,64.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Farmasi,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Kesehatan Masyarakat,var1477,29.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Kesehatan Lingkungan,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Gizi,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Ahli Teknologi Laboratorium Medik,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2016,Pekarya,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Dokter Umum,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Perawat,var1477,138.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Bidan,var1477,95.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Kesehatan Masyarakat,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Gizi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Dokter Umum,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Perawat,var1477,157.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Bidan,var1477,48.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Farmasi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Kesehatan Masyarakat,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Kesehatan Lingkungan,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Gizi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Ahli Teknologi Laboratorium Medik,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Dokter Umum,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Perawat,var1477,159.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Bidan,var1477,110.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Kesehatan Masyarakat,var1477,52.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Kesehatan Lingkungan,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Gizi,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2016,Pekarya,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Dokter Umum,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Perawat,var1477,166.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Bidan,var1477,52.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Kesehatan Masyarakat,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Kesehatan Lingkungan,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Gizi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Ahli Teknologi Laboratorium Medik,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+9200,PAPUA BARAT DAYA,2016,Dokter Umum,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Dokter Gigi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Perawat,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Bidan,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Farmasi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Kesehatan Masyarakat,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Kesehatan Lingkungan,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Gizi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2016,Pekarya,var1477,,,struktural
+9400,PAPUA,2016,Dokter Umum,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Perawat,var1477,127.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Bidan,var1477,37.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Kesehatan Masyarakat,var1477,35.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Gizi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2016,Pekarya,var1477,1.0,kepadatan per 100.000 penduduk,terisi
+9500,PAPUA SELATAN,2016,Dokter Umum,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Dokter Gigi,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Perawat,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Bidan,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Farmasi,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Kesehatan Masyarakat,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Kesehatan Lingkungan,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Gizi,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9500,PAPUA SELATAN,2016,Pekarya,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Dokter Umum,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Dokter Gigi,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Perawat,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Bidan,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Farmasi,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Kesehatan Masyarakat,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Kesehatan Lingkungan,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Gizi,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9600,PAPUA TENGAH,2016,Pekarya,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Dokter Umum,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Dokter Gigi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Perawat,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Bidan,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Farmasi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Kesehatan Masyarakat,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Kesehatan Lingkungan,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Gizi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2016,Pekarya,var1477,,,struktural
+1100,ACEH,2017,Dokter Umum,var1477,30.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Perawat,var1477,234.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Bidan,var1477,233.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Farmasi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Kesehatan Masyarakat,var1477,37.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Kesehatan Lingkungan,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Ahli Teknologi Laboratorium Medik,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1200,SUMATERA UTARA,2017,Dokter Umum,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Perawat,var1477,109.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Bidan,var1477,113.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Farmasi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Kesehatan Masyarakat,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1300,SUMATERA BARAT,2017,Dokter Umum,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Perawat,var1477,145.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Bidan,var1477,108.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Farmasi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Kesehatan Masyarakat,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Kesehatan Lingkungan,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Ahli Teknologi Laboratorium Medik,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1400,RIAU,2017,Dokter Umum,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Perawat,var1477,120.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Bidan,var1477,92.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Farmasi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Kesehatan Masyarakat,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Gizi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1500,JAMBI,2017,Dokter Umum,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Perawat,var1477,184.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Bidan,var1477,129.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Farmasi,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Kesehatan Masyarakat,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Ahli Teknologi Laboratorium Medik,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1600,SUMATERA SELATAN,2017,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Perawat,var1477,137.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Bidan,var1477,111.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Farmasi,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Kesehatan Masyarakat,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1700,BENGKULU,2017,Dokter Umum,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Perawat,var1477,190.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Bidan,var1477,163.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Farmasi,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Kesehatan Masyarakat,var1477,46.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Gizi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1800,LAMPUNG,2017,Dokter Umum,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Perawat,var1477,91.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Bidan,var1477,77.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Farmasi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Kesehatan Masyarakat,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Kesehatan Lingkungan,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Gizi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+1900,KEP. BANGKA BELITUNG,2017,Dokter Umum,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Perawat,var1477,186.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Bidan,var1477,81.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Farmasi,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Kesehatan Masyarakat,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Ahli Teknologi Laboratorium Medik,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+2100,KEP. RIAU,2017,Dokter Umum,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Perawat,var1477,135.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Bidan,var1477,61.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Farmasi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Kesehatan Masyarakat,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Kesehatan Lingkungan,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+3100,DKI JAKARTA,2017,Dokter Umum,var1477,38.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Dokter Gigi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Perawat,var1477,223.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Bidan,var1477,44.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Farmasi,var1477,67.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Kesehatan Masyarakat,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Ahli Teknologi Laboratorium Medik,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+3200,JAWA BARAT,2017,Dokter Umum,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Perawat,var1477,71.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Bidan,var1477,37.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Farmasi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Kesehatan Masyarakat,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Kesehatan Lingkungan,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Gizi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+3300,JAWA TENGAH,2017,Dokter Umum,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Perawat,var1477,107.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Bidan,var1477,53.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Farmasi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Kesehatan Masyarakat,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+3400,DI YOGYAKARTA,2017,Dokter Umum,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Dokter Gigi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Perawat,var1477,175.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Bidan,var1477,42.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Farmasi,var1477,30.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Kesehatan Masyarakat,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Kesehatan Lingkungan,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Ahli Teknologi Laboratorium Medik,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+3500,JAWA TIMUR,2017,Dokter Umum,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Perawat,var1477,86.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Bidan,var1477,46.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Farmasi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Kesehatan Masyarakat,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Kesehatan Lingkungan,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+3600,BANTEN,2017,Dokter Umum,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Perawat,var1477,67.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Bidan,var1477,35.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Farmasi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Kesehatan Masyarakat,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Kesehatan Lingkungan,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Gizi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Ahli Teknologi Laboratorium Medik,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+5100,BALI,2017,Dokter Umum,var1477,27.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Dokter Gigi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Perawat,var1477,159.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Bidan,var1477,84.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Kesehatan Masyarakat,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+5200,NUSA TENGGARA BARAT,2017,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Perawat,var1477,110.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Bidan,var1477,61.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Farmasi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Kesehatan Masyarakat,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+5300,NUSA TENGGARA TIMUR,2017,Dokter Umum,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Perawat,var1477,126.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Bidan,var1477,77.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Farmasi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Kesehatan Masyarakat,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Kesehatan Lingkungan,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Ahli Teknologi Laboratorium Medik,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+6100,KALIMANTAN BARAT,2017,Dokter Umum,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Perawat,var1477,142.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Bidan,var1477,73.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Kesehatan Masyarakat,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Gizi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+6200,KALIMANTAN TENGAH,2017,Dokter Umum,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Perawat,var1477,199.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Bidan,var1477,99.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Farmasi,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Kesehatan Masyarakat,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Gizi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Ahli Teknologi Laboratorium Medik,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+6300,KALIMANTAN SELATAN,2017,Dokter Umum,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Perawat,var1477,118.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Bidan,var1477,53.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Farmasi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Kesehatan Masyarakat,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Ahli Teknologi Laboratorium Medik,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+6400,KALIMANTAN TIMUR,2017,Dokter Umum,var1477,29.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Dokter Gigi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Perawat,var1477,207.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Bidan,var1477,84.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Farmasi,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Kesehatan Masyarakat,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Kesehatan Lingkungan,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Gizi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Ahli Teknologi Laboratorium Medik,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+6500,KALIMANTAN UTARA,2017,Dokter Umum,var1477,37.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Dokter Gigi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Perawat,var1477,300.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Bidan,var1477,126.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Farmasi,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Kesehatan Masyarakat,var1477,42.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Kesehatan Lingkungan,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Gizi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Ahli Teknologi Laboratorium Medik,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+7100,SULAWESI UTARA,2017,Dokter Umum,var1477,36.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Perawat,var1477,205.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Bidan,var1477,49.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Farmasi,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Kesehatan Masyarakat,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Kesehatan Lingkungan,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Gizi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Ahli Teknologi Laboratorium Medik,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+7200,SULAWESI TENGAH,2017,Dokter Umum,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Perawat,var1477,151.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Bidan,var1477,103.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Kesehatan Masyarakat,var1477,29.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Ahli Teknologi Laboratorium Medik,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+7300,SULAWESI SELATAN,2017,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Dokter Gigi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Perawat,var1477,142.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Bidan,var1477,63.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Kesehatan Masyarakat,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Ahli Teknologi Laboratorium Medik,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+7400,SULAWESI TENGGARA,2017,Dokter Umum,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Perawat,var1477,180.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Bidan,var1477,139.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Farmasi,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Kesehatan Masyarakat,var1477,41.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Kesehatan Lingkungan,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Gizi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Ahli Teknologi Laboratorium Medik,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+7500,GORONTALO,2017,Dokter Umum,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Perawat,var1477,139.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Bidan,var1477,90.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Kesehatan Masyarakat,var1477,31.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Kesehatan Lingkungan,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Gizi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Ahli Teknologi Laboratorium Medik,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+7600,SULAWESI BARAT,2017,Dokter Umum,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Perawat,var1477,133.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Bidan,var1477,99.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Farmasi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Kesehatan Masyarakat,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+8100,MALUKU,2017,Dokter Umum,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Perawat,var1477,210.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Bidan,var1477,74.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Farmasi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Kesehatan Masyarakat,var1477,19.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Kesehatan Lingkungan,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Gizi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Ahli Teknologi Laboratorium Medik,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+8200,MALUKU UTARA,2017,Dokter Umum,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Perawat,var1477,179.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Bidan,var1477,145.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Farmasi,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Kesehatan Masyarakat,var1477,45.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Gizi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Ahli Teknologi Laboratorium Medik,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+9100,PAPUA BARAT,2017,Dokter Umum,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Perawat,var1477,141.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Bidan,var1477,54.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Farmasi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Kesehatan Masyarakat,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Ahli Teknologi Laboratorium Medik,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+9200,PAPUA BARAT DAYA,2017,Dokter Umum,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Dokter Gigi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Perawat,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Bidan,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Farmasi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Kesehatan Masyarakat,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Kesehatan Lingkungan,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Gizi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2017,Pekarya,var1477,,,struktural
+9400,PAPUA,2017,Dokter Umum,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Perawat,var1477,193.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Bidan,var1477,66.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Farmasi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Kesehatan Masyarakat,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Kesehatan Lingkungan,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Gizi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Ahli Teknologi Laboratorium Medik,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2017,Pekarya,var1477,,,kategori_tidak_tersedia
+9500,PAPUA SELATAN,2017,Dokter Umum,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Dokter Gigi,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Perawat,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Bidan,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Farmasi,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Kesehatan Masyarakat,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Kesehatan Lingkungan,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Gizi,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9500,PAPUA SELATAN,2017,Pekarya,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Dokter Umum,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Dokter Gigi,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Perawat,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Bidan,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Farmasi,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Kesehatan Masyarakat,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Kesehatan Lingkungan,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Gizi,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9600,PAPUA TENGAH,2017,Pekarya,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Dokter Umum,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Dokter Gigi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Perawat,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Bidan,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Farmasi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Kesehatan Masyarakat,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Kesehatan Lingkungan,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Gizi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2017,Pekarya,var1477,,,struktural
+1100,ACEH,2018,Dokter Umum,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Perawat,var1477,175.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Bidan,var1477,213.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Farmasi,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Kesehatan Masyarakat,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Kesehatan Lingkungan,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1100,ACEH,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1100,ACEH,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1200,SUMATERA UTARA,2018,Dokter Umum,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Perawat,var1477,82.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Bidan,var1477,123.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Farmasi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Kesehatan Masyarakat,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1200,SUMATERA UTARA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1200,SUMATERA UTARA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1300,SUMATERA BARAT,2018,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Perawat,var1477,130.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Bidan,var1477,105.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Farmasi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Kesehatan Masyarakat,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Kesehatan Lingkungan,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1300,SUMATERA BARAT,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1300,SUMATERA BARAT,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1400,RIAU,2018,Dokter Umum,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Perawat,var1477,92.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Bidan,var1477,99.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Farmasi,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Kesehatan Masyarakat,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Gizi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1400,RIAU,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1400,RIAU,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1500,JAMBI,2018,Dokter Umum,var1477,29.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Perawat,var1477,185.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Bidan,var1477,148.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Farmasi,var1477,30.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Kesehatan Masyarakat,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1500,JAMBI,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1500,JAMBI,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1600,SUMATERA SELATAN,2018,Dokter Umum,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Perawat,var1477,120.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Bidan,var1477,133.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Kesehatan Masyarakat,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1600,SUMATERA SELATAN,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1600,SUMATERA SELATAN,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1700,BENGKULU,2018,Dokter Umum,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Perawat,var1477,216.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Bidan,var1477,195.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Farmasi,var1477,29.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Kesehatan Masyarakat,var1477,43.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Gizi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+1700,BENGKULU,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1700,BENGKULU,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1800,LAMPUNG,2018,Dokter Umum,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Perawat,var1477,78.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Bidan,var1477,92.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Farmasi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Kesehatan Masyarakat,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Kesehatan Lingkungan,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Gizi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+1800,LAMPUNG,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1800,LAMPUNG,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+1900,KEP. BANGKA BELITUNG,2018,Dokter Umum,var1477,35.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Perawat,var1477,231.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Bidan,var1477,96.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Farmasi,var1477,38.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Kesehatan Masyarakat,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+1900,KEP. BANGKA BELITUNG,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+1900,KEP. BANGKA BELITUNG,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+2100,KEP. RIAU,2018,Dokter Umum,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Perawat,var1477,169.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Bidan,var1477,82.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Farmasi,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Kesehatan Masyarakat,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Kesehatan Lingkungan,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+2100,KEP. RIAU,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+2100,KEP. RIAU,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+3100,DKI JAKARTA,2018,Dokter Umum,var1477,118.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Dokter Gigi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Perawat,var1477,320.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Bidan,var1477,79.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Farmasi,var1477,162.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Kesehatan Masyarakat,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+3100,DKI JAKARTA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+3100,DKI JAKARTA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+3200,JAWA BARAT,2018,Dokter Umum,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Perawat,var1477,50.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Bidan,var1477,36.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Farmasi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Kesehatan Masyarakat,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Kesehatan Lingkungan,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Gizi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3200,JAWA BARAT,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+3200,JAWA BARAT,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+3300,JAWA TENGAH,2018,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Perawat,var1477,132.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Bidan,var1477,68.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Farmasi,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Kesehatan Masyarakat,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Kesehatan Lingkungan,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3300,JAWA TENGAH,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+3300,JAWA TENGAH,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+3400,DI YOGYAKARTA,2018,Dokter Umum,var1477,54.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Dokter Gigi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Perawat,var1477,237.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Bidan,var1477,64.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Farmasi,var1477,69.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Kesehatan Masyarakat,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Kesehatan Lingkungan,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3400,DI YOGYAKARTA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+3400,DI YOGYAKARTA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+3500,JAWA TIMUR,2018,Dokter Umum,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Perawat,var1477,133.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Bidan,var1477,64.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Farmasi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Kesehatan Masyarakat,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Kesehatan Lingkungan,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Gizi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+3500,JAWA TIMUR,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+3500,JAWA TIMUR,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+3600,BANTEN,2018,Dokter Umum,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Perawat,var1477,56.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Bidan,var1477,41.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Farmasi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Kesehatan Masyarakat,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Kesehatan Lingkungan,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Gizi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+3600,BANTEN,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+3600,BANTEN,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+5100,BALI,2018,Dokter Umum,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Dokter Gigi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Perawat,var1477,193.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Bidan,var1477,107.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Farmasi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Kesehatan Masyarakat,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+5100,BALI,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+5100,BALI,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+5200,NUSA TENGGARA BARAT,2018,Dokter Umum,var1477,51.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Dokter Gigi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Perawat,var1477,377.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Bidan,var1477,138.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Farmasi,var1477,50.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Kesehatan Masyarakat,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+5200,NUSA TENGGARA BARAT,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+5200,NUSA TENGGARA BARAT,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+5300,NUSA TENGGARA TIMUR,2018,Dokter Umum,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Perawat,var1477,118.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Bidan,var1477,96.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Kesehatan Masyarakat,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Kesehatan Lingkungan,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+5300,NUSA TENGGARA TIMUR,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+5300,NUSA TENGGARA TIMUR,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+6100,KALIMANTAN BARAT,2018,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Perawat,var1477,160.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Bidan,var1477,81.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Farmasi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Kesehatan Masyarakat,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Gizi,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+6100,KALIMANTAN BARAT,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+6100,KALIMANTAN BARAT,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+6200,KALIMANTAN TENGAH,2018,Dokter Umum,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Perawat,var1477,222.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Bidan,var1477,131.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Farmasi,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Kesehatan Masyarakat,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Gizi,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+6200,KALIMANTAN TENGAH,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+6200,KALIMANTAN TENGAH,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+6300,KALIMANTAN SELATAN,2018,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Perawat,var1477,151.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Bidan,var1477,107.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Farmasi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Kesehatan Masyarakat,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6300,KALIMANTAN SELATAN,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+6300,KALIMANTAN SELATAN,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+6400,KALIMANTAN TIMUR,2018,Dokter Umum,var1477,29.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Dokter Gigi,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Perawat,var1477,217.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Bidan,var1477,96.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Farmasi,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Kesehatan Masyarakat,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Kesehatan Lingkungan,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Gizi,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+6400,KALIMANTAN TIMUR,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+6400,KALIMANTAN TIMUR,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+6500,KALIMANTAN UTARA,2018,Dokter Umum,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Perawat,var1477,238.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Bidan,var1477,137.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Farmasi,var1477,33.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Kesehatan Masyarakat,var1477,26.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Kesehatan Lingkungan,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Gizi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+6500,KALIMANTAN UTARA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+6500,KALIMANTAN UTARA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+7100,SULAWESI UTARA,2018,Dokter Umum,var1477,36.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Perawat,var1477,246.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Bidan,var1477,68.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Farmasi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Kesehatan Masyarakat,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Kesehatan Lingkungan,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Gizi,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7100,SULAWESI UTARA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+7100,SULAWESI UTARA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+7200,SULAWESI TENGAH,2018,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Perawat,var1477,216.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Bidan,var1477,169.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Farmasi,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Kesehatan Masyarakat,var1477,45.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Gizi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+7200,SULAWESI TENGAH,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+7200,SULAWESI TENGAH,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+7300,SULAWESI SELATAN,2018,Dokter Umum,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Dokter Gigi,var1477,7.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Perawat,var1477,156.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Bidan,var1477,106.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Farmasi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Kesehatan Masyarakat,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Kesehatan Lingkungan,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+7300,SULAWESI SELATAN,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+7300,SULAWESI SELATAN,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+7400,SULAWESI TENGGARA,2018,Dokter Umum,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Perawat,var1477,206.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Bidan,var1477,157.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Farmasi,var1477,27.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Kesehatan Masyarakat,var1477,45.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Kesehatan Lingkungan,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Gizi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+7400,SULAWESI TENGGARA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+7400,SULAWESI TENGGARA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+7500,GORONTALO,2018,Dokter Umum,var1477,27.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Dokter Gigi,var1477,5.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Perawat,var1477,190.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Bidan,var1477,124.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Farmasi,var1477,27.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Kesehatan Masyarakat,var1477,47.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Kesehatan Lingkungan,var1477,15.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Gizi,var1477,24.0,kepadatan per 100.000 penduduk,terisi
+7500,GORONTALO,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+7500,GORONTALO,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+7600,SULAWESI BARAT,2018,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Dokter Gigi,var1477,6.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Perawat,var1477,131.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Bidan,var1477,105.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Farmasi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Kesehatan Masyarakat,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Gizi,var1477,10.0,kepadatan per 100.000 penduduk,terisi
+7600,SULAWESI BARAT,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+7600,SULAWESI BARAT,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+8100,MALUKU,2018,Dokter Umum,var1477,14.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Perawat,var1477,236.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Bidan,var1477,90.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Farmasi,var1477,16.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Kesehatan Masyarakat,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Kesehatan Lingkungan,var1477,20.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Gizi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+8100,MALUKU,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+8100,MALUKU,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+8200,MALUKU UTARA,2018,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Dokter Gigi,var1477,3.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Perawat,var1477,166.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Bidan,var1477,140.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Farmasi,var1477,22.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Kesehatan Masyarakat,var1477,42.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Kesehatan Lingkungan,var1477,9.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Gizi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+8200,MALUKU UTARA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+8200,MALUKU UTARA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+9100,PAPUA BARAT,2018,Dokter Umum,var1477,25.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Dokter Gigi,var1477,4.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Perawat,var1477,295.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Bidan,var1477,108.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Farmasi,var1477,23.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Kesehatan Masyarakat,var1477,21.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Kesehatan Lingkungan,var1477,8.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Gizi,var1477,11.0,kepadatan per 100.000 penduduk,terisi
+9100,PAPUA BARAT,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+9100,PAPUA BARAT,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+9200,PAPUA BARAT DAYA,2018,Dokter Umum,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Dokter Gigi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Perawat,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Bidan,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Farmasi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Kesehatan Masyarakat,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Kesehatan Lingkungan,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Gizi,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9200,PAPUA BARAT DAYA,2018,Pekarya,var1477,,,struktural
+9400,PAPUA,2018,Dokter Umum,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Dokter Gigi,var1477,2.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Perawat,var1477,172.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Bidan,var1477,74.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Farmasi,var1477,13.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Kesehatan Masyarakat,var1477,17.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Kesehatan Lingkungan,var1477,12.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Gizi,var1477,18.0,kepadatan per 100.000 penduduk,terisi
+9400,PAPUA,2018,Ahli Teknologi Laboratorium Medik,var1477,,,kategori_tidak_tersedia
+9400,PAPUA,2018,Pekarya,var1477,,,kategori_tidak_tersedia
+9500,PAPUA SELATAN,2018,Dokter Umum,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Dokter Gigi,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Perawat,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Bidan,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Farmasi,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Kesehatan Masyarakat,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Kesehatan Lingkungan,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Gizi,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9500,PAPUA SELATAN,2018,Pekarya,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Dokter Umum,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Dokter Gigi,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Perawat,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Bidan,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Farmasi,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Kesehatan Masyarakat,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Kesehatan Lingkungan,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Gizi,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9600,PAPUA TENGAH,2018,Pekarya,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Dokter Umum,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Dokter Gigi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Perawat,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Bidan,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Farmasi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Kesehatan Masyarakat,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Kesehatan Lingkungan,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Gizi,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Ahli Teknologi Laboratorium Medik,var1477,,,struktural
+9700,PAPUA PEGUNUNGAN,2018,Pekarya,var1477,,,struktural
+1100,ACEH,2022,Tidak ada,var2279,97.05,Persen,terisi
+1200,SUMATERA UTARA,2022,Tidak ada,var2279,56.3,Persen,terisi
+1300,SUMATERA BARAT,2022,Tidak ada,var2279,69.71,Persen,terisi
+1400,RIAU,2022,Tidak ada,var2279,63.26,Persen,terisi
+1500,JAMBI,2022,Tidak ada,var2279,53.99,Persen,terisi
+1600,SUMATERA SELATAN,2022,Tidak ada,var2279,58.92,Persen,terisi
+1700,BENGKULU,2022,Tidak ada,var2279,63.18,Persen,terisi
+1800,LAMPUNG,2022,Tidak ada,var2279,63.33,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2022,Tidak ada,var2279,70.04,Persen,terisi
+2100,KEP. RIAU,2022,Tidak ada,var2279,69.34,Persen,terisi
+3100,DKI JAKARTA,2022,Tidak ada,var2279,86.04,Persen,terisi
+3200,JAWA BARAT,2022,Tidak ada,var2279,61.98,Persen,terisi
+3300,JAWA TENGAH,2022,Tidak ada,var2279,67.7,Persen,terisi
+3400,DI YOGYAKARTA,2022,Tidak ada,var2279,81.47,Persen,terisi
+3500,JAWA TIMUR,2022,Tidak ada,var2279,63.75,Persen,terisi
+3600,BANTEN,2022,Tidak ada,var2279,65.92,Persen,terisi
+5100,BALI,2022,Tidak ada,var2279,83.24,Persen,terisi
+5200,NUSA TENGGARA BARAT,2022,Tidak ada,var2279,62.39,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2022,Tidak ada,var2279,71.03,Persen,terisi
+6100,KALIMANTAN BARAT,2022,Tidak ada,var2279,57.9,Persen,terisi
+6200,KALIMANTAN TENGAH,2022,Tidak ada,var2279,54.03,Persen,terisi
+6300,KALIMANTAN SELATAN,2022,Tidak ada,var2279,66.19,Persen,terisi
+6400,KALIMANTAN TIMUR,2022,Tidak ada,var2279,74.24,Persen,terisi
+6500,KALIMANTAN UTARA,2022,Tidak ada,var2279,82.27,Persen,terisi
+7100,SULAWESI UTARA,2022,Tidak ada,var2279,75.92,Persen,terisi
+7200,SULAWESI TENGAH,2022,Tidak ada,var2279,70.99,Persen,terisi
+7300,SULAWESI SELATAN,2022,Tidak ada,var2279,78.47,Persen,terisi
+7400,SULAWESI TENGGARA,2022,Tidak ada,var2279,71.96,Persen,terisi
+7500,GORONTALO,2022,Tidak ada,var2279,79.37,Persen,terisi
+7600,SULAWESI BARAT,2022,Tidak ada,var2279,88.13,Persen,terisi
+8100,MALUKU,2022,Tidak ada,var2279,59.49,Persen,terisi
+8200,MALUKU UTARA,2022,Tidak ada,var2279,67.78,Persen,terisi
+9100,PAPUA BARAT,2022,Tidak ada,var2279,70.09,Persen,terisi
+9200,PAPUA BARAT DAYA,2022,Tidak ada,var2279,,,missing
+9400,PAPUA,2022,Tidak ada,var2279,84.0,Persen,terisi
+9500,PAPUA SELATAN,2022,Tidak ada,var2279,,,missing
+9600,PAPUA TENGAH,2022,Tidak ada,var2279,,,missing
+9700,PAPUA PEGUNUNGAN,2022,Tidak ada,var2279,,,missing
+1100,ACEH,2023,Tidak ada,var2279,96.87,Persen,terisi
+1200,SUMATERA UTARA,2023,Tidak ada,var2279,61.86,Persen,terisi
+1300,SUMATERA BARAT,2023,Tidak ada,var2279,71.41,Persen,terisi
+1400,RIAU,2023,Tidak ada,var2279,63.83,Persen,terisi
+1500,JAMBI,2023,Tidak ada,var2279,53.49,Persen,terisi
+1600,SUMATERA SELATAN,2023,Tidak ada,var2279,64.43,Persen,terisi
+1700,BENGKULU,2023,Tidak ada,var2279,68.18,Persen,terisi
+1800,LAMPUNG,2023,Tidak ada,var2279,66.48,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2023,Tidak ada,var2279,75.45,Persen,terisi
+2100,KEP. RIAU,2023,Tidak ada,var2279,77.72,Persen,terisi
+3100,DKI JAKARTA,2023,Tidak ada,var2279,88.48,Persen,terisi
+3200,JAWA BARAT,2023,Tidak ada,var2279,64.85,Persen,terisi
+3300,JAWA TENGAH,2023,Tidak ada,var2279,69.08,Persen,terisi
+3400,DI YOGYAKARTA,2023,Tidak ada,var2279,83.28,Persen,terisi
+3500,JAWA TIMUR,2023,Tidak ada,var2279,68.55,Persen,terisi
+3600,BANTEN,2023,Tidak ada,var2279,67.47,Persen,terisi
+5100,BALI,2023,Tidak ada,var2279,85.89,Persen,terisi
+5200,NUSA TENGGARA BARAT,2023,Tidak ada,var2279,63.92,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2023,Tidak ada,var2279,72.18,Persen,terisi
+6100,KALIMANTAN BARAT,2023,Tidak ada,var2279,61.96,Persen,terisi
+6200,KALIMANTAN TENGAH,2023,Tidak ada,var2279,57.96,Persen,terisi
+6300,KALIMANTAN SELATAN,2023,Tidak ada,var2279,68.79,Persen,terisi
+6400,KALIMANTAN TIMUR,2023,Tidak ada,var2279,79.75,Persen,terisi
+6500,KALIMANTAN UTARA,2023,Tidak ada,var2279,85.03,Persen,terisi
+7100,SULAWESI UTARA,2023,Tidak ada,var2279,79.16,Persen,terisi
+7200,SULAWESI TENGAH,2023,Tidak ada,var2279,75.41,Persen,terisi
+7300,SULAWESI SELATAN,2023,Tidak ada,var2279,80.07,Persen,terisi
+7400,SULAWESI TENGGARA,2023,Tidak ada,var2279,75.74,Persen,terisi
+7500,GORONTALO,2023,Tidak ada,var2279,84.11,Persen,terisi
+7600,SULAWESI BARAT,2023,Tidak ada,var2279,88.52,Persen,terisi
+8100,MALUKU,2023,Tidak ada,var2279,60.81,Persen,terisi
+8200,MALUKU UTARA,2023,Tidak ada,var2279,69.32,Persen,terisi
+9100,PAPUA BARAT,2023,Tidak ada,var2279,70.98,Persen,terisi
+9200,PAPUA BARAT DAYA,2023,Tidak ada,var2279,73.29,Persen,terisi
+9400,PAPUA,2023,Tidak ada,var2279,76.93,Persen,terisi
+9500,PAPUA SELATAN,2023,Tidak ada,var2279,88.43,Persen,terisi
+9600,PAPUA TENGAH,2023,Tidak ada,var2279,67.06,Persen,terisi
+9700,PAPUA PEGUNUNGAN,2023,Tidak ada,var2279,89.91,Persen,terisi
+1100,ACEH,2024,Tidak ada,var2279,97.19,Persen,terisi
+1200,SUMATERA UTARA,2024,Tidak ada,var2279,65.75,Persen,terisi
+1300,SUMATERA BARAT,2024,Tidak ada,var2279,75.76,Persen,terisi
+1400,RIAU,2024,Tidak ada,var2279,68.38,Persen,terisi
+1500,JAMBI,2024,Tidak ada,var2279,58.06,Persen,terisi
+1600,SUMATERA SELATAN,2024,Tidak ada,var2279,71.49,Persen,terisi
+1700,BENGKULU,2024,Tidak ada,var2279,72.02,Persen,terisi
+1800,LAMPUNG,2024,Tidak ada,var2279,70.18,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2024,Tidak ada,var2279,80.13,Persen,terisi
+2100,KEP. RIAU,2024,Tidak ada,var2279,81.91,Persen,terisi
+3100,DKI JAKARTA,2024,Tidak ada,var2279,89.91,Persen,terisi
+3200,JAWA BARAT,2024,Tidak ada,var2279,68.84,Persen,terisi
+3300,JAWA TENGAH,2024,Tidak ada,var2279,70.9,Persen,terisi
+3400,DI YOGYAKARTA,2024,Tidak ada,var2279,85.7,Persen,terisi
+3500,JAWA TIMUR,2024,Tidak ada,var2279,69.66,Persen,terisi
+3600,BANTEN,2024,Tidak ada,var2279,71.86,Persen,terisi
+5100,BALI,2024,Tidak ada,var2279,88.47,Persen,terisi
+5200,NUSA TENGGARA BARAT,2024,Tidak ada,var2279,68.28,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2024,Tidak ada,var2279,75.24,Persen,terisi
+6100,KALIMANTAN BARAT,2024,Tidak ada,var2279,65.22,Persen,terisi
+6200,KALIMANTAN TENGAH,2024,Tidak ada,var2279,64.53,Persen,terisi
+6300,KALIMANTAN SELATAN,2024,Tidak ada,var2279,70.85,Persen,terisi
+6400,KALIMANTAN TIMUR,2024,Tidak ada,var2279,82.88,Persen,terisi
+6500,KALIMANTAN UTARA,2024,Tidak ada,var2279,87.46,Persen,terisi
+7100,SULAWESI UTARA,2024,Tidak ada,var2279,84.41,Persen,terisi
+7200,SULAWESI TENGAH,2024,Tidak ada,var2279,77.39,Persen,terisi
+7300,SULAWESI SELATAN,2024,Tidak ada,var2279,83.55,Persen,terisi
+7400,SULAWESI TENGGARA,2024,Tidak ada,var2279,80.39,Persen,terisi
+7500,GORONTALO,2024,Tidak ada,var2279,87.74,Persen,terisi
+7600,SULAWESI BARAT,2024,Tidak ada,var2279,89.53,Persen,terisi
+8100,MALUKU,2024,Tidak ada,var2279,61.75,Persen,terisi
+8200,MALUKU UTARA,2024,Tidak ada,var2279,69.58,Persen,terisi
+9100,PAPUA BARAT,2024,Tidak ada,var2279,72.41,Persen,terisi
+9200,PAPUA BARAT DAYA,2024,Tidak ada,var2279,81.37,Persen,terisi
+9400,PAPUA,2024,Tidak ada,var2279,81.04,Persen,terisi
+9500,PAPUA SELATAN,2024,Tidak ada,var2279,90.11,Persen,terisi
+9600,PAPUA TENGAH,2024,Tidak ada,var2279,67.34,Persen,terisi
+9700,PAPUA PEGUNUNGAN,2024,Tidak ada,var2279,97.28,Persen,terisi
+1100,ACEH,2025,Tidak ada,var2279,98.18,Persen,terisi
+1200,SUMATERA UTARA,2025,Tidak ada,var2279,68.69,Persen,terisi
+1300,SUMATERA BARAT,2025,Tidak ada,var2279,78.19,Persen,terisi
+1400,RIAU,2025,Tidak ada,var2279,73.3,Persen,terisi
+1500,JAMBI,2025,Tidak ada,var2279,61.04,Persen,terisi
+1600,SUMATERA SELATAN,2025,Tidak ada,var2279,73.33,Persen,terisi
+1700,BENGKULU,2025,Tidak ada,var2279,76.2,Persen,terisi
+1800,LAMPUNG,2025,Tidak ada,var2279,71.9,Persen,terisi
+1900,KEP. BANGKA BELITUNG,2025,Tidak ada,var2279,84.11,Persen,terisi
+2100,KEP. RIAU,2025,Tidak ada,var2279,80.0,Persen,terisi
+3100,DKI JAKARTA,2025,Tidak ada,var2279,91.69,Persen,terisi
+3200,JAWA BARAT,2025,Tidak ada,var2279,70.62,Persen,terisi
+3300,JAWA TENGAH,2025,Tidak ada,var2279,72.96,Persen,terisi
+3400,DI YOGYAKARTA,2025,Tidak ada,var2279,89.27,Persen,terisi
+3500,JAWA TIMUR,2025,Tidak ada,var2279,73.86,Persen,terisi
+3600,BANTEN,2025,Tidak ada,var2279,74.49,Persen,terisi
+5100,BALI,2025,Tidak ada,var2279,89.15,Persen,terisi
+5200,NUSA TENGGARA BARAT,2025,Tidak ada,var2279,71.73,Persen,terisi
+5300,NUSA TENGGARA TIMUR,2025,Tidak ada,var2279,77.45,Persen,terisi
+6100,KALIMANTAN BARAT,2025,Tidak ada,var2279,68.92,Persen,terisi
+6200,KALIMANTAN TENGAH,2025,Tidak ada,var2279,67.89,Persen,terisi
+6300,KALIMANTAN SELATAN,2025,Tidak ada,var2279,74.32,Persen,terisi
+6400,KALIMANTAN TIMUR,2025,Tidak ada,var2279,83.0,Persen,terisi
+6500,KALIMANTAN UTARA,2025,Tidak ada,var2279,88.4,Persen,terisi
+7100,SULAWESI UTARA,2025,Tidak ada,var2279,83.46,Persen,terisi
+7200,SULAWESI TENGAH,2025,Tidak ada,var2279,80.86,Persen,terisi
+7300,SULAWESI SELATAN,2025,Tidak ada,var2279,86.56,Persen,terisi
+7400,SULAWESI TENGGARA,2025,Tidak ada,var2279,84.19,Persen,terisi
+7500,GORONTALO,2025,Tidak ada,var2279,87.21,Persen,terisi
+7600,SULAWESI BARAT,2025,Tidak ada,var2279,89.32,Persen,terisi
+8100,MALUKU,2025,Tidak ada,var2279,65.53,Persen,terisi
+8200,MALUKU UTARA,2025,Tidak ada,var2279,73.41,Persen,terisi
+9100,PAPUA BARAT,2025,Tidak ada,var2279,76.74,Persen,terisi
+9200,PAPUA BARAT DAYA,2025,Tidak ada,var2279,84.13,Persen,terisi
+9400,PAPUA,2025,Tidak ada,var2279,79.9,Persen,terisi
+9500,PAPUA SELATAN,2025,Tidak ada,var2279,92.19,Persen,terisi
+9600,PAPUA TENGAH,2025,Tidak ada,var2279,70.83,Persen,terisi
+9700,PAPUA PEGUNUNGAN,2025,Tidak ada,var2279,96.31,Persen,terisi
