@@ -1,26 +1,26 @@
 provinsi,tahun,nilai,batas_bawah,batas_atas,alasan,seri_kode,kategori,kategori_anomali,keterangan
-DI YOGYAKARTA,2021,3.02,3.78,4.94,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-DI YOGYAKARTA,2022,7.48,3.78,4.94,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-DKI JAKARTA,2022,1.56,1.76,4.3,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-JAMBI,2022,6.56,3.64,6.12,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-JAWA TENGAH,2021,8.28,3.39,7.61,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-JAWA TIMUR,2016,4.11,4.35,6.29,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-JAWA TIMUR,2021,6.75,4.35,6.29,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-KALIMANTAN BARAT,2023,7.23,4.04,7.19,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-KALIMANTAN SELATAN,2015,7.8,4.89,7.47,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-KALIMANTAN TIMUR,2022,5.34,2.34,5.17,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-KALIMANTAN UTARA,2022,8.9,1.28,7.86,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-KEP. BANGKA BELITUNG,2022,6.03,2.16,5.98,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-LAMPUNG,2016,4.03,4.61,6.03,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-LAMPUNG,2021,3.89,4.61,6.03,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-LAMPUNG,2022,7.33,4.61,6.03,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-PAPUA,2025,3.62,2.09,3.57,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-PAPUA BARAT,2017,5.46,2.23,5.33,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2017, tetapi patahan seri belum terkonfirmasi."
-RIAU,2021,3.2,3.43,6.89,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
-SULAWESI BARAT,2022,8.5,5.31,7.95,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-SULAWESI SELATAN,2022,7.15,3.99,6.77,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-SULAWESI TENGGARA,2022,10.21,5.64,9.5,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
-SULAWESI UTARA,2021,3.19,3.73,6.13,Nilai berada di luar batas IQR 1.5,var1402,,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+DI YOGYAKARTA,2021,3.02,3.78,4.94,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+DI YOGYAKARTA,2022,7.48,3.78,4.94,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+DKI JAKARTA,2022,1.56,1.76,4.3,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+JAMBI,2022,6.56,3.64,6.12,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+JAWA TENGAH,2021,8.28,3.39,7.61,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+JAWA TIMUR,2016,4.11,4.35,6.29,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+JAWA TIMUR,2021,6.75,4.35,6.29,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+KALIMANTAN BARAT,2023,7.23,4.04,7.19,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+KALIMANTAN SELATAN,2015,7.8,4.89,7.47,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+KALIMANTAN TIMUR,2022,5.34,2.34,5.17,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+KALIMANTAN UTARA,2022,8.9,1.28,7.86,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+KEP. BANGKA BELITUNG,2022,6.03,2.16,5.98,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+LAMPUNG,2016,4.03,4.61,6.03,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+LAMPUNG,2021,3.89,4.61,6.03,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+LAMPUNG,2022,7.33,4.61,6.03,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+PAPUA,2025,3.62,2.09,3.57,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+PAPUA BARAT,2017,5.46,2.23,5.33,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2017, tetapi patahan seri belum terkonfirmasi."
+RIAU,2021,3.2,3.43,6.89,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
+SULAWESI BARAT,2022,8.5,5.31,7.95,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+SULAWESI SELATAN,2022,7.15,3.99,6.77,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+SULAWESI TENGGARA,2022,10.21,5.64,9.5,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,"Nilai cocok dengan sumber mentah. Terdapat indikasi kenaikan serentak pada banyak provinsi pada 2022, tetapi patahan seri belum terkonfirmasi."
+SULAWESI UTARA,2021,3.19,3.73,6.13,Nilai berada di luar batas IQR 1.5,var1402,Tidak ada,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
 ACEH,2016,124.0,-6.38,112.62,Nilai berada di luar batas IQR pada kategori dan tahun yang sama,var1477,Bidan,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
 BENGKULU,2016,133.0,-6.38,112.62,Nilai berada di luar batas IQR pada kategori dan tahun yang sama,var1477,Bidan,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
 ACEH,2017,233.0,-20.75,183.25,Nilai berada di luar batas IQR pada kategori dan tahun yang sama,var1477,Bidan,outlier asli,Nilai cocok dengan sumber mentah BPS. Tidak ditemukan bukti galat input.
