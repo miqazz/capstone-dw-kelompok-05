@@ -48,21 +48,54 @@ Irisan tahun dihitung berdasarkan tahun observasi yang benar-benar tersedia pada
 
 ## 5. Penilaian Kelayakan Pembanding
 
+Status pemetaan dibedakan menjadi informasi yang telah terverifikasi berdasarkan metadata atau tabel resmi BPS dan kesesuaian definisi yang masih perlu dikonfirmasi. Kesamaan tema atau nama file tidak cukup untuk menyatakan dua indikator memiliki definisi yang identik.
+
 ### UHC_INDEX_REPORTED dan var1402
 
-Keduanya merupakan kandidat pembanding secara konseptual karena berkaitan dengan cakupan layanan kesehatan. Terdapat sembilan tahun irisan, yaitu 2015–2023. Namun, perbandingan angka secara langsung belum dapat dilakukan sebelum definisi dan komponen penyusun kedua indikator dipastikan setara.
+**Status: Pembanding kontekstual - kesetaraan definisi belum terverifikasi.**
+
+**Informasi BPS yang terverifikasi:**
+- Nama indikator: Persentase Unmet Need Pelayanan Kesehatan Menurut Provinsi.
+- Satuan: persen.
+- Periode: tahunan.
+- Metadata SIRUSA menjelaskan unmet need sebagai penduduk yang mengalami keluhan kesehatan dan terganggu aktivitasnya, tetapi tidak berobat jalan.
+- Sumber: https://sirusa.bps.go.id/metadata/indikator/1bd82d5c-6161-7de8-6dd0-152d7c8c448d
+
+**Hal yang belum terverifikasi:**
+- Kesetaraan definisi, komponen penyusun, dan metode penghitungan var1402 dengan UHC Service Coverage Index (UHC_INDEX_REPORTED) dari WHO.
+- Oleh karena itu, keduanya tidak dinyatakan sebagai indikator yang identik dan tidak digunakan untuk perbandingan angka secara langsung.
+
+Terdapat sembilan tahun irisan, yaitu 2015-2023. Irisan periode tersebut memungkinkan pembacaan secara berdampingan, tetapi tidak membuktikan kesetaraan indikator.
 
 ### FINPROTECTION_CATA_TOT_10_POP dan var2279
+
+**Status: Pembanding kontekstual - kesetaraan definisi belum terverifikasi.**
+
+**Informasi BPS yang terverifikasi:**
+- Nama indikator: Persentase Penduduk yang Memiliki Jaminan Kesehatan Nasional (JKN) Menurut Provinsi.
+- Satuan: persen.
+- Periode: tahunan.
+- Indikator membahas kepemilikan JKN, bukan pengeluaran kesehatan katastropik.
+- Sumber tabel BPS: https://www.bps.go.id/id/statistics-table/2/MjI3OSMy/persentase-penduduk-yang-memiliki-jaminan-kesehatan-nasional--jkn--menurut-provinsi--persen-.html
+- Referensi metadata umum kepemilikan jaminan kesehatan: https://sirusa.bps.go.id/metadata/indikator/cc16cb10-8f4a-da86-ae10-a40060aa9ca9
+
+**Hal yang belum terverifikasi:**
+- Kesetaraan definisi dan metode penghitungan var2279 dengan indikator WHO FINPROTECTION_CATA_TOT_10_POP.
+- Kepemilikan JKN tidak dapat dianggap identik dengan pengeluaran kesehatan katastropik.
 
 Tidak terdapat tahun irisan antara kedua seri. Oleh karena itu, keduanya belum dapat digunakan untuk perbandingan berdasarkan periode yang tersedia.
 
 ### HWF_0001 dan var1477
 
-Keduanya berkaitan dengan tenaga kesehatan. WHO menyediakan kepadatan dokter per 10.000 penduduk, sedangkan BPS memiliki kategori tenaga kesehatan termasuk dokter umum. Cakupan definisi tenaga dokter dan satuannya berbeda sehingga hanya dapat digunakan sebagai pembanding kontekstual.
+**Status: Pembanding kontekstual - definisi dan satuan berbeda.**
+
+WHO menyediakan kepadatan dokter per 10.000 penduduk, sedangkan BPS memiliki kategori tenaga kesehatan termasuk dokter umum. Cakupan definisi tenaga dokter dan satuannya berbeda sehingga hanya dapat digunakan sebagai pembanding kontekstual.
 
 ### HWF_0006 dan var1477
 
-Keduanya berkaitan dengan tenaga perawat dan bidan. WHO menyajikan kepadatan gabungan perawat dan bidan per 10.000 penduduk, sedangkan BPS menyediakan data jumlah tenaga kesehatan berdasarkan kategori. Perbedaan satuan dan cakupan perlu diperhatikan sehingga keduanya belum dapat dibandingkan secara langsung.
+**Status: Pembanding kontekstual - definisi dan satuan berbeda.**
+
+WHO menyajikan kepadatan gabungan perawat dan bidan per 10.000 penduduk, sedangkan BPS menyediakan data jumlah tenaga kesehatan berdasarkan kategori. Perbedaan satuan dan cakupan perlu diperhatikan sehingga keduanya belum dapat dibandingkan secara langsung.
 
 ## 6. Kesimpulan
 
