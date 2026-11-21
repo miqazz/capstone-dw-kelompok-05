@@ -16,7 +16,7 @@ Seluruh angka pada bagian ini dihitung dari `data/silver/silver.csv` dengan skri
 
 Perlu dibedakan bahwa profil_ringkasan.txt merupakan hasil profiling pada saat pemuatan Silver pertama, sedangkan audit_profil.txt merupakan hasil audit ulang terhadap file Silver yang sama, yaitu data/silver/silver.csv. Perbedaan jumlah baris per seri pada kedua ringkasan disebabkan oleh perbedaan cakupan penghitungan. Ringkasan awal mencakup data nasional dan provinsi, sedangkan perhitungan celah panel BPS pada audit hanya mencakup data provinsi dengan mengecualikan kode wilayah 9999 (INDONESIA). Dengan demikian, perbedaan angka tersebut tidak menunjukkan penggunaan sumber Silver yang berbeda, melainkan perbedaan cakupan observasi yang dihitung.
 
-Berdasarkan hasil audit, data Silver yang digunakan terdiri atas 1.541 baris, 7 seri, 39 kode wilayah unik, dan tidak ditemukan duplikasi pada kunci Silver. Hasil ini menjadi dasar dalam penyusunan ringkasan kualitas data dan identifikasi permasalahan data pada laporan.
+Berdasarkan hasil audit, data Silver yang digunakan terdiri atas 1.541 baris, 7 seri, 39 kode wilayah unik, dan tidak ditemukan duplikasi pada kunci Silver. Hasil ini menjadi dasar dalam penyusunan ringkasan kualitas data dan identifikasi permasalahan data pada laporan. 
 
 | No | Masalah | Bukti/angka dan cara penarikan ulang | Penanganan/keputusan | Status/ID log |
 |---:|---|---|---|---|
