@@ -14,9 +14,9 @@ ulang API (bila dilakukan): apa yang berubah sejak snapshot 17–20 Oktober 2026
 
 Seluruh angka pada bagian ini dihitung dari `data/silver/silver.csv` dengan skrip `sprint/sprint-1/capstone/audit_profil.py`. Jalankan dari root repository menggunakan `python sprint/sprint-1/capstone/audit_profil.py`; hasil rinci (termasuk daftar sel/tahun yang hilang) ditulis ke `sprint/sprint-1/capstone/audit_profil.txt`. Silver yang diaudit berisi 1.541 baris, 7 seri, 39 kode wilayah unik, dan 0 duplikat pada kunci Silver.
 
-profil_ringkasan.txt merupakan hasil profiling saat pemuatan Silver pertama, sedangkan audit_profil.txt merupakan hasil audit ulang dari file Silver yang sama. Perbedaan jumlah baris per seri terjadi karena ringkasan awal mencakup data nasional dan provinsi, sedangkan perhitungan celah panel BPS pada audit hanya mencakup provinsi.
+Perlu dibedakan bahwa profil_ringkasan.txt merupakan hasil profiling pada saat pemuatan Silver pertama, sedangkan audit_profil.txt merupakan hasil audit ulang terhadap file Silver yang sama, yaitu data/silver/silver.csv. Perbedaan jumlah baris per seri pada kedua ringkasan disebabkan oleh perbedaan cakupan penghitungan. Ringkasan awal mencakup data nasional dan provinsi, sedangkan perhitungan celah panel BPS pada audit hanya mencakup data provinsi dengan mengecualikan kode wilayah 9999 (INDONESIA). Dengan demikian, perbedaan angka tersebut tidak menunjukkan penggunaan sumber Silver yang berbeda, melainkan perbedaan cakupan observasi yang dihitung.
 
-Silver yang diaudit berisi 1.541 baris, 7 seri, 39 kode wilayah unik, dan 0 duplikat pada kunci Silver.
+Berdasarkan hasil audit, data Silver yang digunakan terdiri atas 1.541 baris, 7 seri, 39 kode wilayah unik, dan tidak ditemukan duplikasi pada kunci Silver. Hasil ini menjadi dasar dalam penyusunan ringkasan kualitas data dan identifikasi permasalahan data pada laporan.
 
 | No | Masalah | Bukti/angka dan cara penarikan ulang | Penanganan/keputusan | Status/ID log |
 |---:|---|---|---|---|
