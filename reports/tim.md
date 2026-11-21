@@ -14,6 +14,10 @@ ulang API (bila dilakukan): apa yang berubah sejak snapshot 17–20 Oktober 2026
 
 Seluruh angka pada bagian ini dihitung dari `data/silver/silver.csv` dengan skrip `sprint/sprint-1/capstone/audit_profil.py`. Jalankan dari root repository menggunakan `python sprint/sprint-1/capstone/audit_profil.py`; hasil rinci (termasuk daftar sel/tahun yang hilang) ditulis ke `sprint/sprint-1/capstone/audit_profil.txt`. Silver yang diaudit berisi 1.541 baris, 7 seri, 39 kode wilayah unik, dan 0 duplikat pada kunci Silver.
 
+profil_ringkasan.txt merupakan hasil profiling saat pemuatan Silver pertama, sedangkan audit_profil.txt merupakan hasil audit ulang dari file Silver yang sama. Perbedaan jumlah baris per seri terjadi karena ringkasan awal mencakup data nasional dan provinsi, sedangkan perhitungan celah panel BPS pada audit hanya mencakup provinsi.
+
+Silver yang diaudit berisi 1.541 baris, 7 seri, 39 kode wilayah unik, dan 0 duplikat pada kunci Silver.
+
 | No | Masalah | Bukti/angka dan cara penarikan ulang | Penanganan/keputusan | Status/ID log |
 |---:|---|---|---|---|
 | 1 | Agregat nasional tercampur dengan unit provinsi | Kolom `wilayah_kode` menggunakan `9999` untuk INDONESIA. Silver memiliki 39 kode wilayah unik; kode nasional dipisahkan sehingga unit provinsi dianalisis tersendiri. | Pisahkan `9999` sebagai agregat nasional; 38 provinsi menjadi unit analisis provinsi. | K-001 |
