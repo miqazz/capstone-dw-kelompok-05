@@ -70,6 +70,26 @@ def baca_json(path):
 
     return _tempel_lineage(df, path)
 
+def cetak_hasil_uji(nama, df):
+    """Menampilkan jumlah baris dan pemeriksaan kolom lineage."""
+    kolom_lineage = ["_berkas_raw", "_sha256_raw"]
+
+    kolom_ada = [kolom for kolom in kolom_lineage if kolom in df.columns]
+
+    print(f"\nBerkas: {nama}")
+    print(f"Jumlah baris: {len(df)}")
+    print(f"Jumlah kolom lineage: {len(kolom_ada)}/2")
+
+    for kolom in kolom_lineage:
+        if kolom in df.columns:
+            kosong = (
+                df[kolom].isna()
+                | df[kolom].astype(str).str.strip().eq("")
+            ).sum()
+
+            print(f"{kolom}: ADA | Kosong: {kosong}")
+        else:
+            print(f"{kolom}: TIDAK ADA")
 
 def jalankan():
     """Membaca seluruh empat CSV dan dua JSON WHO."""
@@ -80,14 +100,14 @@ def jalankan():
         df = baca_csv(path)
         hasil[path.stem] = df
 
-        print(f"CSV  {nama}: {len(df)} baris")
+        cetak_hasil_uji(nama, df)
 
     for nama in NAMA_JSON:
         path = _cari_berkas(nama)
         df = baca_json(path)
         hasil[path.stem] = df
 
-        print(f"JSON {nama}: {len(df)} baris")
+        cetak_hasil_uji(nama, df)
 
     print("\nRINGKASAN WHO")
     print("Total berkas:", len(hasil))
