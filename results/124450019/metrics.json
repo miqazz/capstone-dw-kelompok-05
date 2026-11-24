@@ -1,11 +1,11 @@
 {
   "metrik": {
+    "pasangan_rekonsiliasi": 4,
+    "periode_beririsan": 11,
     "baris_masuk": 1722,
     "baris_silver": 1541,
     "baris_gold_panel": 1448,
     "baris_gold_nasional": 96,
-    "pasangan_rekonsiliasi": 4,
-    "periode_beririsan": 11,
     "selisih_median": 2.9
   },
   "seed": 0,

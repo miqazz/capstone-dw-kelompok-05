@@ -71,7 +71,7 @@ Ringkasan: 96 baris.
 | nilai_pembanding | float | sesuai satuan_pembanding | ya | 0.57–68.0 atau kosong | Gold nasional | Nilai pembanding |
 | satuan_pembanding | string | — | ya | ['indeks (skor cakupan layanan UHC, 0-100)', 'per 10.000 penduduk', 'persen populasi'] | Gold | Satuan pembanding |
 | selisih | float | utama-pembanding | ya | numerik/kosong | hitung | Kosong bila tidak berpasangan/definisi berbeda |
-| kategori_selisih | string | enum | tidak | definisi berbeda, metode berbeda, vintage berbeda, cakupan berbeda, belum terjelaskan | K-003/K-004/aturan | Kategori |
+| kategori_selisih | string | enum | tidak | definisi berbeda, metode berbeda, vintage berbeda, cakupan berbeda, belum terjelaskan | K-003/K-004/aturan | Kategori; `belum terjelaskan` wajib punya penjelasan & bukti_dicari |
 | penjelasan | string | teks | tidak | teks | log/analisis | Alasan kategori |
 | bukti_dicari | string | teks | ya | teks | log/analisis | Bukti/rujukan yang diperiksa |
 

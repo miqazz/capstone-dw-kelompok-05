@@ -154,6 +154,9 @@ def simpan_silver(df: pd.DataFrame) -> dict[str, Path]:
         con.close()
     if n != len(df):
         raise ValueError(f"Baris SQLite ({n}) != DataFrame ({len(df)})")
+    pq = pd.read_parquet(SILVER_PARQUET)
+    if len(pq) != n:
+        raise ValueError(f"Baris Parquet silver ({len(pq)}) != SQL ({n})")
     return {"csv": SILVER_CSV, "parquet": SILVER_PARQUET, "sqlite": SILVER_DB}
 
 

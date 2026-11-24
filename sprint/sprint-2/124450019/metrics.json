@@ -1,0 +1,14 @@
+{
+  "metrik": {
+    "pasangan_rekonsiliasi": 4,
+    "periode_beririsan": 11,
+    "baris_masuk": 1722,
+    "baris_silver": 1541,
+    "baris_gold_panel": 1448,
+    "baris_gold_nasional": 96,
+    "selisih_median": 2.9
+  },
+  "seed": 0,
+  "data_hash": "1bbe0df404c003147f02a5a825ac2730eff73472722c95b8f2549c88264bdd17",
+  "perangkat": "Windows AMD64 Python 3.13.4"
+}

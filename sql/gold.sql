@@ -47,7 +47,7 @@ CREATE TABLE rekonsiliasi_nasional (
     satuan_pembanding     TEXT,
     selisih               REAL,
     kategori_selisih      TEXT NOT NULL CHECK (kategori_selisih IN (
-        'definisi berbeda','metode berbeda','vintage berbeda','cakupan berbeda','belum terjelaskan','tidak berpasangan'
+        'definisi berbeda','metode berbeda','vintage berbeda','cakupan berbeda','belum terjelaskan'
     )),
     penjelasan            TEXT NOT NULL,
     bukti_dicari          TEXT,

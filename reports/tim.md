@@ -7,8 +7,9 @@ dan `log-keputusan.csv` yang sudah di-*commit*.
 Kasus, seri yang ditangani, dan satu kalimat temuan utama tentang kualitas datanya.
 
 ## Data dan lineage
-Sumber dan format mentah, jumlah berkas, cara `_berkas_raw`/`_sha256_raw` dibentuk, dan hasil tarik
-ulang API (bila dilakukan): apa yang berubah sejak snapshot 17–20 Oktober 2026.
+Sumber raw: 13 berkas di `data/raw/` (7 BPS, 4 WHO GHO CSV, 1 WHO JSON indikator, 1 WHO JSON). Format mentah: CSV (BPS/WHO GHO) dan JSON (WHO metadata). Manifest: `data/raw/MANIFEST.csv`. `_berkas_raw` dan `_sha256_raw` diambil dari manifest via `src.common.manifest`/pemuatan pipeline, bukan ditulis tangan. Snapshot 2026-10-20; tidak ada tarik ulang API pada Sprint 2 ini.
+
+**Pilihan basis data:** SQLite dipilih untuk Silver dan Gold (`data/silver/silver.sqlite`, `data/gold/gold.sqlite`) karena portabel (file tunggal), tanpa server, mendukung PK/CHECK/indeks untuk integritas skema, dan dapat direproduksi oleh `python pipeline.py` dengan dependensi standar Python `sqlite3` + pandas. JSON mentah tetap disimpan di `data/raw/` sebagai bronze/provenance karena mempertahankan struktur asli sumber; tabel relasional dipakai untuk Silver/Gold karena mudah divalidasi, dijoin, dan diquery. Perbandingan dan alasan detail: `sprint/sprint-1/capstone/alasan_basis_data.md`.
 
 ## Masalah data dan penanganannya (draf Sprint 1, 124450019)
 
@@ -44,19 +45,17 @@ Sumber rekonsiliasi: `data/gold/rekonsiliasi_nasional.csv` (76 baris, 4 pasangan
 | P1_dokter_hwf0001 | var1477 Dokter Umum (turunan per 10.000) | HWF_0001 medical doctors (per 10.000) | 13 | 1 (2018) | cakupan berbeda; periode lain belum terjelaskan | 2018: 2.1−4.21 = **−2.11** | Satuan disetarakan (/10). Dokter Gigi tidak digabung ke HWF_0001 (K-003). Selisih dipengaruhi cakupan profesi/sumber/vintage; periode non-beririsan tidak dipaksa sama. |
 | P2_perawat_bidan_hwf0006 | var1477 Perawat+Bidan (turunan per 10.000) | HWF_0006 nursing and midwifery (per 10.000) | 13 | 1 (2018) | cakupan berbeda; periode lain belum terjelaskan | 2018: 38.8−30.89 = **+7.91** | Perawat+Bidan dijumlahkan setelah verifikasi definisi WHO (K-003). Satuan disetarakan. Selisih dapat dipengaruhi cakupan kader/sumber/vintage. |
 | P3_var1402_uhc | var1402 unmet need (%) | UHC_INDEX_REPORTED (indeks 0–100) | 26 | 9 (2015–2023) | definisi berbeda; periode lain belum terjelaskan | tidak dihitung (konstruk/skala berbeda) | Kontekstual SDG 3.8.1, bukan padanan numerik. Selisih numerik tidak ditafsirkan sebagai gap langsung (K-004). |
-| P4_var2279_finprot | var2279 kepemilikan JKN (%) | FINPROTECTION_CATA_TOT_10_POP (% populasi, TOTAL) | 24 | 0 | belum terjelaskan | tidak ada periode beririsan | Kontekstual SDG 3.8.2, definisi/arah berbeda (K-004). WHO difilter DIM_DEG_URB=TOTAL. Tidak dipaksa sama. |
+| P4_var2279_finprot | var2279 kepemilikan JKN (%) | FINPROTECTION_CATA_TOT_10_POP (% populasi, TOTAL) | 24 | 0 | belum terjelaskan | tidak ada periode beririsan | Kontekstual SDG 3.8.2, definisi/arah berbeda (K-004): var2279 JKN vs FINPROTECTION_CATA_TOT_10_POP pengeluaran kesehatan katastropik. Semua baris tidak berpasangan periode; diberi dugaan/bukti di `rekonsiliasi_nasional`. WHO difilter DIM_DEG_URB=TOTAL. Tidak dipaksa sama. |
 
 **Catatan:** `selisih_median` pada `results/124450019/metrics.json` dihitung dari selisih numerik yang valid (11 baris berpasangan; selisih P3 tidak dihitung karena definisi berbeda) = **2.9**. Semua baris punya kategori; baris `belum terjelaskan` memuat dugaan dan bukti yang dicari di kolom `penjelasan`/`bukti_dicari`.
 
-## Data dan lineage
-Sumber raw: 13 berkas di `data/raw/` (7 BPS, 4 WHO GHO CSV, 1 WHO JSON indikator, 1 WHO JSON). Manifest: `data/raw/MANIFEST.csv`. `_berkas_raw` dan `_sha256_raw` diambil dari manifest via `src.common.manifest.sha256_raw`/pemuatan pipeline, bukan ditulis tangan. Snapshot 2026-10-20; tidak ada tarik ulang API pada Sprint 2 ini.
-
-**Pilihan basis data:** SQLite dipilih untuk Silver dan Gold (`data/silver/silver.sqlite`, `data/gold/gold.sqlite`) karena portabel (file tunggal), tanpa server, mendukung PK/CHECK/indeks untuk integritas skema, dan dapat direproduksi oleh `python pipeline.py` dengan dependensi standar Python `sqlite3` + pandas. JSON mentah tetap disimpan di `data/raw/` sebagai bronze/provenance karena mempertahankan struktur asli sumber; tabel relasional dipakai untuk Silver/Gold karena mudah divalidasi, dijoin, dan diquery. Perbandingan dan alasan detail: `sprint/sprint-1/capstone/alasan_basis_data.md`.
+## Validasi dan reproduksibilitas
 
 ## Validasi dan reproduksibilitas
 - `python pipeline.py` berjalan dari `data/raw/` dan menghasilkan Silver/Gold/rekonsiliasi.
 - `python -m src.common.skema data/silver/silver.parquet` lolos: 1.541 baris, 7 seri, 39 wilayah, 7 berkas sumber.
-- SQL: `data/silver/silver.sqlite` (1541 baris) = Silver; `data/gold/gold.sqlite` berisi `gold_panel_provinsi` (1448), `gold_nasional_periode_seri` (96), `rekonsiliasi_nasional` (76) — jumlah baris sama dengan Parquet/CSV.
+- Pemeriksaan jumlah baris SQL dibanding Parquet dilakukan pipeline/validasi untuk `silver`, `gold_panel_provinsi`, `gold_nasional_periode_seri`, `rekonsiliasi_nasional`; jumlah harus sama.
+- Validasi rekonsiliasi: kategori harus termasuk enum DDL; baris `belum terjelaskan` wajib punya `penjelasan` dan `bukti_dicari`.
 - Validasi ringan: `reports/validasi.md`. Validasi skema penuh pandera/GE masih pekerjaan tahap 8.
 
 ## Pembagian kerja

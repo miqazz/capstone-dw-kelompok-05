@@ -13,6 +13,9 @@ GOLD_DDL = ROOT / "sql" / "gold.sql"
 NASIONAL_CSV = GOLD_DIR / "nasional_periode_seri.csv"
 PANEL_CSV = GOLD_DIR / "panel_provinsi.csv"
 REKON_CSV = GOLD_DIR / "rekonsiliasi_nasional.csv"
+KATEGORI_REKONSILIASI = (
+    "definisi berbeda", "metode berbeda", "vintage berbeda", "cakupan berbeda", "belum terjelaskan",
+)
 
 
 def _buat_panel(silver: pd.DataFrame) -> pd.DataFrame:
@@ -174,12 +177,12 @@ def _buat_rekonsiliasi(nasional: pd.DataFrame) -> pd.DataFrame:
         vb = float(b["nilai"].iloc[0]) if not b.empty else None
         if vu is None or vb is None:
             kat = "belum terjelaskan"
-            pen = "Belum terjelaskan: periode tidak berpasangan pada snapshot saat ini. Dugaan: beda rentang waktu/vintage antara seri BPS dan WHO. Bukti dicari: cek periode di silver/gold dan metadata WHO/BPS; tidak dipaksa sama."
+            pen = "Belum terjelaskan: periode tidak berpasangan pada snapshot saat ini. Dugaan: beda rentang waktu/vintage antara seri BPS var2279 dan WHO FINPROTECTION. Bukti dicari: cek periode di silver/gold dan metadata WHO/BPS; tidak dipaksa sama."
             add("P4_var2279_finprot", "var2279", "Tidak ada", "FINPROTECTION_CATA_TOT_10_POP", "TOTAL",
                 p, "tahun", vu, "Persen", vb, "persen populasi", kat, pen, "K-004; filter WHO DIM_DEG_URB=TOTAL")
         else:
             kat = "definisi berbeda"
-            pen = "Konsep terkait SDG 3.8.2 tetapi indikator berbeda: var2279 kepemilikan JKN (%) vs pengeluaran kesehatan katastropik >10% anggaran rumah tangga (% populasi, TOTAL). Arah dan konstruk berbeda; selisih numerik tidak dihitung."
+            pen = "Konsep terkait SDG 3.8.2 tetapi indikator berbeda: var2279 kepemilikan JKN (%) vs FINPROTECTION_CATA_TOT_10_POP pengeluaran kesehatan katastropik >10% anggaran rumah tangga (% populasi, TOTAL). Arah dan konstruk berbeda; selisih numerik tidak dihitung."
             rows.append({
                 "pasangan_id":"P4_var2279_finprot","seri_utama":"var2279","rincian_utama":"Tidak ada",
                 "seri_pembanding":"FINPROTECTION_CATA_TOT_10_POP","rincian_pembanding":"TOTAL","periode":str(p),
@@ -190,6 +193,9 @@ def _buat_rekonsiliasi(nasional: pd.DataFrame) -> pd.DataFrame:
 
     df = pd.DataFrame(rows)
     df = df.sort_values(["pasangan_id", "periode"]).reset_index(drop=True)
+    buruk = df[~df["kategori_selisih"].isin(KATEGORI_REKONSILIASI)]
+    if not buruk.empty:
+        raise ValueError(f"Kategori rekonsiliasi tidak dikenal: {sorted(buruk['kategori_selisih'].unique())}")
     return df
 
 
@@ -228,9 +234,17 @@ def simpan_gold(tables: dict[str, pd.DataFrame]) -> dict[str, Path]:
         "gold_nasional_periode_seri": len(nasional),
         "rekonsiliasi_nasional": len(rekon),
     }
+    parquet_map = {
+        "gold_panel_provinsi": GOLD_DIR / "panel_provinsi.parquet",
+        "gold_nasional_periode_seri": GOLD_DIR / "nasional_periode_seri.parquet",
+        "rekonsiliasi_nasional": GOLD_DIR / "rekonsiliasi_nasional.parquet",
+    }
     for k, v in expected.items():
         if counts[k] != v:
             raise ValueError(f"Baris SQL {k} ({counts[k]}) != DataFrame ({v})")
+        pq = pd.read_parquet(parquet_map[k])
+        if len(pq) != counts[k]:
+            raise ValueError(f"Baris Parquet {k} ({len(pq)}) != SQL ({counts[k]})")
     return {"db": GOLD_DB, "panel": PANEL_CSV, "nasional": NASIONAL_CSV, "rekon": REKON_CSV}
 
 
