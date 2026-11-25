@@ -1,7 +1,7 @@
 # Validasi
 
 - Silver lolos skema minimal: 1541 baris
-- Gold panel_provinsi: 734 baris
+- Gold panel_provinsi: 1710 baris
 - Gold nasional_periode_seri: 96 baris
 - Rekonsiliasi_nasional: 76 baris
 - Semua baris rekonsiliasi memiliki kategori.
@@ -12,6 +12,6 @@
 | Tabel | SQL | Parquet | Status |
 |---|---:|---:|---|
 | silver | 1541 | 1541 | sama |
-| gold_panel_provinsi | 734 | 734 | sama |
+| gold_panel_provinsi | 1710 | 1710 | sama |
 | gold_nasional_periode_seri | 96 | 96 | sama |
 | rekonsiliasi_nasional | 76 | 76 | sama |
