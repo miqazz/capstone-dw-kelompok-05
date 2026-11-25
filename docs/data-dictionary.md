@@ -1,27 +1,81 @@
-# Data dictionary — Data Alchemist (Kelompok 5)
+# Data dictionary — Kasus 05 Akses layanan dan tenaga kesehatan (Data Alchemist / Kelompok 5)
 
-Satu tabel per keluaran (Silver dan setiap tabel Gold). Isi dari data nyata, bukan dari ingatan: tipe, satuan, rentang, dan jumlah kosong dihitung ulang setiap kali pipeline berjalan.
+Diisi dari data nyata. Angka dihitung dari berkas `data/silver` dan `data/gold` yang di-commit.
 
-## data/silver/silver.parquet
-
-| Kolom | Tipe | Satuan/format | Boleh kosong | Rentang atau nilai sah | Asal (berkas/aturan) | Keterangan |
-|---|---|---|---|---|---|---|
-| sumber | string | — | tidak | bps, bnpb, wdi, who_gho, ilostat | nama folder data/raw | |
-| seri_kode | string | - | tidak | var1402, var2279, var1477, UHC_INDEX_REPORTED, FINPROTECTION_CATA_TOT_10_POP, HWF_0001, HWF_0006 | nama seri BPS/WHO | Kode indikator pengamatan |
-| wilayah_kode | int | kode BPS x 100 | tidak | 9999 atau 1100–9600 | log K-001 | Kode 38 provinsi tahun 2025 (provinsi x 100) dan 9999 untuk nasional |
-| nama_wilayah | string | teks | tidak | Aceh, Sumatera Utara, ..., Indonesia | log K-001 | Nama resmi provinsi atau Indonesia |
-| periode | string | YYYY | tidak | 1992–2025 | tahun pengamatan BPS/WHO | Tahun pengamatan data |
-| jenis_periode | string | - | tidak | tahunan | turtahun BPS / frekuensi WHO | Frekuensi pengumpulan/rilis data |
-| rincian | string | snake_case | tidak | total, dokter, perawat, bidan, tenaga_kefarmasian, dll (dan dimensi WHO) | turvar BPS / DIM WHO | Kategori disagregasi. Nilainya 'total' jika angka agregat |
-| nilai | float64 | numerik | tidak | sesuai rentang indikator dan satuan sumber | kolom nilai mentah | Nilai indikator; baris kosong dari mentah tidak dimasukkan ke Silver |
-| satuan | string | - | tidak | persen, persen_populasi, per_100000_penduduk, per_10000_penduduk, indeks_per_100 | metadata sumber / log keputusan | Satuan ukur baku dari pengamatan |
-| _berkas_raw | string | jalur relatif | tidak | jalur di dalam data/raw/ | src.common.manifest | Untuk penelusuran berkas mentah asli |
-| _sha256_raw | string | hex 64 karakter | tidak | hash SHA-256 (64 karakter) | src.common.manifest | Hash menjamin keaslian data dari snapshot |
-
-## data/gold/<tabel>.parquet
+## data/silver/silver.(csv|parquet|sqlite:table silver)
 
 | Kolom | Tipe | Satuan/format | Boleh kosong | Rentang atau nilai sah | Asal (berkas/aturan) | Keterangan |
 |---|---|---|---|---|---|---|
+| sumber | string | — | tidak | ['bps', 'who_gho'] | nama folder/format sumber | Sumber data |
+| seri_kode | string | kode seri | tidak | ['FINPROTECTION_CATA_TOT_10_POP', 'HWF_0001', 'HWF_0006', 'UHC_INDEX_REPORTED', 'var1402', 'var1477', 'var2279'] | BPS/WHO raw | Kode seri indikator |
+| wilayah_kode | int | kode BPS x 100 / 9999 | tidak | 1100–9999 | K-001 | 9999=Indonesia, provinsi=kode BPS x 100 |
+| nama_wilayah | string | — | tidak | 39 nilai unik | raw BPS/WHO | Nama wilayah |
+| periode | string/int | YYYY | tidak | 1992–2025 | raw | Periode observasi |
+| jenis_periode | string | enum | tidak | ['tahun'] | normalisasi | Tipe periode |
+| rincian | string | — | tidak | 12 nilai unik | turvar BPS / TOTAL WHO | Rincian/turunan |
+| nilai | float | lihat satuan | tidak | 0.0–377.0 | raw | Nilai observasi |
+| satuan | string | — | tidak | ['Persen', 'indeks (skor cakupan layanan UHC, 0-100)', 'kepadatan per 100.000 penduduk', 'per 10.000 penduduk', 'persen populasi'] | raw/metadata K-002 | Satuan nilai |
+| _berkas_raw | string | path relatif data/raw | tidak | 7 berkas | MANIFEST | Lineage berkas |
+| _sha256_raw | string | sha256 hex | tidak | 64 char | MANIFEST.csv | Lineage hash |
+
+Ringkasan: 1541 baris, 7 seri, 39 wilayah, duplikat kunci 0.
+
+## data/gold/panel_provinsi.(csv|parquet|sqlite:gold_panel_provinsi)
+
+| Kolom | Tipe | Satuan/format | Boleh kosong | Rentang atau nilai sah | Asal | Keterangan |
+|---|---|---|---|---|---|---|
+| sumber | string | — | tidak | ['bps'] | Silver | Sumber |
+| seri_kode | string | — | tidak | ['var1402', 'var1477', 'var2279'] | Silver | Seri BPS provinsi |
+| wilayah_kode | int | kode BPS x 100 | tidak | 1100–9700, !=9999 | Silver | Provinsi saja |
+| nama_wilayah | string | — | tidak | 38 nilai | Silver | Nama provinsi |
+| periode | string | YYYY | tidak | 2015–2025 | Silver | Tahun |
+| jenis_periode | string | enum | tidak | tahun | Silver | Tahunan |
+| rincian | string | — | tidak | 11 nilai | Silver | Rincian/turvar |
+| nilai | float | lihat satuan | tidak | 0.0–377.0 | Silver | Nilai |
+| satuan | string | — | tidak | ['Persen', 'kepadatan per 100.000 penduduk'] | Silver/K-002 | Satuan |
+| _berkas_raw | string | path | tidak | 3 berkas | MANIFEST | Lineage |
+| _sha256_raw | string | sha256 | tidak | 64 char | MANIFEST | Lineage |
+
+Ringkasan: 1448 baris (nasional 9999 dikeluarkan).
+
+## data/gold/nasional_periode_seri.(csv|parquet|sqlite:gold_nasional_periode_seri)
+
+| Kolom | Tipe | Satuan/format | Boleh kosong | Rentang atau nilai sah | Asal | Keterangan |
+|---|---|---|---|---|---|---|
+| sumber | string | — | tidak | ['bps', 'who_gho'] | Silver/turunan | bps/who_gho |
+| seri_kode | string | — | tidak | ['FINPROTECTION_CATA_TOT_10_POP', 'HWF_0001', 'HWF_0006', 'UHC_INDEX_REPORTED', 'var1402', 'var1477', 'var1477_dokter_umum_per10k', 'var1477_perawat_bidan_per100k', 'var1477_perawat_bidan_per10k', 'var2279'] | Silver/turunan | Termasuk seri turunan per10k |
+| periode | string | YYYY | tidak | 1992–2025 | Silver | Tahun |
+| jenis_periode | string | enum | tidak | tahun | Silver | Tahunan |
+| rincian | string | — | tidak | ['Bidan', 'Dokter Gigi', 'Dokter Umum', 'Farmasi', 'Gizi', 'Kesehatan Lingkungan', 'Kesehatan Masyarakat', 'Perawat', 'Perawat + Bidan', 'TOTAL', 'Tidak ada'] | Silver/turunan | Rincian/TOTAL |
+| nilai | float | lihat satuan | tidak | 0.57–388.0 | Silver/turunan | Nilai |
+| satuan | string | — | tidak | ['Persen', 'indeks (skor cakupan layanan UHC, 0-100)', 'kepadatan per 100.000 penduduk', 'per 10.000 penduduk', 'persen populasi'] | Silver/K-002/K-003 | Satuan |
+| _berkas_raw | string | path | tidak | 7 berkas | MANIFEST | Lineage |
+| _sha256_raw | string | sha256 | tidak | 64 char | MANIFEST | Lineage |
+| catatan | string | — | ya | teks/kosong | aturan rekonsiliasi | Catatan turunan/filter |
+
+Ringkasan: 96 baris.
+
+## data/gold/rekonsiliasi_nasional.(csv|parquet|sqlite:rekonsiliasi_nasional)
+
+| Kolom | Tipe | Satuan/format | Boleh kosong | Rentang atau nilai sah | Asal | Keterangan |
+|---|---|---|---|---|---|---|
+| pasangan_id | string | ID | tidak | ['P1_dokter_hwf0001', 'P2_perawat_bidan_hwf0006', 'P3_var1402_uhc', 'P4_var2279_finprot'] | aturan kasus 05 | ID pasangan |
+| seri_utama | string | — | tidak | ['var1402', 'var1477_dokter_umum_per10k', 'var1477_perawat_bidan_per10k', 'var2279'] | BPS/turunan | Seri utama |
+| rincian_utama | string | — | tidak | ['Dokter Umum', 'Perawat + Bidan', 'Tidak ada'] | BPS | Rincian utama |
+| seri_pembanding | string | — | tidak | ['FINPROTECTION_CATA_TOT_10_POP', 'HWF_0001', 'HWF_0006', 'UHC_INDEX_REPORTED'] | WHO | Seri pembanding |
+| rincian_pembanding | string | — | tidak | TOTAL | WHO | Rincian pembanding |
+| periode | string | YYYY | tidak | 1992–2025 | Silver/Gold | Tahun |
+| jenis_periode | string | enum | tidak | tahun | aturan | Tahunan |
+| nilai_utama | float | sesuai satuan_utama | ya | 2.1–75.49 atau kosong | Gold nasional | Nilai utama |
+| satuan_utama | string | — | ya | ['Persen', 'per 10.000 penduduk'] | Gold | Satuan utama |
+| nilai_pembanding | float | sesuai satuan_pembanding | ya | 0.57–68.0 atau kosong | Gold nasional | Nilai pembanding |
+| satuan_pembanding | string | — | ya | ['indeks (skor cakupan layanan UHC, 0-100)', 'per 10.000 penduduk', 'persen populasi'] | Gold | Satuan pembanding |
+| selisih | float | utama-pembanding | ya | numerik/kosong | hitung | Kosong bila tidak berpasangan/definisi berbeda |
+| kategori_selisih | string | enum | tidak | definisi berbeda, metode berbeda, vintage berbeda, cakupan berbeda, belum terjelaskan | K-003/K-004/aturan | Kategori; `belum terjelaskan` wajib punya penjelasan & bukti_dicari |
+| penjelasan | string | teks | tidak | teks | log/analisis | Alasan kategori |
+| bukti_dicari | string | teks | ya | teks | log/analisis | Bukti/rujukan yang diperiksa |
+
+Ringkasan: 76 baris; 4 pasangan; periode beririsan terisi 11.
 
 ## Referensi Metadata dan Definisi Seri
 
@@ -56,24 +110,3 @@ Kesamaan tema kesehatan tidak secara otomatis menunjukkan kesetaraan definisi, m
 4. `var1477` dan `HWF_0006` hanya menjadi pembanding kontekstual. WHO menggabungkan perawat dan bidan, sedangkan BPS menyimpan kategori tenaga kesehatan secara terpisah.
 
 Selain perbedaan definisi dan satuan, data WHO yang diperoleh hanya tersedia pada tingkat nasional, sedangkan data BPS mencakup tingkat provinsi. Data WHO tidak digunakan untuk menyimpulkan kesetaraan atau perbedaan kondisi antarprovinsi.
-
-Analisis perbandingan memperhatikan irisan tahun yang benar-benar tersedia, tingkat wilayah, definisi indikator, satuan, dan cakupan data. Tidak dilakukan penyetaraan angka atau penarikan kesimpulan langsung dari dua indikator yang belum terbukti mengukur konstruk yang sama.
-
-## Contoh Ketertelusuran (Lineage) Baris Silver ke Berkas Mentah
-
-Contoh untuk baris data persentase *Unmet Need* (`var1402`) di Aceh pada tahun 2023:
-
-**Kolom Pencarian di Silver:**
-
-- `seri_kode`: "var1402"
-- `wilayah_kode`: 1100
-- `periode`: "2023"
-- `rincian`: "total"
-- `_berkas_raw`: "bps/2026-10-20/sdg3_3_8_1_a_v1402.csv"
-- `_sha256_raw`: 28ffd7f28e35a54da609618ee3fd164c20cd39e248ab69aa2cda94c90e50b15d
-
-**Cara Verifikasi:**
-
-1. Pipeline mengecek `_sha256_raw` di atas apakah sama persis dengan hash file CSV tersebut di `data/raw/MANIFEST.csv`. Jika berbeda, pipeline gagal.
-2. Buka berkas `data/raw/bps/2026-10-20/sdg3_3_8_1_a_v1402.csv`.
-3. Cari baris dengan wilayah "Aceh" (kode `1100`) dan kolom tahun `2023`. Nilai di sel tersebut akan sama persis dengan kolom `nilai` di baris Silver, sehingga kesesuaian nilai dengan berkas mentah dapat diverifikasi.

@@ -1,17 +1,17 @@
-# Hasil Validasi Silver (Kasus 05)
+# Validasi
 
-Dihasilkan otomatis oleh `python pipeline.py`.
+- Silver lolos skema minimal: 1541 baris
+- Gold panel_provinsi: 1448 baris
+- Gold nasional_periode_seri: 96 baris
+- Rekonsiliasi_nasional: 76 baris
+- Semua baris rekonsiliasi memiliki kategori.
+- Baris 'belum terjelaskan' memiliki penjelasan dan bukti_dicari: 65 baris
 
+## SQL vs Parquet
 
-## Ringkasan Aturan
-
-| Aturan                             | Jenis        | Hasil   |
-|:-----------------------------------|:-------------|:--------|
-| Rentang Nilai Persen (0-100)       | Keras (Umum) | LOLOS   |
-| Kesesuaian Kamus Profesi (var1477) | Keras (Umum) | LOLOS   |
-| Keseragaman Satuan Kepadatan       | Keras (Umum) | LOLOS   |
-
-
-## Rincian Kegagalan
-
-✅ *Tidak ada. Semua aturan lolos.*
+| Tabel | SQL | Parquet | Status |
+|---|---:|---:|---|
+| silver | 1541 | 1541 | sama |
+| gold_panel_provinsi | 1448 | 1448 | sama |
+| gold_nasional_periode_seri | 96 | 96 | sama |
+| rekonsiliasi_nasional | 76 | 76 | sama |

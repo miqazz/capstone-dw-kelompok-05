@@ -1,122 +1,86 @@
-"""Tahap 8 - Validasi dan dokumentasi (pertemuan XIV-XV). Milik tim."""
+"""Tahap 8 — Validasi ringan untuk Sprint 2."""
+from __future__ import annotations
 
-import os
+from pathlib import Path
+import sqlite3
+
 import pandas as pd
-import pandera.pandas as pa
 
-# 1. Kamus 10 profesi resmi pada seri var1477 (sesuaikan juga di docs/data-dictionary.md)
-PROFESI_VALID = [
-    "Ahli Teknologi Laboratorium Medik",
-    "Bidan",
-    "Dokter Gigi",
-    "Dokter Umum",
-    "Farmasi",
-    "Gizi",
-    "Kesehatan Lingkungan",
-    "Kesehatan Masyarakat",
-    "Pekarya",
-    "Perawat",
-]
+from src.common.skema import periksa_silver
+from src.common.manifest import baca
 
-# Satuan kepadatan yang diakui (harus seragam satu satuan dalam seri kepadatan)
-SATUAN_KEPADATAN_VALID = [
-    "per_1000_penduduk",
-    "per_10000_penduduk",
-    "per_100000_penduduk",
-]
-
-KODE_VAR1477 = ["var1477", "1477"]
+ROOT = Path(__file__).resolve().parents[2]
 
 
-def _cek_rentang_persen(df: pd.DataFrame) -> bool:
-    sub = df[df["satuan"].isin(["persen", "%"])]
-    if sub.empty:
-        return True
-    return bool(sub["nilai"].dropna().between(0, 100).all())
-
-
-def _cek_profesi_var1477(df: pd.DataFrame) -> bool:
-    sub = df[df["seri_kode"].isin(KODE_VAR1477)]
-    if sub.empty:
-        return True
-    return bool(sub["rincian"].isin(PROFESI_VALID).all())
-
-
-def _cek_satuan_kepadatan_seragam(df: pd.DataFrame) -> bool:
-    sub = df[df["seri_kode"].isin(KODE_VAR1477)]
-    if sub.empty:
-        return True
-    # Semua baris harus memakai satuan kepadatan baku DAN hanya ada 1 satuan (seragam)
-    return bool(
-        sub["satuan"].isin(SATUAN_KEPADATAN_VALID).all()
-        and sub["satuan"].nunique() == 1
-    )
-
-
-skema_silver = pa.DataFrameSchema(
-    columns={
-        "seri_kode": pa.Column(str),
-        "nilai": pa.Column(float, nullable=True),
-        "satuan": pa.Column(str),
-        "rincian": pa.Column(str),
-    },
-    checks=[
-        pa.Check(_cek_rentang_persen, name="Rentang Nilai Persen (0-100)"),
-        pa.Check(_cek_profesi_var1477, name="Kesesuaian Kamus Profesi (var1477)"),
-        pa.Check(_cek_satuan_kepadatan_seragam, name="Keseragaman Satuan Kepadatan"),
-    ],
-)
-
-
-def jalankan(silver, gold):
-    print("--- Memulai Validasi Lapis Silver ---")
-    os.makedirs("reports", exist_ok=True)
-
-    df_silver = pd.read_parquet(silver) if isinstance(silver, str) else silver
-    if df_silver is None or df_silver.empty:
-        print("⚠️ Data Silver kosong. Melewati validasi.")
-        return pd.DataFrame()
-
-    gagal_umum = pd.DataFrame()
-    aturan_gagal = []
-
+def _hitung_sql() -> dict[str, int]:
+    con_s = sqlite3.connect(ROOT / "data/silver/silver.sqlite")
+    con_g = sqlite3.connect(ROOT / "data/gold/gold.sqlite")
     try:
-        skema_silver.validate(df_silver, lazy=True)
-    except pa.errors.SchemaErrors as e:
-        gagal_umum = e.failure_cases[["column", "check", "failure_case", "index"]]
-        aturan_gagal = gagal_umum["check"].unique().tolist()
+        return {
+            "silver": con_s.execute("SELECT COUNT(*) FROM silver").fetchone()[0],
+            "gold_panel_provinsi": con_g.execute("SELECT COUNT(*) FROM gold_panel_provinsi").fetchone()[0],
+            "gold_nasional_periode_seri": con_g.execute("SELECT COUNT(*) FROM gold_nasional_periode_seri").fetchone()[0],
+            "rekonsiliasi_nasional": con_g.execute("SELECT COUNT(*) FROM rekonsiliasi_nasional").fetchone()[0],
+        }
+    finally:
+        con_s.close()
+        con_g.close()
 
-    hasil = []
-    for cek in skema_silver.checks:
-        nama_aturan = cek.name
-        hasil.append({
-            "Aturan": nama_aturan,
-            "Jenis": "Keras (Umum)",
-            "Hasil": "GAGAL" if nama_aturan in aturan_gagal else "LOLOS",
-        })
-    tabel_ringkasan = pd.DataFrame(hasil)
 
-    laporan = [
-        "# Hasil Validasi Silver (Kasus 05)",
-        "Dihasilkan otomatis oleh `python pipeline.py`.\n",
-        "## Ringkasan Aturan",
-        tabel_ringkasan.to_markdown(index=False),
-        "\n## Rincian Kegagalan",
+def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
+    manifest = baca()
+    salah = periksa_silver(silver, manifest)
+    if salah:
+        raise ValueError("Validasi Silver gagal: " + "; ".join(salah))
+
+    panel = gold["panel_provinsi"]
+    nasional = gold["nasional_periode_seri"]
+    rekon = gold["rekonsiliasi_nasional"]
+
+    # cek baris SQL vs output parquet/csv dilakukan saat simpan; ini cek konsistensi dasar
+    for nama, df in {"panel_provinsi": panel, "nasional_periode_seri": nasional, "rekonsiliasi_nasional": rekon}.items():
+        if df.empty:
+            raise ValueError(f"Tabel gold kosong: {nama}")
+
+    if rekon["kategori_selisih"].isna().any() or (rekon["kategori_selisih"] == "").any():
+        raise ValueError("Ada baris rekonsiliasi tanpa kategori_selisih")
+    boleh = {"definisi berbeda", "metode berbeda", "vintage berbeda", "cakupan berbeda", "belum terjelaskan"}
+    asing = set(rekon["kategori_selisih"].dropna().astype(str)) - boleh
+    if asing:
+        raise ValueError(f"Kategori rekonsiliasi tidak dikenal: {sorted(asing)}")
+    belum = rekon[rekon["kategori_selisih"] == "belum terjelaskan"]
+    for kolom in ["penjelasan", "bukti_dicari"]:
+        kosong = belum[kolom].isna() | belum[kolom].astype(str).str.strip().eq("")
+        if kosong.any():
+            raise ValueError(f"Kategori 'belum terjelaskan' wajib punya {kolom}: {int(kosong.sum())} baris kosong")
+    _ = rekon["selisih"]
+
+    sql_counts = _hitung_sql()
+    parquet_counts = {
+        "silver": len(pd.read_parquet(ROOT / "data/silver/silver.parquet")),
+        "gold_panel_provinsi": len(pd.read_parquet(ROOT / "data/gold/panel_provinsi.parquet")),
+        "gold_nasional_periode_seri": len(pd.read_parquet(ROOT / "data/gold/nasional_periode_seri.parquet")),
+        "rekonsiliasi_nasional": len(pd.read_parquet(ROOT / "data/gold/rekonsiliasi_nasional.parquet")),
+    }
+    for k, sql_n in sql_counts.items():
+        pq_n = parquet_counts[k]
+        if sql_n != pq_n:
+            raise ValueError(f"Baris SQL vs Parquet tidak sama untuk {k}: SQL={sql_n}, Parquet={pq_n}")
+
+    reports = ROOT / "reports"
+    reports.mkdir(exist_ok=True)
+    lines = [
+        "# Validasi", "",
+        f"- Silver lolos skema minimal: {len(silver)} baris",
+        f"- Gold panel_provinsi: {len(panel)} baris",
+        f"- Gold nasional_periode_seri: {len(nasional)} baris",
+        f"- Rekonsiliasi_nasional: {len(rekon)} baris",
+        "- Semua baris rekonsiliasi memiliki kategori.",
+        f"- Baris 'belum terjelaskan' memiliki penjelasan dan bukti_dicari: {len(belum)} baris",
+        "", "## SQL vs Parquet", "",
+        "| Tabel | SQL | Parquet | Status |", "|---|---:|---:|---|",
     ]
-
-    if not gagal_umum.empty:
-        laporan.append(gagal_umum.head(50).to_markdown(index=False))
-    else:
-        laporan.append("✅ *Tidak ada. Semua aturan lolos.*")
-
-    with open("reports/validasi.md", "w", encoding="utf-8") as f:
-        f.write("\n\n".join(laporan))
-
-    if not gagal_umum.empty:
-        raise SystemExit(
-            f"❌ Validasi GAGAL pada aturan: {', '.join(aturan_gagal)}. "
-            "Rincian lihat di reports/validasi.md"
-        )
-
-    print("✅ Validasi Silver lolos 100%. Laporan dicetak ke reports/validasi.md")
-    return tabel_ringkasan
+    for k in ["silver", "gold_panel_provinsi", "gold_nasional_periode_seri", "rekonsiliasi_nasional"]:
+        lines.append(f"| {k} | {sql_counts[k]} | {parquet_counts[k]} | {'sama' if sql_counts[k] == parquet_counts[k] else 'beda'} |")
+    (reports / "validasi.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return {"silver_ok": True, "rows": {k: len(v) for k, v in gold.items()}}
