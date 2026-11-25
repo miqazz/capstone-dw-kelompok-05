@@ -1,7 +1,6 @@
 """Tahap 1 — Ekstraksi (pertemuan X)."""
 from __future__ import annotations
 
-import csv
 from pathlib import Path
 
 import pandas as pd
