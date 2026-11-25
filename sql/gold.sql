@@ -38,6 +38,7 @@ CREATE TABLE gold_nasional_periode_seri (
     _berkas_raw   TEXT    NOT NULL,
     _sha256_raw   TEXT    NOT NULL,
     catatan       TEXT,
+    asal_angka    TEXT,
     PRIMARY KEY (sumber, seri_kode, periode, rincian, _berkas_raw)
 );
 
