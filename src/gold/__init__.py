@@ -18,10 +18,124 @@ KATEGORI_REKONSILIASI = (
 )
 
 
+
+
 def _buat_panel(silver: pd.DataFrame) -> pd.DataFrame:
-    panel = silver[silver["wilayah_kode"].astype(int) != 9999].copy()
-    panel = panel.sort_values(["seri_kode", "wilayah_kode", "periode", "rincian", "_berkas_raw"]).reset_index(drop=True)
-    return panel
+    # Data provinsi, bukan data nasional
+    provinsi = silver[silver["wilayah_kode"].astype(int) != 9999].copy()
+
+    kolom = [
+        "sumber", "seri_kode", "wilayah_kode", "nama_wilayah",
+        "periode", "jenis_periode", "rincian", "nilai", "satuan",
+        "_berkas_raw", "_sha256_raw"
+    ]
+
+    # Ambil var1402 dan var2279
+    dasar = provinsi[
+        provinsi["seri_kode"].isin(["var1402", "var2279"])
+        & (provinsi["rincian"] == "Tidak ada")
+    ][kolom].copy()
+
+    # Ambil data Dokter Umum, Perawat, dan Bidan
+    tenaga = provinsi[
+        (provinsi["seri_kode"] == "var1477")
+        & (provinsi["rincian"].isin(["Dokter Umum", "Perawat", "Bidan"]))
+    ].copy()
+
+    # Dokter Umum: per 100.000 menjadi per 10.000
+    dokter = tenaga[tenaga["rincian"] == "Dokter Umum"].copy()
+    dokter["nilai"] = dokter["nilai"].astype(float) / 10
+    dokter["seri_kode"] = "var1477_dokter_umum_per10k"
+    dokter["satuan"] = "per 10.000 penduduk"
+
+    # Gabungkan Perawat dan Bidan
+    kunci = [
+        "sumber", "wilayah_kode", "nama_wilayah", "periode",
+        "jenis_periode", "_berkas_raw", "_sha256_raw"
+    ]
+
+    perawat = tenaga[tenaga["rincian"] == "Perawat"][kunci + ["nilai"]]
+    bidan = tenaga[tenaga["rincian"] == "Bidan"][kunci + ["nilai"]]
+
+    gabungan = perawat.merge(
+        bidan,
+        on=kunci,
+        suffixes=("_perawat", "_bidan")
+    )
+
+    gabungan["nilai"] = (
+        gabungan["nilai_perawat"].astype(float)
+        + gabungan["nilai_bidan"].astype(float)
+    ) / 10
+
+    gabungan["seri_kode"] = "var1477_perawat_bidan_per10k"
+    gabungan["rincian"] = "Perawat + Bidan"
+    gabungan["satuan"] = "per 10.000 penduduk"
+
+    gabungan = gabungan[
+        kunci + ["seri_kode", "nilai", "rincian", "satuan"]
+    ]
+
+    # Satukan semua seri
+    panel = pd.concat(
+        [
+            dasar,
+            dokter[kolom],
+            gabungan[kolom],
+        ],
+        ignore_index=True
+    )
+
+    # Baca laporan anomali
+    anomali_1402 = pd.read_csv("reports/klasifikasi_anomali.csv")
+    anomali_1402 = anomali_1402[
+        anomali_1402["seri_kode"] == "var1402"
+    ]
+
+    anomali_1477 = pd.read_csv("reports/calon_anomali_var1477.csv")
+
+    # Buat daftar anomali var1402
+    daftar_1402 = set(zip(
+        anomali_1402["provinsi"].str.upper(),
+        anomali_1402["tahun"].astype(int)
+    ))
+
+    # Buat daftar anomali tenaga kesehatan
+    daftar_1477 = set(zip(
+        anomali_1477["kategori"],
+        anomali_1477["provinsi"].str.upper(),
+        anomali_1477["tahun"].astype(int)
+    ))
+
+    # Periksa status anomali setiap baris
+    def cek_anomali(baris):
+        nama = baris["nama_wilayah"].upper()
+        tahun = int(baris["periode"])
+        seri = baris["seri_kode"]
+
+        if seri == "var1402":
+            return "Ya" if (nama, tahun) in daftar_1402 else "Tidak"
+
+        if seri == "var1477_dokter_umum_per10k":
+            kunci_anomali = ("Dokter Umum", nama, tahun)
+            return "Ya" if kunci_anomali in daftar_1477 else "Tidak"
+
+        if seri == "var1477_perawat_bidan_per10k":
+            perawat = ("Perawat", nama, tahun) in daftar_1477
+            bidan = ("Bidan", nama, tahun) in daftar_1477
+            return "Ya" if perawat or bidan else "Tidak"
+
+        return "Tidak"
+
+    panel["status_anomali"] = panel.apply(cek_anomali, axis=1)
+
+    panel["periode"] = panel["periode"].astype(str)
+
+    return panel.sort_values(
+        ["seri_kode", "wilayah_kode", "periode"]
+    ).reset_index(drop=True)
+
+
 
 
 def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:

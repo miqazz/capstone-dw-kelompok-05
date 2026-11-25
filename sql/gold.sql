@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS rekonsiliasi_nasional;
 DROP TABLE IF EXISTS gold_nasional_periode_seri;
 DROP TABLE IF EXISTS gold_panel_provinsi;
 
+
 CREATE TABLE gold_panel_provinsi (
     sumber        TEXT    NOT NULL,
     seri_kode     TEXT    NOT NULL,
@@ -12,12 +13,14 @@ CREATE TABLE gold_panel_provinsi (
     rincian       TEXT    NOT NULL,
     nilai         REAL    NOT NULL,
     satuan        TEXT    NOT NULL,
+    status_anomali TEXT   NOT NULL CHECK (status_anomali IN ('Ya','Tidak')),
     _berkas_raw   TEXT    NOT NULL,
     _sha256_raw   TEXT    NOT NULL,
     PRIMARY KEY (sumber, seri_kode, wilayah_kode, periode, rincian, _berkas_raw),
     CHECK (wilayah_kode >= 0 AND wilayah_kode != 9999),
     CHECK (length(_sha256_raw) = 64)
 );
+
 
 CREATE TABLE gold_nasional_periode_seri (
     sumber        TEXT    NOT NULL,
