@@ -2,7 +2,9 @@
   "metrik": {
     "seri_silver": 3,
     "rincian_dienkode": 10,
-    "baris_silver": 1471
+    "baris_silver": 1471,
+    "seri_panel": 3,
+    "baris_gold": 1710
   },
   "seed": 0,
   "data_hash": "1bbe0df404c003147f02a5a825ac2730eff73472722c95b8f2549c88264bdd17",
