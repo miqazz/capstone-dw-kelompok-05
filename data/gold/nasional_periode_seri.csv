@@ -10,16 +10,16 @@ bps,var1402,2022,tahun,Tidak ada,6.09,Persen,bps/2026-10-20/sdg3_3_8_1_a_v1402.c
 bps,var1402,2023,tahun,Tidak ada,5.22,Persen,bps/2026-10-20/sdg3_3_8_1_a_v1402.csv,239d16d2f8b90cb405caa8a92866b0aa2143bdb535e16e4f2b43a193e5ebb6cf,
 bps,var1402,2024,tahun,Tidak ada,5.18,Persen,bps/2026-10-20/sdg3_3_8_1_a_v1402.csv,239d16d2f8b90cb405caa8a92866b0aa2143bdb535e16e4f2b43a193e5ebb6cf,
 bps,var1402,2025,tahun,Tidak ada,5.32,Persen,bps/2026-10-20/sdg3_3_8_1_a_v1402.csv,239d16d2f8b90cb405caa8a92866b0aa2143bdb535e16e4f2b43a193e5ebb6cf,
-bps,var1477,2018,tahun,Bidan,213,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
-bps,var1477,2018,tahun,Dokter Gigi,4,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
-bps,var1477,2018,tahun,Dokter Umum,21,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
-bps,var1477,2018,tahun,Farmasi,20,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
-bps,var1477,2018,tahun,Gizi,11,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
-bps,var1477,2018,tahun,Kesehatan Lingkungan,20,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
-bps,var1477,2018,tahun,Kesehatan Masyarakat,33,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
-bps,var1477,2018,tahun,Perawat,175,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Bidan,213.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Dokter Gigi,4.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Dokter Umum,21.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Farmasi,20.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Gizi,11.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Kesehatan Lingkungan,20.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Kesehatan Masyarakat,33.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
+bps,var1477,2018,tahun,Perawat,175.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,
 bps,var1477_dokter_umum_per10k,2018,tahun,Dokter Umum,2.1,per 10.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,turunan konversi: kepadatan Dokter Umum per 100.000 / 10 untuk pembanding HWF_0001
-bps,var1477_perawat_bidan_per100k,2018,tahun,Perawat + Bidan,388,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,turunan: penjumlahan kepadatan Perawat dan Bidan (rincian nasional 2018)
+bps,var1477_perawat_bidan_per100k,2018,tahun,Perawat + Bidan,388.0,kepadatan per 100.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,turunan: penjumlahan kepadatan Perawat dan Bidan (rincian nasional 2018)
 bps,var1477_perawat_bidan_per10k,2018,tahun,Perawat + Bidan,38.8,per 10.000 penduduk,bps/2026-10-20/sdg3_3_c_1_v1477.csv,8ecd8de05c4883c614661ff3b57fff2ac9ff8c17baacd27836ea274ea29ba7b7,turunan konversi: (Perawat + Bidan) per 100.000 / 10 untuk pembanding HWF_0006
 bps,var2279,2022,tahun,Tidak ada,67.01,Persen,bps/2026-10-20/sdg3_3_8_2_a_v2279.csv,3771a1558f46fccd701bedaca0b65911bbef32187a0fe1afedd9771361c1bf58,
 bps,var2279,2023,tahun,Tidak ada,69.88,Persen,bps/2026-10-20/sdg3_3_8_2_a_v2279.csv,3771a1558f46fccd701bedaca0b65911bbef32187a0fe1afedd9771361c1bf58,

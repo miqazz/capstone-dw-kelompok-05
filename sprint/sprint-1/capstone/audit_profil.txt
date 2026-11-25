@@ -1,0 +1,85 @@
+AUDIT PROFIL SPRINT 1
+Sumber: data/silver/silver.csv (artefak Silver yang di-commit)
+Cara menjalankan: python sprint/sprint-1/capstone/audit_profil.py
+
+A. RINGKASAN SILVER
+total_baris=1541
+jumlah_seri=7
+jumlah_wilayah_unik=39 (termasuk kode nasional 9999 bila ada)
+duplikat_kunci=0
+
+B. PANEL BPS (hanya provinsi; kode 9999/INDONESIA dikecualikan)
+
+[var1402]
+baris_provinsi=382
+rentang_periode=2015..2025 (jumlah_tahun=11)
+jumlah_provinsi_teramati=38
+rincian=1: Tidak ada
+expected=418 = 38 x 11 x 1
+observed=382
+missing_sel=36
+daftar_wilayah_periode_tidak_ada=9200:2015, 9200:2016, 9200:2017, 9200:2018, 9200:2019, 9200:2020, 9200:2021, 9200:2022, 9200:2023, 9500:2015, 9500:2016, 9500:2017, 9500:2018, 9500:2019, 9500:2020, 9500:2021, 9500:2022, 9500:2023, 9600:2015, 9600:2016, 9600:2017, 9600:2018, 9600:2019, 9600:2020, 9600:2021, 9600:2022, 9600:2023, 9700:2015, 9700:2016, 9700:2017, 9700:2018, 9700:2019, 9700:2020, 9700:2021, 9700:2022, 9700:2023
+nilai_min=1.39; nilai_max=10.21; satuan_tercantum=Persen
+
+[var1477]
+baris_provinsi=918
+rentang_periode=2016..2018 (jumlah_tahun=3)
+jumlah_provinsi_teramati=34
+rincian=10: Ahli Teknologi Laboratorium Medik, Bidan, Dokter Gigi, Dokter Umum, Farmasi, Gizi, Kesehatan Lingkungan, Kesehatan Masyarakat, Pekarya, Perawat
+expected=1020 = 34 x 3 x 10
+observed=918
+missing_sel=102
+kombinasi_wilayah_tahun_tidak_lengkap=68
+distribusi_jumlah_rincian=8 rincian: 34 kombinasi, 9 rincian: 34 kombinasi, 10 rincian: 34 kombinasi
+rincian_kurang_per_wilayah_tahun=1100:2017=9, 1100:2018=8, 1200:2017=9, 1200:2018=8, 1300:2017=9, 1300:2018=8, 1400:2017=9, 1400:2018=8, 1500:2017=9, 1500:2018=8, 1600:2017=9, 1600:2018=8, 1700:2017=9, 1700:2018=8, 1800:2017=9, 1800:2018=8, 1900:2017=9, 1900:2018=8, 2100:2017=9, 2100:2018=8, 3100:2017=9, 3100:2018=8, 3200:2017=9, 3200:2018=8, 3300:2017=9, 3300:2018=8, 3400:2017=9, 3400:2018=8, 3500:2017=9, 3500:2018=8, 3600:2017=9, 3600:2018=8, 5100:2017=9, 5100:2018=8, 5200:2017=9, 5200:2018=8, 5300:2017=9, 5300:2018=8, 6100:2017=9, 6100:2018=8, 6200:2017=9, 6200:2018=8, 6300:2017=9, 6300:2018=8, 6400:2017=9, 6400:2018=8, 6500:2017=9, 6500:2018=8, 7100:2017=9, 7100:2018=8, 7200:2017=9, 7200:2018=8, 7300:2017=9, 7300:2018=8, 7400:2017=9, 7400:2018=8, 7500:2017=9, 7500:2018=8, 7600:2017=9, 7600:2018=8, 8100:2017=9, 8100:2018=8, 8200:2017=9, 8200:2018=8, 9100:2017=9, 9100:2018=8, 9400:2017=9, 9400:2018=8
+kode_pemekaran_tidak_muncul_dalam_seri=9200, 9500, 9600, 9700
+baris_nasional=8; periode_nasional=2018
+rincian_nasional_tersedia=Bidan, Dokter Gigi, Dokter Umum, Farmasi, Gizi, Kesehatan Lingkungan, Kesehatan Masyarakat, Perawat
+rincian_nasional_tidak_tersedia=Ahli Teknologi Laboratorium Medik, Pekarya
+catatan: daftar rincian nasional dibandingkan dengan daftar rincian seri provinsi; ketidaktersediaan nasional bukan bukti bahwa profesi tidak ada.
+nilai_min=0; nilai_max=377; satuan_tercantum=kepadatan per 100.000 penduduk
+
+[var2279]
+baris_provinsi=148
+rentang_periode=2022..2025 (jumlah_tahun=4)
+jumlah_provinsi_teramati=38
+rincian=1: Tidak ada
+expected=152 = 38 x 4 x 1
+observed=148
+missing_sel=4
+daftar_wilayah_periode_tidak_ada=9200:2022, 9500:2022, 9600:2022, 9700:2022
+nilai_min=53.49; nilai_max=98.18; satuan_tercantum=Persen
+
+C. SERI WHO NASIONAL (kode wilayah 9999)
+
+[FINPROTECTION_CATA_TOT_10_POP]
+jumlah_observasi=20
+rentang_periode=1999..2021 (jumlah_tahun_dalam_rentang=23)
+tahun_hilang=3: 2000, 2003, 2008
+nilai_min=1.82; nilai_max=4.74; satuan=persen populasi
+
+[HWF_0001]
+jumlah_observasi=13
+rentang_periode=1993..2023 (jumlah_tahun_dalam_rentang=31)
+tahun_hilang=18: 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2004, 2005, 2006, 2007, 2008, 2011, 2013, 2014, 2016
+nilai_min=0.57; nilai_max=6.88; satuan=per 10.000 penduduk
+
+[HWF_0006]
+jumlah_observasi=13
+rentang_periode=1992..2023 (jumlah_tahun_dalam_rentang=32)
+tahun_hilang=19: 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012
+nilai_min=6.19; nilai_max=41.23; satuan=per 10.000 penduduk
+perubahan_2018_ke_2019=30.89 -> 37.81; selisih=6.92; perubahan_persen=22.40%
+interpretasi=indikasi perubahan tajam yang perlu verifikasi metadata; bukan otomatis kesalahan data atau bukti patahan definisi.
+
+[UHC_INDEX_REPORTED]
+jumlah_observasi=24
+rentang_periode=2000..2023 (jumlah_tahun_dalam_rentang=24)
+tahun_hilang=0: (tidak ada)
+nilai_min=44; nilai_max=68; satuan=indeks (skor cakupan layanan UHC, 0-100)
+
+D. BATASAN KETERLACAKAN
+Audit ini menghitung ulang angka dari Silver yang di-commit. Data mentah di data/raw/ dikecualikan oleh .gitignore.
+Karena itu, jumlah baris mentah FINPROTECTION dan jumlah kombinasi dimensi sebelum filter tidak dihitung ulang oleh skrip ini.
+Angka tersebut hanya boleh dicantumkan sebagai informasi snapshot jika manifest/metadata sumber yang mendukung ikut disimpan sebagai artefak yang dapat diperiksa.
+Metadata definisi profesi WHO dan satuan var1477 perlu dirujuk ke dokumentasi/metadata sumber; audit numerik Silver tidak membuktikan kesetaraan definisi profesi.
