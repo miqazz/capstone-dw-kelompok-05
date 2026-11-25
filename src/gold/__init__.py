@@ -38,7 +38,7 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
         return {
             "sumber": "bps", "seri_kode": seri, "periode": "2018", "jenis_periode": "tahun",
             "rincian": rincian, "nilai": float(nilai), "satuan": satuan,
-            "_berkas_raw": berkas, "_sha256_raw": sha, "catatan": catatan,
+            "_berkas_raw": berkas, "_sha256_raw": sha, "catatan": catatan, "asal_angka": "turunan dari baris Indonesia var1477 (wilayah_kode=9999)",
         }
 
     dokter = v1477[v1477["rincian"] == "Dokter Umum"]
@@ -59,6 +59,13 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
                            "turunan konversi: (Perawat + Bidan) per 100.000 / 10 untuk pembanding HWF_0006"))
 
     nat["catatan"] = ""
+    nat["asal_angka"] = nat["seri_kode"].apply(
+    lambda x: (
+        "baris Indonesia (wilayah_kode=9999)"
+        if x in ["var1402", "var2279", "var1477"]
+        else "pembanding nasional WHO (wilayah_kode=9999)"
+        )
+    )
     # catatan WHO FINPROTECTION
     mask_fin = nat["seri_kode"] == "FINPROTECTION_CATA_TOT_10_POP"
     nat.loc[mask_fin, "catatan"] = "disagregasi TOTAL (DIM_DEG_URB=TOTAL, dimensi lain kosong)"
@@ -68,7 +75,13 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
 
     nat["periode"] = nat["periode"].astype(str)
     nat = nat.sort_values(["sumber", "seri_kode", "periode", "rincian"]).reset_index(drop=True)
-    return nat[["sumber", "seri_kode", "periode", "jenis_periode", "rincian", "nilai", "satuan", "_berkas_raw", "_sha256_raw", "catatan"]]
+    return nat[
+        [
+            "sumber", "seri_kode", "periode", "jenis_periode",
+            "rincian", "nilai", "satuan",
+            "_berkas_raw", "_sha256_raw", "catatan", "asal_angka"
+        ]
+    ]
 
 
 def _buat_rekonsiliasi(nasional: pd.DataFrame) -> pd.DataFrame:
