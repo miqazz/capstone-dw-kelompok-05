@@ -286,14 +286,17 @@ def _buat_panel(silver):
 
     return panel
 
-
-
 def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
-    nat = silver[silver["wilayah_kode"].astype(int) == 9999].copy()
+    # Mengambil baris nasional Indonesia.
+    nat = silver[
+        silver["wilayah_kode"].astype(int) == 9999
+    ].copy()
 
     cols = [
         "sumber",
         "seri_kode",
+        "wilayah_kode",
+        "nama_wilayah",
         "periode",
         "jenis_periode",
         "rincian",
@@ -304,22 +307,23 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
     ]
 
     nat = nat[cols].copy()
+    nat["catatan"] = ""
 
-    # Turunan var1477 untuk rekonsiliasi.
+    # Menyiapkan data BPS var1477 tahun 2018
+    # sebagai sumber angka turunan.
     v1477 = nat[
         (nat["seri_kode"] == "var1477")
         & (nat["periode"].astype(str) == "2018")
-    ]
+    ].copy()
 
-    berkas = "bps/2026-10-20/sdg3_3_c_1_v1477.csv"
+    if not v1477.empty:
+        berkas = v1477["_berkas_raw"].iloc[0]
+        sha = v1477["_sha256_raw"].iloc[0]
+    else:
+        berkas = ""
+        sha = ""
 
-    sha = (
-        v1477["_sha256_raw"].iloc[0]
-        if not v1477.empty
-        else nat[nat["seri_kode"] == "var1477"]["_sha256_raw"].iloc[0]
-    )
-
-    def row(seri, rincian, nilai, satuan, catatan):
+    def row(seri, rincian, nilai, satuan, catatan, asal_angka):
         return {
             "sumber": "bps",
             "seri_kode": seri,
@@ -331,12 +335,10 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
             "_berkas_raw": berkas,
             "_sha256_raw": sha,
             "catatan": catatan,
-            "asal_angka": (
-                "turunan dari baris Indonesia var1477 "
-                "(wilayah_kode=9999)"
-            ),
+            "asal_angka": asal_angka,
         }
 
+    # Mengambil nilai pembentuk dari rincian var1477.
     dokter = v1477[v1477["rincian"] == "Dokter Umum"]
     perawat = v1477[v1477["rincian"] == "Perawat"]
     bidan = v1477[v1477["rincian"] == "Bidan"]
@@ -345,14 +347,24 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
 
     if not dokter.empty:
         v = float(dokter["nilai"].iloc[0])
+        hasil = v / 10
 
         turunan.append(
             row(
                 "var1477_dokter_umum_per10k",
                 "Dokter Umum",
-                v / 10,
+                hasil,
                 "per 10.000 penduduk",
-                "turunan konversi: kepadatan Dokter Umum per 100.000 / 10 untuk pembanding HWF_0001",
+                (
+                    "Konversi kepadatan Dokter Umum "
+                    "dari per 100.000 menjadi per 10.000."
+                ),
+                (
+                    "Turunan BPS var1477; wilayah Indonesia "
+                    "(kode 9999); periode 2018; rincian "
+                    f"Dokter Umum bernilai {v}; rumus "
+                    f"{v} / 10 = {hasil}; berkas sumber: {berkas}."
+                ),
             )
         )
 
@@ -360,6 +372,7 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
         vp = float(perawat["nilai"].iloc[0])
         vb = float(bidan["nilai"].iloc[0])
         total = vp + vb
+        per10k = total / 10
 
         turunan.append(
             row(
@@ -367,7 +380,14 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
                 "Perawat + Bidan",
                 total,
                 "kepadatan per 100.000 penduduk",
-                "turunan: penjumlahan kepadatan Perawat dan Bidan (rincian nasional 2018)",
+                "Penjumlahan kepadatan Perawat dan Bidan.",
+                (
+                    "Turunan BPS var1477; wilayah Indonesia "
+                    "(kode 9999); periode 2018; rincian "
+                    f"Perawat bernilai {vp} dan Bidan bernilai {vb}; "
+                    f"rumus {vp} + {vb} = {total}; "
+                    f"berkas sumber: {berkas}."
+                ),
             )
         )
 
@@ -375,30 +395,84 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
             row(
                 "var1477_perawat_bidan_per10k",
                 "Perawat + Bidan",
-                total / 10,
+                per10k,
                 "per 10.000 penduduk",
-                "turunan konversi: (Perawat + Bidan) per 100.000 / 10 untuk pembanding HWF_0006",
+                (
+                    "Konversi hasil penjumlahan kepadatan "
+                    "Perawat dan Bidan dari per 100.000 "
+                    "menjadi per 10.000."
+                ),
+                (
+                    "Turunan BPS var1477; wilayah Indonesia "
+                    "(kode 9999); periode 2018; nilai Perawat "
+                    f"{vp} dan Bidan {vb}; rumus "
+                    f"({vp} + {vb}) / 10 = {per10k}; "
+                    f"berkas sumber: {berkas}."
+                ),
             )
         )
 
-    nat["catatan"] = ""
+    # Menjelaskan asal angka setiap baris asli.
+    def jelaskan_asal(r):
+        sumber = r["sumber"]
+        seri = r["seri_kode"]
+        periode = r["periode"]
+        rincian = r["rincian"]
+        wilayah = r["nama_wilayah"]
+        kode = r["wilayah_kode"]
+        berkas_sumber = r["_berkas_raw"]
 
-    # Menambahkan informasi asal angka.
-    nat["asal_angka"] = nat["seri_kode"].apply(
-        lambda x: (
-            "baris Indonesia (wilayah_kode=9999)"
-            if x in ["var1402", "var2279", "var1477"]
-            else "pembanding nasional WHO (wilayah_kode=9999)"
+        if sumber == "bps":
+            return (
+                f"Data langsung BPS; seri {seri}; "
+                f"wilayah {wilayah} (kode {kode}); "
+                f"periode {periode}; rincian {rincian}; "
+                f"berkas sumber: {berkas_sumber}."
+            )
+
+        if seri in ["HWF_0001", "HWF_0006"]:
+            aturan = (
+                "pemilihan DIM_GEO_CODE_M49 = 360; "
+                "nilai diambil dari RATE_PER_10000_N"
+            )
+        elif seri == "UHC_INDEX_REPORTED":
+            aturan = (
+                "pemilihan DIM_GEO_CODE_M49 = 360; "
+                "nilai diambil dari INDEX_N"
+            )
+        elif seri == "FINPROTECTION_CATA_TOT_10_POP":
+            aturan = (
+                "pemilihan DIM_GEO_CODE_M49 = 360; "
+                "DIM_DEG_URB = TOTAL; "
+                "DIM_SEX, DIM_AGE, DIM_HOUSEHOLD_COMP_BY_AGE, "
+                "dan DIM_POP_TYPE kosong; "
+                "nilai diambil dari PERCENT_POP_N"
+            )
+        else:
+            aturan = "aturan pemilihan data WHO sesuai proses Silver"
+
+        return (
+            f"Data nasional WHO GHO; seri {seri}; "
+            f"wilayah {wilayah} (kode {kode}); "
+            f"periode {periode}; rincian {rincian}; "
+            f"aturan sumber: {aturan}; "
+            f"berkas sumber: {berkas_sumber}."
         )
-    )
 
-    # Catatan WHO FINPROTECTION.
-    mask_fin = nat["seri_kode"] == "FINPROTECTION_CATA_TOT_10_POP"
+    nat["asal_angka"] = nat.apply(jelaskan_asal, axis=1)
+
+    # Catatan khusus seri FINPROTECTION.
+    mask_fin = (
+        nat["seri_kode"] == "FINPROTECTION_CATA_TOT_10_POP"
+    )
 
     nat.loc[mask_fin, "catatan"] = (
-        "disagregasi TOTAL (DIM_DEG_URB=TOTAL, dimensi lain kosong)"
+        "DIM_GEO_CODE_M49=360; DIM_DEG_URB=TOTAL; "
+        "DIM_SEX, DIM_AGE, DIM_HOUSEHOLD_COMP_BY_AGE, "
+        "dan DIM_POP_TYPE kosong."
     )
 
+    # Menggabungkan data asli dan data turunan.
     if turunan:
         nat = pd.concat(
             [nat, pd.DataFrame(turunan)],
@@ -406,6 +480,13 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
         )
 
     nat["periode"] = nat["periode"].astype(str)
+
+    # Memastikan asal angka tersedia untuk seluruh baris.
+    if nat["asal_angka"].isna().any():
+        raise ValueError("Ditemukan asal_angka yang kosong.")
+
+    if nat["asal_angka"].astype(str).str.strip().eq("").any():
+        raise ValueError("Ditemukan asal_angka yang kosong.")
 
     nat = nat.sort_values(
         ["sumber", "seri_kode", "periode", "rincian"]
@@ -426,6 +507,7 @@ def _buat_nasional(silver: pd.DataFrame) -> pd.DataFrame:
             "asal_angka",
         ]
     ]
+
 
 
 
