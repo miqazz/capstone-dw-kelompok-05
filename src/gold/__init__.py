@@ -73,6 +73,30 @@ def _status_kosong(seri, kode, periode, rincian, kategori_periode):
 
     return "missing"
 
+def _buat_lookup_anomali():
+    """Membaca hasil klasifikasi anomali."""
+    path_1402 = ROOT / "reports" / "klasifikasi_anomali.csv"
+    path_1477 = ROOT / "reports" / "calon_anomali_var1477.csv"
+
+    anomali_1402 = pd.read_csv(path_1402)
+    anomali_1402 = anomali_1402[
+        anomali_1402["seri_kode"] == "var1402"
+    ]
+
+    anomali_1477 = pd.read_csv(path_1477)
+
+    lookup_1402 = set(zip(
+        anomali_1402["provinsi"].str.strip().str.upper(),
+        anomali_1402["tahun"].astype(int)
+    ))
+
+    lookup_1477 = set(zip(
+        anomali_1477["kategori"].str.strip(),
+        anomali_1477["provinsi"].str.strip().str.upper(),
+        anomali_1477["tahun"].astype(int)
+    ))
+
+    return lookup_1402, lookup_1477
 
 def _buat_panel(silver):
     """Membentuk panel provinsi dari Silver dan menyimpannya sebagai Parquet."""
@@ -80,32 +104,23 @@ def _buat_panel(silver):
     df = silver.copy()
 
     if not isinstance(df, pd.DataFrame):
-
         raise TypeError("Input Gold harus berupa DataFrame Silver.")
 
     wajib = {
-        "seri_kode",
-        "wilayah_kode",
-        "nama_wilayah",
-        "periode",
-        "rincian",
-        "nilai",
-        "satuan",
-        "_berkas_raw",
-        "_sha256_raw",
+        "seri_kode", "wilayah_kode", "nama_wilayah",
+        "periode", "jenis_periode", "rincian", "nilai",
+        "satuan", "sumber", "_berkas_raw", "_sha256_raw",
     }
 
     kolom_hilang = wajib - set(df.columns)
 
     if kolom_hilang:
-
-        raise ValueError(f"Kolom Silver tidak ditemukan: {sorted(kolom_hilang)}")
+        raise ValueError(
+            f"Kolom Silver tidak ditemukan: {sorted(kolom_hilang)}"
+        )
 
     df = df[df["seri_kode"].isin(SERI_UTAMA)].copy()
-
-    df = df[df["wilayah_kode"] != 9999].copy()
-
-    # Daftar wilayah diambil langsung dari Silver.
+    df = df[df["wilayah_kode"].astype(int) != 9999].copy()
 
     wilayah = (
         df[["wilayah_kode", "nama_wilayah"]]
@@ -114,11 +129,9 @@ def _buat_panel(silver):
     )
 
     if wilayah["wilayah_kode"].duplicated().any():
-
         raise ValueError("Satu kode wilayah memiliki lebih dari satu nama.")
 
     if len(wilayah) != 38:
-
         raise ValueError(
             f"Jumlah provinsi Silver seharusnya 38, ditemukan {len(wilayah)}."
         )
@@ -126,93 +139,77 @@ def _buat_panel(silver):
     hasil = []
 
     for seri in SERI_UTAMA:
-
         sumber = df[df["seri_kode"] == seri].copy()
-
         periode_list = sorted(sumber["periode"].astype(str).unique())
 
         if seri == "var1477":
-
             rincian_list = sorted(sumber["rincian"].unique())
 
             kategori_periode = {
                 periode: set(
                     sumber.loc[
-                        sumber["periode"].astype(str) == periode, "rincian"
+                        sumber["periode"].astype(str) == periode,
+                        "rincian"
                     ].unique()
                 )
                 for periode in periode_list
             }
-
         else:
-
             rincian_list = ["Tidak ada"]
-
             kategori_periode = {}
-
-        # Memastikan tidak ada observasi Silver dengan kunci ganda.
 
         kunci_sumber = ["wilayah_kode", "periode", "rincian"]
 
         if sumber.duplicated(subset=kunci_sumber).any():
-
-            raise ValueError(f"Ditemukan kunci Silver ganda pada {seri}.")
+            raise ValueError(
+                f"Ditemukan kunci Silver ganda pada {seri}."
+            )
 
         lookup = {
-            (int(row["wilayah_kode"]), str(row["periode"]), row["rincian"]): row
+            (
+                int(row["wilayah_kode"]),
+                str(row["periode"]),
+                row["rincian"]
+            ): row
             for row in sumber.to_dict("records")
         }
 
         for provinsi in wilayah.itertuples(index=False):
-
             kode = int(provinsi.wilayah_kode)
-
             nama = provinsi.nama_wilayah
 
             for periode in periode_list:
-
                 for rincian in rincian_list:
-
                     observasi = lookup.get((kode, periode, rincian))
 
                     if observasi is not None:
-
                         nilai_asli = float(observasi["nilai"])
-
                         satuan_asli = observasi["satuan"]
 
-                        # Konversi kepadatan dari per 100.000 menjadi per 10.000.
-
                         if seri == "var1477":
-
                             nilai = nilai_asli / 10
-
                             satuan = "per_10000_penduduk"
-
                         else:
-
                             nilai = nilai_asli
-
                             satuan = satuan_asli
 
                         status = "terisi"
-
                         berkas_raw = observasi["_berkas_raw"]
-
                         sha256_raw = observasi["_sha256_raw"]
 
                     else:
-
                         nilai_asli = float("nan")
-
                         satuan_asli = (
-                            "per_100000_penduduk" if seri == "var1477" else "persen"
+                            "per_100000_penduduk"
+                            if seri == "var1477"
+                            else "persen"
                         )
 
                         nilai = float("nan")
-
                         satuan = (
-                            "per_10000_penduduk" if seri == "var1477" else satuan_asli
+                            "per_10000_penduduk"
+                            if seri == "var1477"
+                            else satuan_asli
                         )
 
                         status = _status_kosong(
@@ -220,64 +217,89 @@ def _buat_panel(silver):
                         )
 
                         berkas_raw = None
-
                         sha256_raw = None
 
                     indikator = (
-                        f"var1477_{_slug(rincian)}" if seri == "var1477" else seri
+                        f"var1477_{_slug(rincian)}"
+                        if seri == "var1477"
+                        else seri
                     )
 
-                    hasil.append(
-                        {
-                            "sumber": (
-                                observasi["sumber"] if observasi is not None else "bps"
-                            ),
-                            "wilayah_kode": kode,
-                            "nama_wilayah": nama,
-                            "periode": periode,
-                            "jenis_periode": (
-                                observasi["jenis_periode"]
-                                if observasi is not None
-                                else sumber.loc[
-                                    sumber["periode"].astype(str) == periode,
-                                    "jenis_periode",
-                                ].iloc[0]
-                            ),
-                            "indikator": indikator,
-                            "seri_kode": seri,
-                            "rincian": rincian,
-                            "nilai_asli": nilai_asli,
-                            "satuan_asli": satuan_asli,
-                            "nilai": nilai,
-                            "satuan": satuan,
-                            "status": status,
-                            "_berkas_raw": berkas_raw,
-                            "_sha256_raw": sha256_raw,
-                        }
-                    )
+                    hasil.append({
+                        "sumber": (
+                            observasi["sumber"]
+                            if observasi is not None
+                            else "bps"
+                        ),
+                        "wilayah_kode": kode,
+                        "nama_wilayah": nama,
+                        "periode": periode,
+                        "jenis_periode": (
+                            observasi["jenis_periode"]
+                            if observasi is not None
+                            else sumber.loc[
+                                sumber["periode"].astype(str) == periode,
+                                "jenis_periode"
+                            ].iloc[0]
+                        ),
+                        "indikator": indikator,
+                        "seri_kode": seri,
+                        "rincian": rincian,
+                        "nilai_asli": nilai_asli,
+                        "satuan_asli": satuan_asli,
+                        "nilai": nilai,
+                        "satuan": satuan,
+                        "status": status,
+                        "_berkas_raw": berkas_raw,
+                        "_sha256_raw": sha256_raw,
+                    })
 
     panel = pd.DataFrame(hasil)
+
+    # Menambahkan penanda anomali.
+    lookup_1402, lookup_1477 = _buat_lookup_anomali()
+
+    def cek_anomali(baris):
+        nama = str(baris["nama_wilayah"]).strip().upper()
+        tahun = int(baris["periode"])
+        seri = baris["seri_kode"]
+        rincian = str(baris["rincian"]).strip()
+
+        if seri == "var1402":
+            return (
+                "Ya"
+                if (nama, tahun) in lookup_1402
+                else "Tidak"
+            )
+
+        if seri == "var1477":
+            return (
+                "Ya"
+                if (rincian, nama, tahun) in lookup_1477
+                else "Tidak"
+            )
+
+        return "Tidak"
+
+    panel["status_anomali"] = panel.apply(
+        cek_anomali, axis=1
+    )
 
     kunci_panel = ["wilayah_kode", "periode", "indikator"]
 
     if panel.duplicated(subset=kunci_panel).any():
-
         raise ValueError("Ditemukan kunci panel Gold yang duplikat.")
-
-    # Memastikan semua nilai terisi memiliki lineage.
 
     terisi = panel["status"] == "terisi"
 
-    if panel.loc[terisi, ["_berkas_raw", "_sha256_raw"]].isna().any().any():
-
+    if panel.loc[
+        terisi, ["_berkas_raw", "_sha256_raw"]
+    ].isna().any().any():
         raise ValueError("Ada nilai Gold terisi tanpa lineage Silver.")
-
-    # Memastikan sel kosong tidak diberi nilai buatan.
 
     kosong = ~terisi
 
     if panel.loc[kosong, "nilai"].notna().any():
-
         raise ValueError("Sel kosong memiliki nilai yang tidak semestinya.")
 
     panel = panel.sort_values(
