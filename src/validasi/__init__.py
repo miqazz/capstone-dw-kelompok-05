@@ -93,11 +93,25 @@ def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
     jml_ganda = int((satuan_ganda > 1).sum())
     hasil_aturan.append(_catat("Gold", "Satuan tunggal per indikator (seri_kode)", jml_ganda == 0, f"{len(satuan_ganda)} indikator dicek, {jml_ganda} bersatuan ganda"))
 
-    # 4c. Setiap sel/baris Gold punya pasangan di Silver
-    kunci_silver = set(zip(silver["wilayah_kode"].astype(str), silver["periode"].astype(str)))
-    kunci_panel = set(zip(panel["wilayah_kode"].astype(str), panel["periode"].astype(str)))
+    # 4c. Setiap observasi Gold yang terisi punya pasangan di Silver
+    panel_terisi = panel.loc[panel["status"] == "terisi"]
+    kunci_silver = set(zip(
+        silver["wilayah_kode"].astype(int),
+        silver["periode"].astype(str),
+        silver["seri_kode"].astype(str),
+    ))
+    kunci_panel = set(zip(
+        panel_terisi["wilayah_kode"].astype(int),
+        panel_terisi["periode"].astype(str),
+        panel_terisi["seri_kode"].astype(str),
+    ))
     tanpa_pasangan = len(kunci_panel - kunci_silver)
-    hasil_aturan.append(_catat("Gold", "Setiap kunci Gold memiliki pasangan di Silver", tanpa_pasangan == 0, f"{len(kunci_panel)} kunci dicek, {tanpa_pasangan} tanpa pasangan"))
+    hasil_aturan.append(_catat(
+        "Gold",
+        "Setiap sel Gold yang terisi memiliki pasangan di Silver",
+        tanpa_pasangan == 0,
+        f"{len(kunci_panel)} kunci dicek, {tanpa_pasangan} tanpa pasangan",
+    ))
 
     # 5. Aturan Rekonsiliasi V4 & Kelengkapan Penjelasan
     kat_kosong = rekon["kategori_selisih"].isna() | rekon["kategori_selisih"].astype(str).str.strip().eq("")
