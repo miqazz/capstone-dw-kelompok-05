@@ -19,7 +19,7 @@ KATEGORI_BAKU = {
 
 
 def _hitung_sql() -> dict[str, int]:
-    """Menghitung jumlah baris pada database SQLite (bagian Allisha)."""
+    """Menghitung jumlah baris pada database SQLite."""
     con_s = sqlite3.connect(ROOT / "data/silver/silver.sqlite")
     con_g = sqlite3.connect(ROOT / "data/gold/gold.sqlite")
     try:
@@ -34,64 +34,80 @@ def _hitung_sql() -> dict[str, int]:
         con_g.close()
 
 
-def _catat(nama: str, lolos: bool, detail: str) -> dict:
-    return {"aturan": nama, "status": "LOLOS" if lolos else "GAGAL", "detail": detail}
+def _catat(tahap: str, nama: str, lolos: bool, detail: str) -> dict:
+    return {
+        "tahap": tahap,
+        "aturan": nama,
+        "status": "LOLOS" if lolos else "GAGAL",
+        "detail": detail,
+    }
 
 
 def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
     hasil_aturan: list[dict] = []
 
-    # 1. Validasi Skema Minimal Silver (Allisha)
+    # 1. Validasi Skema Minimal Silver
     manifest = baca()
     salah = periksa_silver(silver, manifest)
-    hasil_aturan.append(_catat("Silver: Skema minimal", not salah, "Lolos" if not salah else "; ".join(salah)))
+    hasil_aturan.append(_catat("Silver", "Skema minimal Silver", not salah, f"{len(silver)} baris lolos skema" if not salah else "; ".join(salah)))
     if salah:
         raise ValueError("Validasi Silver gagal: " + "; ".join(salah))
 
-    # 2. Aturan Silver Sprint 1 (Mufti)
+    # 2. Aturan Silver Sprint 1
     persen = silver.loc[silver["satuan"].astype(str).str.lower() == "persen", "nilai"].dropna()
     gagal_persen = int((~persen.between(0, 100)).sum())
-    hasil_aturan.append(_catat("Silver: Rentang persen (0-100)", gagal_persen == 0, f"{gagal_persen} pelanggaran"))
+    hasil_aturan.append(_catat("Silver", "Rentang nilai persen (0-100)", gagal_persen == 0, f"{len(persen)} baris dicek, {gagal_persen} pelanggaran"))
 
     v1477 = silver.loc[silver["seri_kode"] == "var1477"]
     if not v1477.empty:
         gagal_satuan = int((v1477["satuan"] != "kepadatan per 100.000 penduduk").sum())
-        hasil_aturan.append(_catat("Silver: Satuan var1477 baku", gagal_satuan == 0, f"{gagal_satuan} pelanggaran"))
+        hasil_aturan.append(_catat("Silver", "Satuan var1477 baku", gagal_satuan == 0, f"{len(v1477)} baris dicek, {gagal_satuan} pelanggaran"))
 
-
-    # 3. Ambil Tabel Gold & Cek Tidak Kosong (Allisha)
+    # 3. Ambil Tabel Gold & Cek Tidak Kosong
     panel = gold["panel_provinsi"]
     nasional = gold["nasional_periode_seri"]
     rekon = gold["rekonsiliasi_nasional"]
 
-    for nama, df in {"panel_provinsi": panel, "nasional_periode_seri": nasional, "rekonsiliasi_nasional": rekon}.items():
-        if df.empty:
-            raise ValueError(f"Tabel gold kosong: {nama}")
+    tabel_gold = {
+        "panel_provinsi": panel,
+        "nasional_periode_seri": nasional,
+        "rekonsiliasi_nasional": rekon,
+    }
+    tabel_kosong = [nama for nama, df in tabel_gold.items() if df.empty]
+    hasil_aturan.append(_catat(
+        "Gold",
+        "Seluruh tabel Gold tidak kosong",
+        len(tabel_kosong) == 0,
+        f"panel={len(panel)}, nasional={len(nasional)}, rekon={len(rekon)}" if not tabel_kosong else f"Kosong: {tabel_kosong}",
+    ))
+    if tabel_kosong:
+        raise ValueError(f"Tabel gold kosong: {', '.join(tabel_kosong)}")
 
-    # 4. Aturan Gold Sprint 2 (#25 - Mufti)
+    # 4. Aturan Gold Sprint 2 (#25)
     # 4a. Kunci panel provinsi unik
     dup_panel = int(panel.duplicated(subset=["seri_kode", "wilayah_kode", "periode", "rincian"]).sum())
-    hasil_aturan.append(_catat("Gold: Kunci panel_provinsi unik", dup_panel == 0, f"{dup_panel} baris duplikat"))
+    hasil_aturan.append(_catat("Gold", "Kunci panel_provinsi unik (seri_kode, wilayah_kode, periode, rincian)", dup_panel == 0, f"{len(panel)} baris dicek, {dup_panel} duplikat"))
 
-    # 4b. Satuan satu per indikator (cek dari Silver berdasarkan seri_kode)
+    # 4b. Satuan satu per indikator
     satuan_ganda = silver.groupby("seri_kode")["satuan"].nunique()
     jml_ganda = int((satuan_ganda > 1).sum())
-    hasil_aturan.append(_catat("Gold: Satuan satu per indikator", jml_ganda == 0, f"{jml_ganda} indikator bersatuan ganda"))
+    hasil_aturan.append(_catat("Gold", "Satuan tunggal per indikator (seri_kode)", jml_ganda == 0, f"{len(satuan_ganda)} indikator dicek, {jml_ganda} bersatuan ganda"))
 
-    # 4c. Setiap sel/baris Gold punya pasangan (wilayah_kode, periode) di Silver
+    # 4c. Setiap sel/baris Gold punya pasangan di Silver
     kunci_silver = set(zip(silver["wilayah_kode"].astype(str), silver["periode"].astype(str)))
     kunci_panel = set(zip(panel["wilayah_kode"].astype(str), panel["periode"].astype(str)))
     tanpa_pasangan = len(kunci_panel - kunci_silver)
-    hasil_aturan.append(_catat("Gold: Sel Gold punya pasangan di Silver", tanpa_pasangan == 0, f"{tanpa_pasangan} kunci tidak ada di Silver"))
+    hasil_aturan.append(_catat("Gold", "Setiap kunci Gold memiliki pasangan di Silver", tanpa_pasangan == 0, f"{len(kunci_panel)} kunci dicek, {tanpa_pasangan} tanpa pasangan"))
 
-    # 5. Aturan Rekonsiliasi V4 & Kelengkapan Penjelasan (Gabungan Allisha & Mufti)
+    # 5. Aturan Rekonsiliasi V4 & Kelengkapan Penjelasan
     kat_kosong = rekon["kategori_selisih"].isna() | rekon["kategori_selisih"].astype(str).str.strip().eq("")
     asing = set(rekon["kategori_selisih"].dropna().astype(str)) - KATEGORI_BAKU
     rekon_ok = (not kat_kosong.any()) and (len(asing) == 0)
     hasil_aturan.append(_catat(
-        "Rekonsiliasi: Kategori baku (V4)",
+        "Rekonsiliasi",
+        "Kategori selisih sesuai taksonomi baku (V4)",
         rekon_ok,
-        "Semua kategori valid" if rekon_ok else f"Kosong: {int(kat_kosong.sum())}, Asing: {sorted(asing)}",
+        f"{len(rekon)} baris valid" if rekon_ok else f"Kosong: {int(kat_kosong.sum())}, Asing: {sorted(asing)}",
     ))
     if kat_kosong.any():
         raise ValueError("Ada baris rekonsiliasi tanpa kategori_selisih")
@@ -99,12 +115,21 @@ def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
         raise ValueError(f"Kategori rekonsiliasi tidak dikenal: {sorted(asing)}")
 
     belum = rekon[rekon["kategori_selisih"] == "belum terjelaskan"]
+    kosong_detail = {}
     for kolom in ["penjelasan", "bukti_dicari"]:
         kosong = belum[kolom].isna() | belum[kolom].astype(str).str.strip().eq("")
         if kosong.any():
-            raise ValueError(f"Kategori 'belum terjelaskan' wajib punya {kolom}: {int(kosong.sum())} baris kosong")
+            kosong_detail[kolom] = int(kosong.sum())
+    hasil_aturan.append(_catat(
+        "Rekonsiliasi",
+        "Kelengkapan penjelasan & bukti_dicari untuk 'belum terjelaskan'",
+        len(kosong_detail) == 0,
+        f"{len(belum)} baris lengkap" if not kosong_detail else f"Kolom kosong: {kosong_detail}",
+    ))
+    for kolom, jml in kosong_detail.items():
+        raise ValueError(f"Kategori 'belum terjelaskan' wajib punya {kolom}: {jml} baris kosong")
 
-    # 6. Cek Konsistensi Baris SQL vs Parquet (Allisha)
+    # 6. Cek Konsistensi Baris SQL vs Parquet
     sql_counts = _hitung_sql()
     parquet_counts = {
         "silver": len(pd.read_parquet(ROOT / "data/silver/silver.parquet")),
@@ -113,40 +138,74 @@ def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
         "rekonsiliasi_nasional": len(pd.read_parquet(ROOT / "data/gold/rekonsiliasi_nasional.parquet")),
     }
     sql_ok = all(sql_counts[k] == parquet_counts[k] for k in sql_counts)
-    hasil_aturan.append(_catat("Penyimpanan: Baris SQL sama dengan Parquet", sql_ok, "Semua tabel sama" if sql_ok else "Ada selisih baris"))
+    hasil_aturan.append(_catat("Penyimpanan", "Konsistensi jumlah baris SQL vs Parquet", sql_ok, "4/4 tabel sama" if sql_ok else "Ada selisih baris"))
     for k, sql_n in sql_counts.items():
         pq_n = parquet_counts[k]
         if sql_n != pq_n:
             raise ValueError(f"Baris SQL vs Parquet tidak sama untuk {k}: SQL={sql_n}, Parquet={pq_n}")
 
-    # 7. Simpan Laporan ke reports/validasi.md
+    # 7. Hitung Ringkasan & Rincian Rekonsiliasi
     total_aturan = len(hasil_aturan)
     aturan_lolos = sum(1 for h in hasil_aturan if h["status"] == "LOLOS")
 
+    dist_kat = rekon["kategori_selisih"].astype(str).value_counts()
+
+    # 8. Simpan Laporan Lengkap ke reports/validasi.md
     reports = ROOT / "reports"
     reports.mkdir(exist_ok=True)
     lines = [
-        "# Validasi Pipeline (Sprint 2)",
+        "# Validasi Pipeline & Hasil Rekonsiliasi (Sprint 2)",
+        "",
+        "## Ringkasan Eksekusi",
         "",
         f"- **Total aturan validasi:** {total_aturan}",
-        f"- **Aturan lolos:** {aturan_lolos}",
-        f"- Silver lolos skema minimal: {len(silver)} baris",
-        f"- Gold panel_provinsi: {len(panel)} baris",
-        f"- Gold nasional_periode_seri: {len(nasional)} baris",
-        f"- Rekonsiliasi_nasional: {len(rekon)} baris",
-        f"- Baris 'belum terjelaskan' lengkap (penjelasan & bukti_dicari): {len(belum)} baris",
+        f"- **Aturan lolos:** {aturan_lolos}/{total_aturan}",
+        f"- **Silver (`silver`):** {len(silver)} baris",
+        f"- **Gold (`panel_provinsi`):** {len(panel)} baris",
+        f"- **Gold (`nasional_periode_seri`):** {len(nasional)} baris",
+        f"- **Rekonsiliasi (`rekonsiliasi_nasional`):** {len(rekon)} baris",
         "",
-        "## Ringkasan Aturan Validasi",
+        "## Hasil Lengkap Tiap Aturan Validasi",
         "",
-        "| Aturan | Status | Detail |",
-        "| :--- | :--- | :--- |",
+        "| No | Tahap | Aturan Validasi | Status | Detail Hasil |",
+        "|---:|---|---|---|---|",
     ]
-    for h in hasil_aturan:
-        lines.append(f"| {h['aturan']} | **{h['status']}** | {h['detail']} |")
+    for i, h in enumerate(hasil_aturan, start=1):
+        lines.append(f"| {i} | {h['tahap']} | {h['aturan']} | **{h['status']}** | {h['detail']} |")
 
     lines += [
         "",
-        "## SQL vs Parquet",
+        "## Hasil Rekonsiliasi Nasional",
+        "",
+        "### Distribusi Kategori Selisih (V4)",
+        "",
+        "| Kategori Selisih | Jumlah Baris | Proporsi |",
+        "|---|---:|---:|",
+    ]
+    for kat, jml in dist_kat.items():
+        pct = (jml / len(rekon)) * 100
+        lines.append(f"| {kat} | {int(jml)} | {pct:.1f}% |")
+
+    if "seri_kode" in rekon.columns:
+        lines += [
+            "",
+            "### Ringkasan Rekonsiliasi per Indikator (`seri_kode`)",
+            "",
+            "| Seri Kode | Jumlah Baris | Kategori Selisih | Rentang Selisih |",
+            "|---|---:|---|---|",
+        ]
+        for seri, grp in rekon.groupby("seri_kode"):
+            kat_str = ", ".join(f"{k} ({int(v)})" for k, v in grp["kategori_selisih"].value_counts().items())
+            if "selisih" in grp.columns:
+                num_sel = pd.to_numeric(grp["selisih"], errors="coerce").dropna()
+                rentang = f"{num_sel.min():.2f} s.d. {num_sel.max():.2f}" if not num_sel.empty else "N/A"
+            else:
+                rentang = "N/A"
+            lines.append(f"| {seri} | {len(grp)} | {kat_str} | {rentang} |")
+
+    lines += [
+        "",
+        "## Konsistensi SQL vs Parquet",
         "",
         "| Tabel | SQL | Parquet | Status |",
         "|---|---:|---:|---|",
@@ -156,7 +215,15 @@ def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
         lines.append(f"| {k} | {sql_counts[k]} | {parquet_counts[k]} | {status} |")
 
     (reports / "validasi.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"[VALIDASI] {aturan_lolos}/{total_aturan} aturan LOLOS. Laporan disimpan di reports/validasi.md")
+
+    # 9. Cetak Hasil Lengkap Tiap Aturan & Rekonsiliasi di Terminal
+    print(f"[VALIDASI] {aturan_lolos}/{total_aturan} aturan LOLOS:")
+    for i, h in enumerate(hasil_aturan, start=1):
+        print(f"  {i:02d}. [{h['status']}] ({h['tahap']}) {h['aturan']} -> {h['detail']}")
+    print("[REKONSILIASI] Distribusi kategori_selisih:")
+    for kat, jml in dist_kat.items():
+        print(f"  - {kat}: {int(jml)} baris")
+    print("[VALIDASI] Laporan lengkap disimpan di reports/validasi.md")
 
     return {
         "silver_ok": True,
