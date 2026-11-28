@@ -46,11 +46,19 @@ CREATE TABLE rekonsiliasi_nasional (
     nilai_pembanding      REAL,
     satuan_pembanding     TEXT,
     selisih               REAL,
+    status_pasangan       TEXT NOT NULL CHECK (status_pasangan IN (
+        'berpasangan','hanya_utama','hanya_pembanding'
+    )),
+    kategori_konsep       TEXT NOT NULL CHECK (kategori_konsep IN (
+        'definisi berbeda','metode berbeda','vintage berbeda','cakupan berbeda','belum terjelaskan'
+    )),
     kategori_selisih      TEXT NOT NULL CHECK (kategori_selisih IN (
         'definisi berbeda','metode berbeda','vintage berbeda','cakupan berbeda','belum terjelaskan'
     )),
     penjelasan            TEXT NOT NULL,
     bukti_dicari          TEXT,
+    rentang_utama         TEXT NOT NULL,
+    rentang_pembanding    TEXT NOT NULL,
     PRIMARY KEY (pasangan_id, periode, rincian_utama, rincian_pembanding)
 );
 

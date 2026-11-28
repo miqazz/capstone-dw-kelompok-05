@@ -6,12 +6,14 @@
 - Rekonsiliasi_nasional: 76 baris
 - Semua baris rekonsiliasi memiliki kategori.
 - Baris 'belum terjelaskan' memiliki penjelasan dan bukti_dicari: 65 baris
+- Validasi jumlah baris: SESUAI (4/4 tabel sesuai).
+- Detail CSV: `reports/validasi_jumlah_baris.csv`
 
 ## SQL vs Parquet
 
-| Tabel | SQL | Parquet | Status |
-|---|---:|---:|---|
-| silver | 1541 | 1541 | sama |
-| gold_panel_provinsi | 1448 | 1448 | sama |
-| gold_nasional_periode_seri | 96 | 96 | sama |
-| rekonsiliasi_nasional | 76 | 76 | sama |
+| nama_tabel | jumlah_baris_parquet | jumlah_baris_sql | selisih | status |
+|---|---:|---:|---:|---|
+| silver | 1541 | 1541 | 0 | sesuai |
+| gold_panel_provinsi | 1448 | 1448 | 0 | sesuai |
+| gold_nasional_periode_seri | 96 | 96 | 0 | sesuai |
+| rekonsiliasi_nasional | 76 | 76 | 0 | sesuai |

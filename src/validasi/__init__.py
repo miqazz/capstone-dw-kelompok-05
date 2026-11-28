@@ -8,8 +8,13 @@ import pandas as pd
 
 from src.common.skema import periksa_silver
 from src.common.manifest import baca
+from src.gold import KATEGORI_REKONSILIASI
 
 ROOT = Path(__file__).resolve().parents[2]
+VALIDASI_BARIS_CSV = ROOT / "reports" / "validasi_jumlah_baris.csv"
+KOLOM_VALIDASI_BARIS = [
+    "nama_tabel", "jumlah_baris_parquet", "jumlah_baris_sql", "selisih", "status",
+]
 
 
 def _hitung_sql() -> dict[str, int]:
@@ -27,34 +32,7 @@ def _hitung_sql() -> dict[str, int]:
         con_g.close()
 
 
-def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
-    manifest = baca()
-    salah = periksa_silver(silver, manifest)
-    if salah:
-        raise ValueError("Validasi Silver gagal: " + "; ".join(salah))
-
-    panel = gold["panel_provinsi"]
-    nasional = gold["nasional_periode_seri"]
-    rekon = gold["rekonsiliasi_nasional"]
-
-    # cek baris SQL vs output parquet/csv dilakukan saat simpan; ini cek konsistensi dasar
-    for nama, df in {"panel_provinsi": panel, "nasional_periode_seri": nasional, "rekonsiliasi_nasional": rekon}.items():
-        if df.empty:
-            raise ValueError(f"Tabel gold kosong: {nama}")
-
-    if rekon["kategori_selisih"].isna().any() or (rekon["kategori_selisih"] == "").any():
-        raise ValueError("Ada baris rekonsiliasi tanpa kategori_selisih")
-    boleh = {"definisi berbeda", "metode berbeda", "vintage berbeda", "cakupan berbeda", "belum terjelaskan"}
-    asing = set(rekon["kategori_selisih"].dropna().astype(str)) - boleh
-    if asing:
-        raise ValueError(f"Kategori rekonsiliasi tidak dikenal: {sorted(asing)}")
-    belum = rekon[rekon["kategori_selisih"] == "belum terjelaskan"]
-    for kolom in ["penjelasan", "bukti_dicari"]:
-        kosong = belum[kolom].isna() | belum[kolom].astype(str).str.strip().eq("")
-        if kosong.any():
-            raise ValueError(f"Kategori 'belum terjelaskan' wajib punya {kolom}: {int(kosong.sum())} baris kosong")
-    _ = rekon["selisih"]
-
+def _validasi_baris() -> list[dict[str, object]]:
     sql_counts = _hitung_sql()
     parquet_counts = {
         "silver": len(pd.read_parquet(ROOT / "data/silver/silver.parquet")),
@@ -62,13 +40,77 @@ def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
         "gold_nasional_periode_seri": len(pd.read_parquet(ROOT / "data/gold/nasional_periode_seri.parquet")),
         "rekonsiliasi_nasional": len(pd.read_parquet(ROOT / "data/gold/rekonsiliasi_nasional.parquet")),
     }
-    for k, sql_n in sql_counts.items():
-        pq_n = parquet_counts[k]
-        if sql_n != pq_n:
-            raise ValueError(f"Baris SQL vs Parquet tidak sama untuk {k}: SQL={sql_n}, Parquet={pq_n}")
+    baris = []
+    for nama in [
+        "silver", "gold_panel_provinsi", "gold_nasional_periode_seri", "rekonsiliasi_nasional",
+    ]:
+        n_sql = int(sql_counts[nama])
+        n_parquet = int(parquet_counts[nama])
+        selisih = n_sql - n_parquet
+        baris.append({
+            "nama_tabel": nama,
+            "jumlah_baris_parquet": n_parquet,
+            "jumlah_baris_sql": n_sql,
+            "selisih": selisih,
+            "status": "sesuai" if selisih == 0 else "tidak sesuai",
+        })
+    return baris
 
-    reports = ROOT / "reports"
-    reports.mkdir(exist_ok=True)
+
+def _tulis_dan_tampilkan_validasi_baris(baris: list[dict[str, object]]) -> None:
+    VALIDASI_BARIS_CSV.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(baris, columns=KOLOM_VALIDASI_BARIS).to_csv(
+        VALIDASI_BARIS_CSV, index=False, lineterminator="\n"
+    )
+
+    lebar = [max(len(str(kolom)), *(len(str(b[kolom])) for b in baris)) for kolom in KOLOM_VALIDASI_BARIS]
+    print("\nValidasi jumlah baris Parquet vs SQL")
+    print(" | ".join(str(kolom).ljust(lebar[i]) for i, kolom in enumerate(KOLOM_VALIDASI_BARIS)))
+    print("-+-".join("-" * lebar[i] for i in range(len(KOLOM_VALIDASI_BARIS))))
+    for b in baris:
+        print(" | ".join(str(b[kolom]).ljust(lebar[i]) for i, kolom in enumerate(KOLOM_VALIDASI_BARIS)))
+    sesuai = sum(b["status"] == "sesuai" for b in baris)
+    print(f"Hasil: {sesuai}/{len(baris)} tabel sesuai. "
+          f"Detail: {VALIDASI_BARIS_CSV.relative_to(ROOT).as_posix()}\n")
+
+
+def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
+    manifest = baca()
+    salah = periksa_silver(silver, manifest)
+    if salah:
+        raise ValueError("Validasi Silver gagal: " + "; ".join(salah))
+
+    baris_validasi = _validasi_baris()
+    _tulis_dan_tampilkan_validasi_baris(baris_validasi)
+    masalah = [
+        f"Baris SQL vs Parquet tidak sama untuk {b['nama_tabel']}: "
+        f"SQL={b['jumlah_baris_sql']}, Parquet={b['jumlah_baris_parquet']}"
+        for b in baris_validasi if b["status"] != "sesuai"
+    ]
+
+    panel = gold["panel_provinsi"]
+    nasional = gold["nasional_periode_seri"]
+    rekon = gold["rekonsiliasi_nasional"]
+
+    for nama, df in {"panel_provinsi": panel, "nasional_periode_seri": nasional, "rekonsiliasi_nasional": rekon}.items():
+        if df.empty:
+            masalah.append(f"Tabel gold kosong: {nama}")
+
+    if rekon["kategori_selisih"].isna().any() or (rekon["kategori_selisih"] == "").any():
+        masalah.append("Ada baris rekonsiliasi tanpa kategori_selisih")
+    boleh = set(KATEGORI_REKONSILIASI)
+    asing = set(rekon["kategori_selisih"].dropna().astype(str)) - boleh
+    if asing:
+        masalah.append(f"Kategori rekonsiliasi tidak dikenal: {sorted(asing)}")
+    belum = rekon[rekon["kategori_selisih"] == "belum terjelaskan"]
+    for kolom in ["penjelasan", "bukti_dicari"]:
+        kosong = belum[kolom].isna() | belum[kolom].astype(str).str.strip().eq("")
+        if kosong.any():
+            masalah.append(f"Kategori 'belum terjelaskan' wajib punya {kolom}: {int(kosong.sum())} baris kosong")
+    _ = rekon["selisih"]
+
+    sesuai = sum(b["status"] == "sesuai" for b in baris_validasi)
+    status_baris = "SESUAI" if not masalah and sesuai == len(baris_validasi) else "TIDAK SESUAI"
     lines = [
         "# Validasi", "",
         f"- Silver lolos skema minimal: {len(silver)} baris",
@@ -77,10 +119,21 @@ def jalankan(silver: pd.DataFrame, gold: dict[str, pd.DataFrame]):
         f"- Rekonsiliasi_nasional: {len(rekon)} baris",
         "- Semua baris rekonsiliasi memiliki kategori.",
         f"- Baris 'belum terjelaskan' memiliki penjelasan dan bukti_dicari: {len(belum)} baris",
+        f"- Validasi jumlah baris: {status_baris} ({sesuai}/{len(baris_validasi)} tabel sesuai).",
+        f"- Detail CSV: `reports/{VALIDASI_BARIS_CSV.name}`",
         "", "## SQL vs Parquet", "",
-        "| Tabel | SQL | Parquet | Status |", "|---|---:|---:|---|",
+        "| nama_tabel | jumlah_baris_parquet | jumlah_baris_sql | selisih | status |",
+        "|---|---:|---:|---:|---|",
     ]
-    for k in ["silver", "gold_panel_provinsi", "gold_nasional_periode_seri", "rekonsiliasi_nasional"]:
-        lines.append(f"| {k} | {sql_counts[k]} | {parquet_counts[k]} | {'sama' if sql_counts[k] == parquet_counts[k] else 'beda'} |")
-    (reports / "validasi.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    for b in baris_validasi:
+        lines.append(
+            f"| {b['nama_tabel']} | {b['jumlah_baris_parquet']} | {b['jumlah_baris_sql']} "
+            f"| {b['selisih']} | {b['status']} |"
+        )
+    (ROOT / "reports" / "validasi.md").write_text(
+        "\n".join(lines) + "\n", encoding="utf-8", newline="\n"
+    )
+
+    if masalah:
+        raise ValueError("Validasi gagal: " + "; ".join(masalah))
     return {"silver_ok": True, "rows": {k: len(v) for k, v in gold.items()}}

@@ -66,16 +66,20 @@ Ringkasan: 96 baris.
 | rincian_pembanding | string | — | tidak | TOTAL | WHO | Rincian pembanding |
 | periode | string | YYYY | tidak | 1992–2025 | Silver/Gold | Tahun |
 | jenis_periode | string | enum | tidak | tahun | aturan | Tahunan |
-| nilai_utama | float | sesuai satuan_utama | ya | 2.1–75.49 atau kosong | Gold nasional | Nilai utama |
+| nilai_utama | float | sesuai satuan_utama | ya | 2.1–75.49 atau kosong | Gold nasional | Nilai utama; kosong bila seri utama tidak punya periode ini |
 | satuan_utama | string | — | ya | ['Persen', 'per 10.000 penduduk'] | Gold | Satuan utama |
-| nilai_pembanding | float | sesuai satuan_pembanding | ya | 0.57–68.0 atau kosong | Gold nasional | Nilai pembanding |
+| nilai_pembanding | float | sesuai satuan_pembanding | ya | 0.57–68.0 atau kosong | Gold nasional | Nilai pembanding; kosong bila pembanding tidak punya periode ini |
 | satuan_pembanding | string | — | ya | ['indeks (skor cakupan layanan UHC, 0-100)', 'per 10.000 penduduk', 'persen populasi'] | Gold | Satuan pembanding |
-| selisih | float | utama-pembanding | ya | numerik/kosong | hitung | Kosong bila tidak berpasangan/definisi berbeda |
-| kategori_selisih | string | enum | tidak | definisi berbeda, metode berbeda, vintage berbeda, cakupan berbeda, belum terjelaskan | K-003/K-004/aturan | Kategori; `belum terjelaskan` wajib punya penjelasan & bukti_dicari |
-| penjelasan | string | teks | tidak | teks | log/analisis | Alasan kategori |
-| bukti_dicari | string | teks | ya | teks | log/analisis | Bukti/rujukan yang diperiksa |
+| selisih | float | utama-pembanding | ya | numerik/kosong | hitung | Dihitung hanya untuk pasangan sebanding dengan nilai di kedua sisi; P3/P4 bernilai kosong karena konstruk/satuan berbeda |
+| status_pasangan | string | enum | tidak | ['berpasangan', 'hanya_utama', 'hanya_pembanding'] | aturan rekonsiliasi | Menandakan sisi mana yang memiliki nilai pada periode tersebut |
+| kategori_konsep | string | enum | tidak | definisi berbeda, metode berbeda, vintage berbeda, cakupan berbeda, belum terjelaskan | K-009/K-010/K-011 | Kategori hubungan konsep pasangan, tetap dicatat walau periodenya tidak beririsan |
+| kategori_selisih | string | enum | tidak | definisi berbeda, metode berbeda, vintage berbeda, cakupan berbeda, belum terjelaskan | K-002–K-011/aturan | Kategori penjelasan baris; `belum terjelaskan` wajib punya penjelasan & bukti_dicari |
+| penjelasan | string | teks | tidak | teks | log/analisis | Alasan kategori, termasuk dugaan untuk periode tanpa pasangan |
+| bukti_dicari | string | teks | ya | teks | CSV mentah, metadata BPS/WHO, log-keputusan.csv | Bukti yang benar-benar diperiksa; mencantumkan berkas, tahun, dan metadata rilis |
+| rentang_utama | string | ringkasan tahun | tidak | mis. `2018 (n=1)` | Gold nasional | Ketersediaan periode seri utama pada tabel nasional |
+| rentang_pembanding | string | ringkasan tahun | tidak | mis. `1993, 2003, ..., 2022, 2023 (n=13)` | Gold nasional | Ketersediaan periode seri pembanding pada tabel nasional |
 
-Ringkasan: 76 baris; 4 pasangan; periode beririsan terisi 11.
+Ringkasan: 76 baris; 4 pasangan; 11 baris berpasangan (11 dengan nilai di kedua sisi, 2 dengan selisih numerik); 65 periode tanpa pasangan tetap tercatat dengan kategori `belum terjelaskan`.
 
 ## Referensi Metadata dan Definisi Seri
 

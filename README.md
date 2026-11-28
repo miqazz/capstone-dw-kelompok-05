@@ -28,8 +28,9 @@ diperhatikan untuk kasus Anda. `data/raw/` tidak di-commit; anggota lain cukup m
 ```text
 unduh_data.py          milik starter — unduh paket kasus dari Release dan periksa sha256
 pipeline.py            satu perintah reproduksi: ekstraksi -> silver -> gold -> validasi
-src/common/            milik starter — jangan diubah: manifest (lineage sha256), skema (pemeriksa Silver),
-                       hasil (results/<nim>/metrics.json untuk bukti artefak di Workbench)
+src/common/            manifest (lineage sha256) dan skema (pemeriksa Silver) milik starter — jangan diubah;
+                        hasil: results/<nim>/metrics.json untuk bukti artefak di Workbench
+
 src/ekstraksi/         tahap 1: pembaca tiap format
 src/silver/            tahap 2–4: profil, pembersihan, penyeragaman
 src/gold/              tahap 4–6: reshape panel, integrasi pembanding, penyimpanan SQL
@@ -38,7 +39,8 @@ src/validasi/          tahap 8: skema pandera/Great Expectations
 data/silver/, data/gold/   keluaran (boleh di-commit bila < 20 MB)
 log-keputusan.csv      setiap keputusan wrangling: apa, alternatif yang ditolak, alasan, dampak baris
 docs/data-dictionary.md    kamus data Silver dan Gold
-results/<nim>/metrics.json   angka hasil komponen Anda: python -m src.common.hasil <nim> nama=angka ...
+results/<nim>/metrics.json   angka hasil komponen: python -m src.common.hasil (tulis ulang semua dari data)
+                             atau python -m src.common.hasil <nim> nama=angka ...
 reports/tim.md, reports/individu/<nim>.md, AI_LOG.md
 ```
 

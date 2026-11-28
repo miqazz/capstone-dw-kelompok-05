@@ -138,7 +138,7 @@ def simpan_silver(df: pd.DataFrame) -> dict[str, Path]:
     import sqlite3
 
     SILVER_DIR.mkdir(parents=True, exist_ok=True)
-    df.to_csv(SILVER_CSV, index=False)
+    df.to_csv(SILVER_CSV, index=False, lineterminator="\n")
     df.to_parquet(SILVER_PARQUET, index=False)
 
     schema = SILVER_DDL.read_text(encoding="utf-8") if SILVER_DDL.exists() else _ddl_default()

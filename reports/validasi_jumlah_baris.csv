@@ -1,0 +1,5 @@
+nama_tabel,jumlah_baris_parquet,jumlah_baris_sql,selisih,status
+silver,1541,1541,0,sesuai
+gold_panel_provinsi,1448,1448,0,sesuai
+gold_nasional_periode_seri,96,96,0,sesuai
+rekonsiliasi_nasional,76,76,0,sesuai
